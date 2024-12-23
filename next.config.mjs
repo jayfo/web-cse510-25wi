@@ -49,12 +49,12 @@ const nextConfig = {
     nextImageExportOptimizer_imageFolderPath: "public/images",
     nextImageExportOptimizer_exportFolderPath: "dist",
     nextImageExportOptimizer_exportFolderName: "images-optimized",
-    nextImageExportOptimizer_quality: 100,
-    nextImageExportOptimizer_storePicturesInWEBP: true,
+    nextImageExportOptimizer_quality: "100",
+    nextImageExportOptimizer_storePicturesInWEBP: "true",
 
     // Disabling blurry placeholder images, requires setting this to false
     // and passing placeholder="empty" to all <ExportedImage> components.
-    nextImageExportOptimizer_generateAndUseBlurImages: true,
+    nextImageExportOptimizer_generateAndUseBlurImages: "true",
   },
 
   experimental: {
