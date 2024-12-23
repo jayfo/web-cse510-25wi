@@ -1,0 +1,16 @@
+# Site uses paths like /assignments/readings#reading-reports.
+# Static export generates files like /assignments/readings.html.
+# Directly accessing an export therefore fails because /assignments/readings/index.html does not exist.
+# Setting nextConfig's trailingSlash to true resolved this,
+# but as of 2023-09-01 it is also causing loss of a trailing hash (e.g., #reading-reports).
+#
+# Manually maintaining this set of redirects will be sufficient for a small site.
+
+RewriteEngine On
+
+RewriteRule ^assignments[/]?$ assignments.html
+RewriteRule ^assignments/exam[/]?$ assignments/exam.html
+RewriteRule ^assignments/project[/]?$ assignments/project.html
+RewriteRule ^assignments/readings[/]?$ assignments/readings.html
+RewriteRule ^assignments/statisticslab[/]?$ assignments/statisticslab.html
+RewriteRule ^calendar[/]?$ calendar.html

@@ -1,0 +1,47 @@
+/*
+ * Overall prefer to use MUI sx, but the base HTML element does not support MUI sx.
+ * The base HTML element style attribute does not support media selectors.
+ * Use raw CSS to configure appropriate top scroll padding.
+ *
+ * It might be possible to get this same behavior with MUI sx on a wrapping DIV,
+ * but experimentation with that did not yield the desired behavior.
+ */
+
+/*
+ * The height of the AppBar is controlled by this:
+ * https://github.com/mui/material-ui/blob/master/packages/mui-material/src/styles/createMixins.js
+ *
+ * toolbar: {
+ *   minHeight: 56,
+ *   [breakpoints.up('xs')]: {
+ *     '@media (orientation: landscape)': {
+ *       minHeight: 48,
+ *     },
+ *   },
+ *   [breakpoints.up('sm')]: {
+ *     minHeight: 64,
+ *   },
+ * },
+ */
+
+.html {
+  overflow-y: auto;
+}
+
+@media (min-width: 600px) {
+  .html {
+    scroll-padding-top: 64px;
+  }
+}
+@media not all and (min-width: 600px) {
+  @media (orientation: landscape) {
+    .html {
+      scroll-padding-top: 48px;
+    }
+  }
+  @media not all and (orientation: landscape) {
+    .html {
+      scroll-padding-top: 56px;
+    }
+  }
+}
