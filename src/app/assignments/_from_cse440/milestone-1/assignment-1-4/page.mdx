@@ -1,0 +1,109 @@
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { TBD } from "@/components/TBD";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { default as CanvasGroupsNotCreated } from '@/contentcomponents/CanvasGroupsNotCreated.mdx';
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { SiteLinks } from "@/data/SiteLinks";
+import { Paths } from "@/paths";
+import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
+
+export const pathDesignIdeationForm = '/assignments/design-ideation-worksheet.pdf';
+
+# Assignment 1.4: Design Ideation
+
+<UnderDevelopment display={false} />
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_4} />
+
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_1_top}/>.
+Be sure you have reviewed that larger context for this assignment.
+
+The goal of this assignment is to begin thinking about how to plan design research to inform your design process.
+
+Generate 10 different ideas related to each of the following design dimensions of your project proposal:
+
+- Forms: types of technology on which a design might be developed
+  (e.g., wearables, watch/phone/tablet/laptop, appliances, other artifacts in an environment).
+- Data: types of data a design might track or help a person track.
+- Tasks: what a person might accomplish with a design.
+- Features: a specific capability a design might have.
+- Contexts for Interaction: Contexts in which a person might interact with a design
+  (e.g., physical environments, social relationships, related goals or activities).
+
+We will provide this worksheet to help structure this brainstorm:
+
+<p><a href={Paths.basePath + pathDesignIdeationForm}>design-ideation-worksheet.pdf</a></p>
+
+Write or sketch your ideas, one in each square.
+Each idea should be either a single sentence or a quick drawing with a caption.
+A person familiar with your project but not in your group should be able to understand each idea.
+
+All ideas should be different.
+The goal is to begin exploring the space of possibilities, not attempting to polish some individual possibility.
+Focus on the quantity of ideas, and avoid become stuck on the quality of any one idea.
+Ideate as a team to develop a greater range of ideas.
+When you get stuck, find a context to inspire new ideas.
+
+After this brainstorming, you will have a broad space of possible directions.
+Your project will soon need to gather information on how to further generate and consider ideas in such directions.
+
+Following up on the above, you should additionally brainstorm:
+
+- People: types of people you might work with to learn more about problems and opportunities.
+- Focus: specific aspects of problems and opportunities you might focus on learning more about.
+- Method: how you might engage such people to learn more about problems and opportunities.
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_4} />
+
+Within the Drive folder for course project files:
+
+- Identify the Slides deck corresponding to this assignment for your group.
+  The deck provides a template for this assignment.
+  Edit the deck in-place, so that you can easily share it in critique.
+
+- Prepare a Slides deck with the following structure:
+
+  For each ideation category (5 total):
+    - 1 slide:
+      - 10 ideas in that category (e.g., an image of this page in the worksheet).
+      - Indicate 3 to 5 that are your favorite or "best" ideas in that category (e.g., add a star to the idea).
+
+Reminders and requirements:
+
+- Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
+
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+
+  - <CanvasGroupsNotCreated />
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+
+The Drive folder for course project files is here:
+
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_1_4} />
+
+## Completion Grading
+
+This assignment will be graded on completion of __5 components__:
+
+1. __Ideation in Each Design Dimension__ (5 total):
+
+   Generate 10 ideas related to each design dimension.
+
+   All ideas should be different.
+
+2. __Clarity and Presentation__

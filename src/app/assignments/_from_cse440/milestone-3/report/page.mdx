@@ -1,0 +1,264 @@
+import { Alert } from "@mui/material";
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { SiteLinks } from "@/data/SiteLinks";
+import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
+
+# Milestone 3 Report
+
+<UnderDevelopment display={false} />
+
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_3_top}/>.
+Be sure you have reviewed that larger context for this assignment.
+
+The goal of this report is to communicate and reflect on
+development and refinement of your tasks and designs,
+culminating in your final design proposal and its two focus tasks.
+
+You are free to directly reuse content produced for earlier assignments in this milestone.
+However, you should revise content as needed to ensure your milestone report reflects your current work.
+Similarly, we expect that feedback received throughout this milestone will have been addressed or implemented in this report.
+
+Milestone 3 has focused on the development of tasks and potential designs,
+with you proposing and exploring a range of design directions
+and then choosing a design direction with two focus tasks.
+In this milestone report, aim to communicate
+this progression through considering and selecting tasks and designs,
+providing rationale for the choices you made in this design process.
+
+This report should have three sections:
+
+1. __Design Problem and Tasks__
+
+   __State the design problem__ you explored throughout this milestone.
+   You may start with text from an earlier assignment,
+   but you should revise to account for feedback and for clarity you have gained in your design exploration.
+   Ensure that your description of the design problem:
+   - Clearly describes a problem that people experience,
+     highlighting relevant aspects of the problem that informed your design exploration.
+   - Conveys aspects of the problem,
+     rather than conveying aspects of a specific design solution.
+   - Remains sufficiently general to describe your exploration of multiple design alternatives.
+
+   __Present 6 tasks__ that characterize the design space you explored throughout this milestone.
+   These might be tasks you submitted in earlier assignments,
+   might be tasks you have revised to better describe an earlier task,
+   or might be new or re-formulated tasks that you feel influenced your design exploration.
+   Ensure that each task:
+   - Consists of a clear action that a person takes and which leads to an accomplishment
+     (e.g., lists of design capabilities are not tasks, things that simply happen to people are not tasks).
+   - Could potentially be supported by different designs
+     (e.g., is not overly tied to a specific design).
+   - Could potentially be pursued across different contexts and details
+     (e.g., is not overly tied to a contexts or details of a specific story).
+
+   __Reflect on these tasks__ and share insights you developed through your design exploration.
+   Insights might be about the tasks themselves or about how those tasks shaped design exploration.
+   For example:
+   - Did certain tasks help suggest design ideas?
+   - Were certain tasks more difficult to incorporate into design ideas?
+   - Did different categories of tasks emerge
+     (e.g., short-term versus long-term tasks, tasks focused on an individual versus tasks among a group of people)?
+   - Are there interesting relationships between tasks
+     (e.g., in time, in data, via dependencies)?
+   - Were there tasks that worked well together or poorly together
+     (e.g., a combination suggested interesting design directions, a combination was difficult to define in the same design)?
+   - Did design explorations suggest consideration of other tasks
+     (e.g., lead you to explore tasks at different levels of a task hierarchy,
+     suggest other tasks you might have explored with more time)?
+
+   Share __at least 3__ meaningful insights about your tasks.
+
+2. __Proposed Designs__
+   
+   Present and review the 3 potential design directions you explored in Assignment 3.2 and this milestone.
+
+   For each design, include:
+
+   __A descriptive title and brief description__ of the key idea or approach of the design.
+
+   __Key sketches__ that communicate the most important aspects of the design.
+   This should be 2 or 3 sketches, which could include
+   earlier overview sketches, earlier task sketches,
+   or new sketches that better communicate the core idea or approach of the design.
+
+   __Reflection on the design.__
+   Informed by any critique you received and by your own reflection on the design,
+   summarize what was more or less compelling or effective in the design.
+   For example:
+   - Are there elements of this design you think could or should be further explored?
+   - Are there elements of this design that you intentionally chose to not further explore?
+   - What informed such decisions?
+   - What did you ultimately learn from this design?
+
+   Note this section needs to clearly present and reflect on each design from Assignment 3.2,
+   regardless of whether you chose to further pursue that design in the rest of this milestone.
+   If your earlier sketches were unclear or did not effectively communicate your design,
+   we strongly encourage you to create updated sketches that better capture the design idea or approach.
+
+3. __Selected Design__
+
+   Present your selected design direction in the context of your two selected focus tasks.
+
+   Introducing your design with __a compelling name__ that you can use for this project.
+   This should be more than just a descriptor you may have used to distinguish designs in Assignment 3.2.
+   Choose a short, creative, and marketable name that captures the key idea or approach in your design.
+
+   Provide a two paragraph __description of your design__:
+   (1) the problem your design aims to address, and
+   (2) the key approach your design takes to addressing this problem.
+   Because you are now introducing your selected design direction,
+   your description of the problem may be more focused or nuanced
+   (e.g., your problem description no longer needs to be as broad as your entire design exploration).
+   Ensure this description of your design direction is concise
+   while providing sufficient detail to a person who does not already know about your project.
+
+   Present each __focus task__ and an associated __storyboard__.
+   These may be from Assignment 3.4, or they may be revised for clarity and conciseness.
+   Ensure the focus task is clearly stated.
+   Ensure the storyboard presents
+   a compelling narrative including a problem, at least one character,
+   a clear interaction between a character and your design,
+   and an accomplishment that provides satisfaction through conveying how the problem was addressed.
+   Be particularly mindful of how you balance clarity and conciseness in each storyboard.
+
+   Explain the __rationale for your selected design and focus tasks__.
+   Be sure to describe why this design and these tasks are compelling.
+   Your focus is on explaining why you are pursuing a specific design direction
+   (i.e., not on explaining why you are not exploring other potential design directions).
+   Discuss the relationship between your selected design and focus tasks.
+   For example:
+   - What synergy exists between your selected design and focus tasks?
+   - How do you expect your focus tasks will support you in exploring meaningful elements of your selected design?
+   - How do you expect your focus tasks will support you in telling a compelling story about your design?
+   - Are there elements of your problem or your design
+     that are important but not captured by your focus tasks?
+     How could you convey those in future descriptions and testing of your design?
+
+   Present specific details of how you intend to __support your focus tasks in this design__.
+   For each focus task, share sketches or selected frames from your Assignment 3.4 task walkthroughs.
+   Concisely convey your current concept of the interaction with your design in this task.
+
+   __Reflect on your design__ and what you currently know or do not know.
+   For example:
+   - What specific elements of the design became clear while developing your task walkthroughs?
+   - What aspects of the design are still open or unclear?
+   - On what elements of the design do you want to focus during upcoming usability testing and design refinement?
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.milestone_3_report} />
+
+Within the Drive folder for course project files:
+
+- Identify the Slides deck corresponding to this assignment for your group.
+  The deck provides a template for this assignment.
+  Edit the deck in-place, so that you can easily share it in critique.
+
+- Prepare a Slides deck with the following structure:
+
+  __Design Problem & Tasks__
+    - 1 slide: Design problem.
+    - 1 slide: 6 representative tasks.
+    - 1 slide: 3 reflection insights about tasks.
+
+  __Proposed Designs__
+    For each of 3 designs proposed in Assignment 3.2:
+     - 1 slide: Title and brief description of the key idea or approach.
+     - 1 slide: Key sketches communicating the design.
+     - 1 slide: Design reflection.
+
+  __Selected Design__
+    - 1 slide: Selected design title.
+    - 1 slide: Description of design problem and approach.
+    - 2 slides: 2 focus tasks and storyboards (i.e., 1 per slide).
+    - 1 slide: Reflection on rationale for selected design and focus tasks.
+    - 2 slides: 2 focus task design details (i.e., 1 per slide).
+    - 1 slide: Design detail reflection and plan.
+
+Reminders and requirements:
+
+- Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
+
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+
+- <GroupAssignment />
+- <ContributionStatementReference />
+
+The Drive folder for course project files is here:
+
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.milestone_3_report} />
+
+## Grading
+
+This milestone report will be graded on a scale of __37 points__:
+
+1. __Design Problem__: (2 points)
+
+   State the design problem you explored throughout this milestone.
+   You may start with text from an earlier assignment, but you should revise to account
+   for feedback and for clarity you have gained in your design exploration.
+
+2. __6 Representative Tasks__: (3 points)
+
+   Present 6 tasks that characterize the design space you explored throughout this milestone.
+
+3. __Task Reflection__: (3 points)
+
+   Reflect on these tasks and share insights you developed through your design exploration.
+   Insights might be about the tasks themselves or about how those tasks shaped design exploration.
+
+   Share at least 3 meaningful insights about your tasks.
+
+4. __Proposed Designs__: (3 x 3 points)
+
+   For each design proposed in Assignment 3.2, include:
+
+   - A descriptive title and brief description of the key idea or approach of the design.
+
+   - Key sketches that communicate the most important aspects of the design.
+
+   - Reflection on the design.
+     Informed by any critique you received and by your own reflection on the design,
+     summarize what was more or less compelling or effective in the design.
+
+5. __Selected Design Title and Description__: (3 points)
+
+   Introduce your design with a compelling name.
+
+   Describe your design, detailing the problem your design addresses
+   and the key approach your design takes to this problem.
+
+6. __Focus Tasks and Storyboards__: (2 x 3 points)
+
+   Present each focus task and an associated storyboard.
+
+7. __Design and Task Selection Rationale__: (2 points)
+
+   Explain the rationale for your selected design and focus tasks.
+   Be sure to describe why this design and these tasks are compelling.
+   Your focus is on explaining why you are pursuing a specific design direction.
+   Do not simply explain why you are not exploring other potential design directions.
+
+8. __Focus Task Design Details__: (2 x 3 points)
+
+   Present specific details of how you intend to support your focus tasks in this design.
+   For each focus task, share sketches or selected frames from your Assignment 3.4 task walkthroughs.
+   Concisely convey your current concept of the interaction with your design in this task.
+
+9. __Design Detail Reflection and Plan__: (2 points)
+
+   Reflect on your design and what you currently know or do not know.
+
+10. __Clarity and Presentation__: (2 points)

@@ -1,0 +1,320 @@
+import { Alert } from "@mui/material";
+
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { TBD } from "@/components/TBD";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseStoreLink } from "@/components/links/CourseStoreLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
+import { calendarData } from "@/data/CalendarData";
+import { SiteLinks } from "@/data/SiteLinks";
+
+# Assignment 5: Web Post
+
+<UnderDevelopment display={false} />
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_web_post_initial} />
+
+Revision Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_web_post_final} />
+
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_5_top}/>.
+Be sure you have reviewed that larger context for this assignment.
+
+The goal of this assignment is to effectively communicate your design
+and your underlying design process in a post appropriate for a web portfolio.
+
+**Prepare a web post** documenting your design and your design process.
+Your post will be integrated into the course website via the
+<SiteLink linkKey={SiteLinks.projectsTop} /> page,
+used to both advertise the course poster session and to provide an archive of course projects.
+Prior milestones provide significant content you can draw upon in this post,
+but this post is intended for an audience of future readers reviewing your design work.
+Not all content from prior milestones will be included,
+you should update your prior work based on feedback received throughout your design process,
+and you will ultimately emphasize a few key insights that most informed your design.
+
+Make sure all images you include are clear and legible (e.g., with appropriate contrast).
+Re-make images as necessary to ensure this
+(e.g., by taking new photos in better lighting, by instead using a scanner,
+by re-creating a piece of a paper prototype using ink that will create a better image).
+
+Remember that audience is important in storytelling,
+and be sure your post takes a tone of presenting and reflecting on your project.
+You are not selling the resulting design, but are instead sharing your work with an interested audience.
+You can express enthusiasm, but do not let that enthusiasm undermine the substance of your content.
+
+Your post should follow the outline below.
+It will be authored using Markdown and provided components for including images.
+Be sure to inspect and understand the template text provided in your project directory.
+
+1. __Title, Logo, and Team__
+
+   A short, creative, and marketable title capturing the key idea or approach.
+
+   An attractive project logo.
+   It will be used to link to your project from the main projects page,
+   and you may also choose to include the logo in your post.
+
+   The members of your team.
+
+2. __Problem and Design Overview__:
+
+   **Provide a concise statement of the problem you are addressing and a brief introduction of your design.**
+   This might be a single paragraph or two short paragraphs.
+   Be sure to include:
+   - The problem that motivates your design.
+   - The key idea or approach of your design.
+
+   Your goal is to set a context and then to motivate a reader to want to continue to learn about your work.
+
+   - Include an image to help build interest.
+     This could be an image that helps introduce the problem and motivation,
+     or it could be an image that helps introduce your design (e.g., your logo).
+
+3. __Design Walkthrough__:
+
+   **Within the context of your overall design, introduce your two focus tasks.**
+   This should be a single short paragraph.
+   Be sure to include:
+   - Any context needed to understand your focus tasks in the context of your overall design.
+   - A brief motivation or rationale for your focus tasks.
+
+   Your goal is to motivate these tasks as context for the details of your design.
+
+   - If you have not already included an image to introduce your overall design,
+   include such an image as part of this introduction of your design walkthrough.
+
+   **Then present key elements of your design in your two focus tasks.**
+   These might each begin with a heading for the task.
+   Be sure to include:
+   - The tasks that are being accomplished.
+   - Images conveying your design in each task
+     (e.g., as walkthroughs with images from your digital mockup).
+   - Enough associated text for a reader to understand the design.
+
+   Your goal is to ensure a person can understand your design and key elements of your task walkthroughs.
+
+   - Do not number your focus tasks (e.g., "Task 1", "Task 2").
+     Instead give them a descriptive title (e.g., based on the text of the task itself).
+
+4. __Design Research and Key Insights__:
+
+   **Provide a concise overview of your design research process.**
+   This might be a single paragraph.
+   Be sure to include:
+   - The goals of your design research (i.e., your focus, your primary need for additional understanding).
+   - The methods and participants you engaged in your design research.
+   - Your rationale (i.e., why you chose your specific methods and participants).
+
+   Your goal is to set a context for the insights this process revealed.
+
+   **Then present 3 key insights from your design research process.**
+   These might each be a descriptive heading and a single paragraph.
+   For each insight, be sure to include:
+   - How the insight emerged in your design research
+     (e.g., how your understanding was shaped by design research,
+     how your understanding was shaped by critique or feedback).
+   - Any specific evidence related to the insight
+     (e.g., quotes or stories from participants,
+     pictures captured during observations,
+     pivots in your approach or thinking that resulted from critique or feedback,
+     key reasons you chose one design over alternatives,
+     key reasons you combined ideas from multiple design alternatives).
+   - Any images appropriate for conveying the insight (e.g., images from your design sketches).
+   - Describe how this insight shaped your design direction or why it was ultimately important to your final design.
+
+   Your goal is to convey key insights from your design research that helped define and differentiate your design.
+
+   - Now that your design is complete, your perspective on prior insights may have evolved.
+     You can and should emphasize your current understanding of insights that emerged throughout your design research.
+   - Do not number your insights (e.g., "Insight 1", "Insight 2", "Insight 3").
+     Instead give them a descriptive heading
+     or consider that each paragraph could begin with a single bolded sentence summarizing the insight.
+
+5. __Iterative Design and Key Insights__:
+
+   **Provide a concise overview of your iterative design process.**
+   This might be a single paragraph.
+   Be sure to include:
+   First provide a concise overview of your iterative design process in Assignment 3, including:
+
+   - A concise overview of your iterative design process
+     (e.g., your paper prototyping, inspection, usability testing, and digital mockup).
+   - Brief motivation or rationale for details of your process
+     (e.g., how you adapted the process to the needs of your project)
+     or reflection on the process
+     (e.g., how the process helped surface design insights).
+
+   Your goal is to set a context for the insights this process revealed.
+
+   - Include an image of your paper prototype as context for this iterative design
+     (e.g., an overview image of your paper prototype).
+
+   **Then present 3 key insights from your iterative design process.**
+   These might each be a descriptive heading and a single paragraph.
+   For each insight, be sure to include:
+   - How the insight emerged
+     (e.g., the state of a design element prior to the insight,
+     the activity, observation, critique, or feedback that prompted you to iterate upon a design element,
+     an aspect of transitioning to a digital mockup that required re-working your design).
+   - Any specific evidence related to the insight
+     (e.g., quotes from or observations of participants).
+   - How you iterated upon the design in response to the insight
+     (e.g., showing a design element before and after an iteration).
+   - Images as appropriate for conveying the insight (e.g., images from your paper prototyping or digital mockup).
+
+   Your goal is to convey key insights from your iterative design.
+
+   - Now that your design is complete, your perspective on prior insights may have evolved.
+     You can and should emphasize your current understanding of insights that emerged throughout your iterative design.
+   - Do not number your insights (e.g., "Insight 1", "Insight 2", "Insight 3").
+     Instead give them a descriptive heading
+     or consider that each paragraph could begin with a single bolded sentence summarizing the insight.
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_web_post_initial} />
+
+Revision Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_web_post_final} />
+
+Evidence from Medium suggests that effective posts can be read in approximately 7 minutes:
+
+[https://medium.com/data-lab/the-optimal-post-is-7-minutes-74b9f41509b](https://medium.com/data-lab/the-optimal-post-is-7-minutes-74b9f41509b)
+
+Author your post such that it conveys the necessary content while remaining easy to skim and read within approximately 7 minutes.
+We estimate posts will be between 1500 and 2000 words in length.
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ParticipantAnonymity />
+
+Submit your post as a pull request against the course website GitHub repository:
+
+- <CourseStoreLink outerComponent="p" linkKey='linkGitHub' />
+
+- You will need to fork the course website, clone it to your local machine,
+  make and commit your edits, then eventually open a pull request to the course website,
+  which we will then merge and publish.
+
+- See the repository README.md for guidance on using `yarn dev` to run a local build of the website.
+  Served at `localhost:3000`, this will dynamically update as you modify your content.
+
+- Prior to opening your pull request, use `yarn export` to ensure that your code builds without errors.
+
+- All edits included in your pull request should be contained within your provided project directory:
+
+  - Each project has a directory within `src/app/projects`.
+  - Edit the provided `page.mdx` with the contents of your post.
+  - Place images in the provided directories in `public/images/projects`
+    (i.e., for pictures of your team and for pictures used in your post).
+    Remove any images that are not in use.
+  - Replace the provided `project_thumb.png` with a 150x150 PNG to be used in linking to your project page.
+
+- You may submit multiple pull requests as you work on your post, and we will merge them as quickly as possible.
+
+- If a change is needed in the overall projects page or in the location of your project directory
+  (e.g., because you have changed your project name), contact and coordinate with the course staff.
+  Do not attempt this yourself, as the website implementation is relatively fragile.
+
+- Start early to ensure you are able to properly submit necessary pull requests.
+  We will accept and merge trivial pull requests if they help you learn this process.
+  In an emergency where you are unable to submit your content via a pull request,
+  you may document the status of your post by emailing the staff a Zip archive of your project directory.
+  We will then work with you on posting your content.
+
+## In Class
+
+Be prepared to discuss your initial post for in-class critique and refinement.
+
+## Completion Grading
+
+Initial submission of this assignment will be graded on completion of the following components:
+
+1. __Complete Draft__
+
+   A complete draft sufficient for in-class discussion and critique.
+   This draft should include an appropriate attempt at each of the final components of the web post.
+   It might also include specific notes or questions to support in-class discussion.
+
+2. __Submission via Pull Request__
+
+   Successful integration of the post into the course website via pull request.
+
+   Be responsive to any challenges of integrating and publishing your post.
+
+## Grading
+
+Final submission of this assignment will be graded on a scale of __40 points__:
+
+1. __Design Name__: (2 points)
+
+   Choose a short, creative, and marketable name that captures the key idea or approach in your design.
+
+2. __Logo__: (2 points)
+
+   Include an attractive project logo.
+
+   This may be the same logo you prepare for your poster,
+   or you may use a variation that you feel is more effective in a web format.
+
+3. __Group Names__: (1 points)
+
+   Appropriately include the full names of each member of your group.
+
+4. __Problem__: (3 points)
+
+   Concisely and effectively convey the problem your design addresses.
+
+5. __Key Idea or Approach__: (3 points)
+
+   Concisely and effectively convey the key idea or approach of your design.
+
+   Provide a brief motivation or rationale for your focus tasks.
+
+   Include an image that provides high-level design context for key functionality.
+
+6. __Focus Task Walkthroughs__: (6 points)
+
+   Present key elements of your design in your two focus tasks.
+
+   Use images to convey your design in each task,
+   while providing enough text for a reader to understand the design.
+
+7. __Design Research Insights__: (9 points)
+
+   Provide a concise overview of your design research process.
+
+   Present 3 key insights from your design research process.
+
+   Describe how each insight shaped your design direction or why it was ultimately important to your final design.
+
+8. __Iterative Design Insights Insights__: (9 points)
+
+   Provide a concise overview of your iterative design process.
+
+   Present 3 key insights from your iterative design process.
+
+   Describe how you iterated upon the design in response to the insight.
+
+9. __Clarity and Presentation__: (5 points)
+
+   Clarity and presentation are weighted more heavily than in prior assignments,
+   corresponding to the expectation of a polished presentation of your work.
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+Examples of web posts and project reports are linked from projects in prior offerings,
+but be sure your submission is designed for the format, requirements, and emphasis of this assignment:
+
+- Winter 2024 Projects: [https://courses.cs.washington.edu/courses/cse440/24wi/projects](https://courses.cs.washington.edu/courses/cse440/24wi/projects)
+- Winter 2023 Projects: [https://courses.cs.washington.edu/courses/cse440/23wi/projects](https://courses.cs.washington.edu/courses/cse440/23wi/projects)
+- Spring 2022 Projects: [https://courses.cs.washington.edu/courses/cse440/22sp/projects](https://courses.cs.washington.edu/courses/cse440/22sp/projects)

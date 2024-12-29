@@ -1,0 +1,118 @@
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { TBD } from "@/components/TBD";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { default as CanvasGroupsNotCreated } from '@/contentcomponents/CanvasGroupsNotCreated.mdx';
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as ExcludedTopics } from "@/contentcomponents/ExcludedTopics.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
+import { SiteLinks } from "@/data/SiteLinks";
+
+# Assignment 1.3: Final Proposal
+
+<UnderDevelopment display={false} />
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_3} />
+
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_1_top}/>.
+Be sure you have reviewed that larger context for this assignment.
+
+The goal of this assignment is to propose and analyze a problem that will form the basis of a design project for this class.
+You should build upon the critique you have received from peers and course staff.
+Although your project will iterate and evolve from this point, your group should have coalesced around an idea.
+
+In one paragraph,
+describe the design problem and motivation.
+State what the problem is and why it is a problem, or describe an opportunity to enhance an existing practice or approach.
+Provide enough detail to convince a reader this is a difficult and interesting problem, worth spending a quarter considering.
+
+In another paragraph,
+analyze the idea to give more background and context to convey how your project might evolve to be compelling.
+Do not just focus on negative aspects of the current situation, but also identify some positive aspects that may be beneficial to retain.
+A few salient examples from existing systems or practices could be used to support those claims.
+If appropriate, you may conduct this analysis by describing a scenario that illustrates how someone might encounter and resolve the problem.
+
+If there are already well-known and widely-available solutions to your idea,
+explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+<ExcludedTopics />
+
+## Group Submission Required
+
+Submitting a finalized project proposal as part of a group is a requirement for proceeding in the class.
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_3} />
+
+Within the Drive folder for course project files:
+
+- Identify the Slides deck corresponding to this assignment for your group.
+  The deck provides a template for this assignment.
+  Edit the deck in-place, so that you can easily share it in critique.
+
+- Prepare a Slides deck with the following structure:
+
+  Proposal Critique
+    - For each proposal from Assignment 1.2 (3 total):
+      - 1/2 slide: Description of the proposal.
+      - 1/2 slide: Overview of critique you received.
+
+  Final Proposal
+    - 1 slide: A revised or new description of the proposal.
+    - 1 slide: Analysis, background, or context for this proposal.
+
+Reminders and requirements:
+
+- Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
+
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+
+The Drive folder for course project files is here:
+
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_1_3} />
+
+## In Class
+
+Be prepared to further brainstorm around your proposed idea,
+as a step toward planning design research to inform your design process.
+
+## Completion Grading
+
+This assignment will be graded on completion of __4 components__:
+
+1. __Problem and Motivation__:
+
+   Provide enough detail to convince the reader that this is a difficult and interesting problem, worth spending a quarter considering.
+
+2. __Analysis of Problem__:
+
+   Give enough background and context to convey how your project might evolve to be compelling.
+
+3. __Novelty and Creativity__:
+
+   If there are already well-known and widely-available solutions to your proposed idea,
+   explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+4. __Clarity and Presentation__
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+<ProjectMilestoneSamples milestone='assignment1b' />
