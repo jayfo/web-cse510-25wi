@@ -1,6 +1,8 @@
-import Box from "@mui/material/Box";
+import { Alert, Box } from '@mui/material';
 import Image from "next-image-export-optimizer";
 
+import { TBD } from "@/components/TBD";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { CourseStoreLink } from "@/components/links/CourseStoreLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as AssignmentsOverview } from "@/contentcomponents/AssignmentsOverview.mdx";
@@ -8,21 +10,29 @@ import { SiteLinks} from "@/data/SiteLinks";
 import { Paths } from "@/paths";
 
 import imgPhotoJames from "public/images/photo_james.jpg";
-import imgPhotoShaan from "public/images/photo_shaan.jpg";
+import imgPhotoAnant from "public/images/photo_placeholder.png";
 
 # Course Overview
 
+<UnderDevelopment display={true} />
+
 ## Course Description
 
-This course provides an introduction to forms of contribution in several major areas of research in Human-Computer Interaction (HCI).
-It is based in a combination of readings and discussion, a small statistics lab, and a self-defined project.
-Course readings require preparing reports on a combination of historic framing papers and more recent contributions.
-This help students examine what the HCI community considers a research contribution across a variety of problems,
-thus preparing students to understand and make meaningful research contributions in these and other areas of HCI.
+This course provides an introduction to forms of contribution in several major areas of research in Human-Computer Interaction.
+Course activities are based in a combination of readings, active discussion and reflection on readings, and a self-defined group project.
+Course readings emphasize a combination of historic framing papers and more recent contributions.
+Discussion and reflection emphasize consideration of readings in terms of their specific contributions,
+methods applied in those contributions, and larger framings of those contributions.
+The group project asks students to extend consideration of specific contributions, methods, and framings to their own research activities.
+The combination of course activities is therefore intended to
+help students examine what the HCI research community considers a contribution across a variety of contexts,
+thus helping prepare students to understand and make meaningful contributions in these and other areas of HCI research.
 
-This course is explicitly not focused on the design methods commonly used in HCI practice.
+This course is explicitly not focused on iterative design methods or associated theory commonly emphasized in HCI practice.
 We do not assume a strong background in HCI (i.e., there is no undergraduate HCI prerequisite),
-but students seeking an introduction to effective design or the design process will be better served by CSE 440.
+but students seeking an introduction to effective design or an iterative design process will be better served by CSE 440.
+
+{/*
 
 The course project will require hands-on experience with HCI, while remaining open to different possibilities.
 You might choose to design and implement a new piece of HCI technology,
@@ -172,3 +182,296 @@ Please do not hesitate to contact the course staff regarding these or any other 
 This course website lives on GitHub:
 
 <CourseStoreLink outerComponent="p" linkKey='linkGitHub' />
+
+
+
+## Course Description
+
+This course provides an introduction to human-computer interaction and the design process.
+Students will learn methods and skills for designing and prototyping interactive systems.
+The course covers a design process from the initial formulation of a design problem to creation of digital prototypes.
+Importantly, the course does not emphasize development but instead fully focuses on design.
+
+The course structure is a mix of lectures, hands-on activities, and design critiques by peers and course staff.
+The course is overwhelmingly organized around a group project, in which students:
+
+- Ideate and Propose Design Problems
+- Study Existing Practices and Challenges
+- Explore Potential Design Opportunities and Tradeoffs
+- Evaluate and Iterate Upon a Design
+- Communicate a Problem and Resulting Design
+
+## Learning Objectives
+
+- Process-Focused Perspective on Interaction Design
+- Design Research Methods and Skills
+- Task-Focused Scenario Development, Sketching, and Storyboarding
+- Rapid Prototyping and Iteration
+- Critical Perspective on Design Solutions
+
+## Course Staff
+
+<Box display="flex" flexDirection="row" alignItems="flex-start">
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>James Fogarty</p>
+    <p>he/him</p>
+    <p>
+      {/* alt="", Treat as decorative, because name is read above /}
+      <Image src={imgPhotoJames}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>Jesse Martinez</p>
+    <p>he/they</p>
+    <p>
+      {/* alt="", Treat as decorative, because name is read above /}
+      <Image src={imgPhotoJesse}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>Katelyn Mei</p>
+    <p>she/her</p>
+    <p>
+      {/* alt="", Treat as decorative, because name is read above /}
+      <Image src={imgPhotoKatelyn}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+</Box>
+
+## Course Coordination
+
+- Contact
+
+  Email course staff at &lt;cse440-staff [at] cs.washington.edu&gt;.
+
+  Please do not email individual course staff.
+  Using the course staff email list promotes both staff coordination and a more prompt response.
+
+- Course Time & Location
+
+  Tuesdays & Thursdays, 10:00-11:20.
+  [CSE2](https://www.washington.edu/maps/#!/cse2)
+  Room [G10](https://www.washington.edu/classroom/CSE2+G10)
+
+  The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
+
+- Section Times & Location
+
+  - Section B: Fridays, 11:30-12:20 [MGH](https://uw.edu/maps/?mgh)
+    Room [058](https://www.washington.edu/classroom/MGH+058).
+  - Section D: Fridays, 1:30-2:20 [MGH](https://uw.edu/maps/?mgh)
+    Room [058](https://www.washington.edu/classroom/MGH+058).
+
+  The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
+
+- Office Hours
+
+  - James, by appointment.
+  - Jesse, Thursdays 12:00 to 1:00, [CSE2](https://uw.edu/maps/?cse2) 152.
+  - Katelyn, Wednesdays 3:00 to 4:00, [CSE2](https://uw.edu/maps/?cse2) 152.
+
+  Scheduled office hours require that you email beforehand (i.e., at least one hour beforehand).
+  If nobody has emailed regarding an office hour, course staff may not be available.
+  Hours are scheduled most weeks, but check the <SiteLink linkKey={SiteLinks.calendarTop} />.
+  Other meetings are by appointment.
+
+- Canvas
+
+  <CourseStoreLink outerComponent="p" linkKey="linkCanvas" />
+
+Course information and material will primarily be provided on this website.
+
+Canvas will be used for submissions and for necessary limitation of access to course materials.
+
+## Assignments
+
+<AssignmentsOverview />
+
+## Grading
+
+Strive to do good work because you care about your own opportunities to learn,
+including the opportunities this course provides working with a group in an intensive project.
+
+Design is an inherently subjective practice, and so grading in this course is necessarily subjective.
+The stated project requirements are often the minimum,
+intended to leave room for groups to earn strong grades through strong work.
+
+### Project Milestones, Assignments, and Reports
+
+The project is composed of five milestones.
+Each milestone includes contributing assignments and culminates in a milestone report or other final deliverables.
+
+#### Assignments
+Contributing assignments will be graded for completion of key components listed in the assignment.
+Because the course is designed around feedback and improvement,
+assignment grades indicate you have invested sufficient effort and insight at the time of the submission.
+
+Completion grading will generally be on a 2 point scale, and can roughly be interpreted as:
+
+- 2: Meets completion expectations.
+- 1: Somewhat problematic or incomplete relative to expectations.
+- 0: Missing or severely problematic or incomplete relative to expectations.
+
+Quality ratings will then generally provide lightweight feedback on each assignment's key components.
+Quality ratings do not directly impact grading of assignments or milestone reports,
+but suggest where staff feel you should invest effort to revise your materials
+as you continue in your design and assemble your materials for the milestone report.
+
+Assignment quality ratings are on a scale from ⭐ to ⭐⭐⭐⭐ and can roughly be interpreted as follows:
+
+- ⭐⭐⭐⭐: High Quality
+
+  Such work is very strong. This is above what is inherently expected and will not be a common rating,
+  but allows course staff to indicate appreciation of very strong work.
+
+- ⭐⭐⭐: Meets Expectations
+
+  Such work is good, but may still leave room for improvement.
+
+- ⭐⭐: Could Improve
+
+  Such work is on the right track, but could benefit from substantial development and revision.
+
+- ⭐: Insufficient
+
+  Such work does not accomplish the intended goal and will need much more work.
+  If you do not already know why an assignment receives this rating, we encourage you to reach out to the course staff.
+
+#### Milestone Reports and Final Deliverables
+The bulk of project grading is then associated with milestone reports and final deliverables,
+which are evaluated more directly on their quality.
+Each milestone report will be predominantly composed of material you prepared in that milestone's assignments,
+with additional expectation of revision and refinement of previously-submitted content
+together with reflection on your design process.
+
+Each milestone report will provide a point breakdown conveying how it will be graded.
+
+### Overall Course Grade
+
+An overall course grade will be computed as follows:
+
+- __65%__: Group Project
+  - __5%__: <SiteLink linkKey={SiteLinks.milestone_1_top} outerComponent="span" />: Project Proposal & Ideation
+    - Assignment Completion (2%)
+      - 1.1: Individual Brainstorm
+      - 1.2: Group Proposals
+      - 1.3: Finalized Proposal
+      - 1.4: Design Ideation
+    - Milestone 1 Report (3%)
+  - __15%__: <SiteLink linkKey={SiteLinks.milestone_2_top} outerComponent="span" />: Design Research
+    - Assignment Completion (9%)
+      - 2.1: Design Research Plan
+      - 2.2: Design Research Check-in
+    - Milestone 2 Report (6%)
+  - __15%__: <SiteLink linkKey={SiteLinks.milestone_3_top} outerComponent="span" />: Getting the Right Design
+    - Assignment Completion (9%)
+      - 3.1: Task Review
+      - 3.2: Design Review
+      - 3.3: Design Presentations
+      - 3.4: Design Scenarios and Storyboards
+    - Milestone 3 Report (6%)
+  - __15%__: <SiteLink linkKey={SiteLinks.milestone_4_top} outerComponent="span" />: Getting the Design Right
+    - Assignment Completion (9%)
+      - 4.1: Paper Prototype
+      - 4.2: Heuristic Evaluation
+      - 4.3: Usability Testing
+    - Milestone 4 Report (6%)
+  - __15%__: <SiteLink linkKey={SiteLinks.milestone_5_top} outerComponent="span" />: Communicating the Design
+    - Assignment Completion (5%)
+      - Digital Mockup
+      - Initial Poster
+      - Initial Web Post
+    - Final Poster (5%)
+    - Final Web Post (5%)
+- __10%__: Participation
+- __25%__: Exam
+
+### Late Policy
+
+We generally expect all assignments will be submitted according to the deadline in Canvas and the assignment description.
+This is a fast-paced course, with many elements of the project depending on prior elements.
+The course staff's ability to give feedback also relies on timely submissions
+(e.g., course staff will often review submissions soon after they are submitted to be ready for course activities).
+
+If your group feels that you would really benefit from an extension,
+or if there is an emergency impacting your ability to submit an assignment,
+contact the course staff before the submission deadline.
+
+We will do our best to be flexible and work with you so that your group stays on track.
+Extensions of a few hours can often be facilitated.
+Except in extreme circumstances, we will typically not be able to give an extension of more than 1 day.
+
+### Regrade Policy
+
+Any request for grade clarification or a re-grade must be submitted via the course staff email list.
+Requests will only be considered within 7 days of the release of a grade.
+
+Upon calculation of final grades, we will explicitly check for any particularly unfortunate effects of rounding
+(e.g., adjusting a pre-rounding final grade of 3.649 to instead give a 3.7).
+This is intended to provide peace of mind that final grades were not defined by any minor point deduction.
+
+## Participation and COVID-19 Safety
+
+Our goal is for this course to provide an opportunity for learning without undermining wellness or safety.
+Active participation in activities is central to this course,
+and we all share responsibility for preserving safety of this learning environment.
+Please review and adhere to related policies, including
+[UW COVID-19 Illness and Exposure Guidance](https://www.ehs.washington.edu/covid-19-prevention-and-response/covid-19-illness-and-exposure-guidance).
+
+### Expectation of In-Person Participation
+
+The course heavily emphasizes a group project and participation in associated in-class activities.
+In-person participation is expected for both lecture and section,
+is part of participation grading,
+and can also impact grading of your contribution to the group project.
+
+### Remote Participation and Recordings
+
+There may be reasons you cannot or should not attend in-person
+(e.g., COVID exposure, COVID symptoms).
+In these circumstances, contact the course staff for permission to attend remotely.
+If you are unsure whether you should attend,
+please reach out and know that we will do our best to be accommodating.
+Our goal is to encourage and support you in decisions that preserve everybody's safety.
+
+Students with permission may attend via the Zoom link provided in <CourseStoreLink linkKey="linkCanvas">Canvas</CourseStoreLink>.
+A member of the course staff will also aim to monitor the Zoom chat for questions.
+If class splits into project group activities,
+the Zoom meeting will end and remote students should join their group
+via a video call with a member of their group.
+
+We will also use the in-room Panopto system to record lecture components of the course.
+This can support review of material, but is not a substitute for in-person activities.
+
+## Accommodations and University Policies
+
+Additional university policies apply
+(e.g., regarding Academic Integrity, Conduct, Disability Resources, Face Coverings, Religious Accommodations):
+
+<CourseStoreLink outerComponent="p" linkKey='linkUniversitySyllabusGuidelines' />
+
+Please do not hesitate to contact the course staff regarding these or any other accommodations.
+We are happy that you are here and want to support your engagement in this learning environment.
+
+## Course Website
+
+This course website lives on GitHub:
+
+<CourseStoreLink outerComponent="p" linkKey='linkGitHub' />
+
+You can submit pull requests to update the website,
+and you will publish elements of your project to the website via pull request.
+
+*/}
