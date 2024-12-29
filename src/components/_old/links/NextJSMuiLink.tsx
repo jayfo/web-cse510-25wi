@@ -8,7 +8,7 @@ export const NextJSMUILink = ({
   children,
   href,
 }: NextJSMUILinkProps): React.ReactElement => {
-  // Because MUILink internally provides the <a> element, we need passHref and legacyBehavior.
+  // Because MUILink internally provides the <a> element, we need to passHref and legacyBehavior.
   //
   // As of 2023-08-14, this is described with the pages router:
   // https://nextjs.org/docs/pages/api-reference/components/link

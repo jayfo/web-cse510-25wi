@@ -25,6 +25,7 @@ export const AssignmentSubmitCanvasLink: React.FunctionComponent<
     assertIsOuterComponent(outerComponent);
   }
 
+  assert(assignmentKey !== undefined);
   assert("submission" in assignmentKey);
   assert(assignmentKey.submission === "canvas");
 

@@ -6,10 +6,10 @@
 
 import * as React from "react";
 
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 
-import EmotionCacheProvider from "./EmotionCache";
 import theme from "./theme";
 
 export default function ThemeRegistry({
@@ -18,11 +18,11 @@ export default function ThemeRegistry({
   children: React.ReactNode;
 }) {
   return (
-    <EmotionCacheProvider options={{ key: "mui" }}>
+    <AppRouterCacheProvider options={{ key: "mui" }}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         {children}
       </ThemeProvider>
-    </EmotionCacheProvider>
+    </AppRouterCacheProvider>
   );
 }
