@@ -1,36 +1,56 @@
 # web-cse510-25wi
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Course website for the Winter 2025 offering of CSE 510.
 
-## Getting Started
+## Installation of System Dependencies
 
-First, run the development server:
+Building requires Node.js and the Yarn package manager.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- [Node.js](https://nodejs.org/)
+
+  Node installation and installers: <https://nodejs.org/en/download/>
+
+  Development has used version 20.x.
+  This version is not currently enforced, but could be enforced through addition of `engines` to `package.json`.
+
+- [Yarn](https://yarnpkg.com/)
+
+  ```
+  npm install --global yarn
+  ```
+
+## Installation of Javascript Dependencies
+
+Use Yarn to install the exact Javascript dependencies in `yarn.lock`.
+
+```
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Yarn Commands
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+With all dependencies installed, use Yarn to list project commands:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+yarn run
+```
 
-## Learn More
+The most common project commands will be:
 
-To learn more about Next.js, take a look at the following resources:
+- Serve a debug build on `http://localhost:3000`, with hot reloading:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  ```
+  yarn dev
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Build a production bundle and create static deployment files in `dist`:
 
-## Deploy on Vercel
+  ```
+  yarn export
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Apply code formatting:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  ```
+  yarn format
+  ```
