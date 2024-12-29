@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { NextJSMUILink } from "@/components/links/NextJSMuiLink";
-import { assertNotNullNotUndefined } from "@/types/Guards";
+import { assertNotNullNotUndefined } from "@/types/guards";
 import { assertIsOuterComponent, OuterComponent } from "@/types/OuterComponent";
 import { Link as MUILink } from "@mui/material";
 import Box from "@mui/material/Box";

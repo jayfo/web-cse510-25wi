@@ -3,7 +3,7 @@
 import * as React from "react";
 
 import AppStoreImpl from "@/stores/AppStore";
-import AppStore, { AppStoreData } from "@/types/AppStore";
+import { AppStore, AppStoreData } from "@/types/AppStore";
 import {
   enableStaticRendering as mobxEnableStaticRendering,
   useLocalObservable,

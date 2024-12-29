@@ -5,7 +5,7 @@
 import * as React from "react";
 
 import { AppLink } from "@/components/links/AppLink";
-import { assertNotNullNotUndefined } from "@/types/Guards";
+import { assertNotNullNotUndefined } from "@/types/guards";
 import { Typography } from "@mui/material";
 import type { MDXComponents } from "mdx/types";
 

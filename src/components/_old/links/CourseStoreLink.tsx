@@ -9,7 +9,7 @@ import {
   assertIsCourseStoreLinkKey,
   CourseStoreLinkKey,
 } from "@/types/CourseStore";
-import { assertNotNullNotUndefined } from "@/types/Guards";
+import { assertNotNullNotUndefined } from "@/types/guards";
 import { assertIsOuterComponent, OuterComponent } from "@/types/OuterComponent";
 
 interface CourseStoreLinkProps extends React.PropsWithChildren<{}> {

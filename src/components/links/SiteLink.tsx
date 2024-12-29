@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { AppLink } from "@/components/links/AppLink";
-import { assertNotNullNotUndefined } from "@/types/Guards";
+import { assertNotNullNotUndefined } from "@/types/guards";
 import { assertIsOuterComponent, OuterComponent } from "@/types/OuterComponent";
 import { SiteLinkKey } from "@/types/SiteLinks";
 

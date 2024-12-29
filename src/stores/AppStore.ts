@@ -1,7 +1,9 @@
 import CourseStoreImpl from "@/stores/CourseStore";
-import AppStore, { AppStoreData } from "@/types/AppStore";
-import CourseStore, { CourseStoreData } from "@/types/CourseStore";
+import { AppStore, AppStoreData } from "@/types/AppStore";
+import { CourseStore, CourseStoreData } from "@/types/CourseStore";
 import { computed, makeObservable, observable } from "mobx";
+
+// TODO: Store logic is not yet used or well-defined.
 
 class AppStoreImpl implements AppStore {
   @observable courseStore: CourseStore;

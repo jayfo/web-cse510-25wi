@@ -5,15 +5,15 @@ import CourseStore, {
 import { computed, makeObservable, observable } from "mobx";
 
 export class CourseStoreImpl implements CourseStore {
-  @observable linkCanvas?: CourseStoreLinkHREF;
-  @observable linkGitHub?: CourseStoreLinkHREF;
-  @observable linkUniversitySyllabusGuidelines?: CourseStoreLinkHREF;
+  // @observable linkCanvas?: CourseStoreLinkHREF;
+  // @observable linkGitHub?: CourseStoreLinkHREF;
+  // @observable linkUniversitySyllabusGuidelines?: CourseStoreLinkHREF;
 
   constructor(initialData: CourseStoreData) {
     ({
-      linkCanvas: this.linkCanvas,
-      linkGitHub: this.linkGitHub,
-      linkUniversitySyllabusGuidelines: this.linkUniversitySyllabusGuidelines,
+      // linkCanvas: this.linkCanvas,
+      // linkGitHub: this.linkGitHub,
+      // linkUniversitySyllabusGuidelines: this.linkUniversitySyllabusGuidelines,
     } = initialData);
 
     makeObservable(this);

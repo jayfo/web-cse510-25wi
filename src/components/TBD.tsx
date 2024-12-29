@@ -6,6 +6,8 @@ import { assertIsOuterComponent, OuterComponent } from "@/types/OuterComponent";
 import { lighten } from "@mui/material";
 import Box from "@mui/material/Box";
 
+// TODO: Decide whether/how TBD and UnderDevelopment should be re-using each other
+
 interface TBDProps extends React.PropsWithChildren<{}> {
   outerComponent?: OuterComponent;
 }
