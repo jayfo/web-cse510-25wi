@@ -1,11 +1,22 @@
 import * as React from "react";
 
-import { Reading } from "@/types/Reading";
+/**
+ * Type for links.
+ */
+export type LinkHREF = string;
 
 /**
  * Store calendar dates as YYYY-MM-DD strings (e.g., "2023-09-28").
  */
 export type CalendarDate = string;
+
+/**
+ * Store calendar weeks as a start date (i.e., Sunday) then all relevant dates (i.e., within the week).
+ */
+export type CalendarWeek = {
+  startDate: CalendarDate;
+  dates: CalendarDate[];
+};
 
 /**
  * One or more dates associated with a calendar item.
@@ -75,38 +86,46 @@ export type AssignmentCalendarItem = {
 } & BaseCalendarItemDate &
   AssignmentCalendarItemSubmission;
 
+export type EventCalendarItem = {
+  type: "event";
+  title: string;
+  slides?: LinkHREF;
+} & BaseCalendarItemDates &
+  BaseCalendarItemTimeAndLocations;
+
 export type HolidayCalendarItem = {
   type: "holiday";
   title: string;
 } & BaseCalendarItemDates;
 
-export type LectureCalendarItemContent =
-  | {}
-  | { contentNonstandard: React.ReactNode }
-  | {
-      readingsStandard: {
-        framing: Reading;
-        instances: Reading[];
-      };
-    };
-
-export type LectureCalendarItemAdditionalResourceReadings =
-  | {}
-  | { additionalResourceReadings: Reading[] };
-
 export type LectureCalendarItem = {
   type: "lecture";
   title: string;
+  slides?: LinkHREF;
 } & BaseCalendarItemDates &
   BaseCalendarItemGuests &
-  BaseCalendarItemTimeAndLocations &
-  LectureCalendarItemContent &
-  LectureCalendarItemAdditionalResourceReadings;
+  BaseCalendarItemTimeAndLocations;
+
+export type OfficeHourCalendarItem = {
+  type: "officeHour";
+  title: string;
+} & BaseCalendarItemDates &
+  BaseCalendarItemTimeAndLocations;
+
+export type StudioCalendarItem = {
+  type: "studio";
+  title: string;
+  slides?: LinkHREF;
+} & BaseCalendarItemDates &
+  BaseCalendarItemTimeAndLocations;
 
 export type CalendarItem =
   | AssignmentCalendarItem
+  | EventCalendarItem
   | HolidayCalendarItem
-  | LectureCalendarItem;
+  | LectureCalendarItem
+  | OfficeHourCalendarItem
+  | StudioCalendarItem;
 
 export function filterAssignmentCalendarItems(
   calendarItems: CalendarItem[],
@@ -114,6 +133,14 @@ export function filterAssignmentCalendarItems(
   return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
     return calendarItemCurrent.type === "assignment";
   }) as AssignmentCalendarItem[];
+}
+
+export function filterEventCalendarItems(
+  calendarItems: CalendarItem[],
+): EventCalendarItem[] {
+  return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
+    return calendarItemCurrent.type === "event";
+  }) as EventCalendarItem[];
 }
 
 export function filterHolidayCalendarItems(
@@ -130,4 +157,20 @@ export function filterLectureCalendarItems(
   return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
     return calendarItemCurrent.type === "lecture";
   }) as LectureCalendarItem[];
+}
+
+export function filterOfficeHourCalendarItems(
+  calendarItems: CalendarItem[],
+): OfficeHourCalendarItem[] {
+  return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
+    return calendarItemCurrent.type === "officeHour";
+  }) as OfficeHourCalendarItem[];
+}
+
+export function filterStudioCalendarItems(
+  calendarItems: CalendarItem[],
+): StudioCalendarItem[] {
+  return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
+    return calendarItemCurrent.type === "studio";
+  }) as StudioCalendarItem[];
 }

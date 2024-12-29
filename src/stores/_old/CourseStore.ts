@@ -18,15 +18,6 @@ export class CourseStoreImpl implements CourseStore {
 
     makeObservable(this);
   }
-
-  @computed
-  get linkCanvasDiscussion(): CourseStoreLinkHREF | undefined {
-    if (this.linkCanvas) {
-      return this.linkCanvas + "/discussion_topics";
-    } else {
-      return undefined;
-    }
-  }
 }
 
 export default CourseStoreImpl;
