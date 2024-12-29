@@ -7,21 +7,23 @@ import * as React from "react";
 import RootLayout from "@/components/RootLayout";
 import { appStoreInitialData } from "@/stores/AppStoreInitialData";
 
+import { LayoutSidebar } from "./layoutSidebar";
+
 // TODO: Pull course title from a configuration
 export const metadata = {
-  title: "CSE 510 - Advanced Topics in HCI - Autumn 2023",
-  description: "CSE 510 - Advanced Topics in HCI - Autumn 2023",
+  title: "CSE 510 - Advanced Topics in HCI - Winter 2025",
+  description: "CSE 510 - Advanced Topics in HCI - Winter 2025",
 };
 
-interface LayoutProps extends React.PropsWithChildren<{}> {
-  sidebar: React.ReactElement;
-}
+interface LayoutProps extends React.PropsWithChildren<{}> {}
 
-export default function Layout({ children, sidebar }: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
   const initialData = appStoreInitialData();
 
+  const layoutSidebar = <LayoutSidebar />;
+
   return (
-    <RootLayout sidebar={sidebar} initialData={initialData}>
+    <RootLayout sidebar={layoutSidebar} initialData={initialData}>
       {children}
     </RootLayout>
   );
