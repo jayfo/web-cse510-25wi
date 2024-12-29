@@ -1,0 +1,138 @@
+import { Alert } from "@mui/material";
+
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { TBD } from "@/components/TBD";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as IndividualAssignment } from "@/contentcomponents/IndividualAssignment.mdx";
+import { default as InformalDrawingTool } from '@/contentcomponents/InformalDrawingTool.mdx';
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
+import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
+import { SiteLinks } from "@/data/SiteLinks";
+import { Paths } from "@/paths.mjs";
+
+export const pathNielsenHeuristics = '/assignments/nielsen-heuristics.pdf';
+
+# Assignment 4.2: Heuristic Evaluation
+
+<UnderDevelopment display={false} />
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_4_2} />
+
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_4_top}/>.
+Be sure you have reviewed that larger context for this assignment.
+
+The goal of this assignment is to conduct and receive heuristic evaluations
+as part of rapidly iterating on your paper prototype.
+
+__Sign up__ to provide heuristic evaluation to another group.
+
+__Conduct a heuristic evaluation__ using Nielsen's heuristics:
+
+<p><a href={Paths.basePath + pathNielsenHeuristics}>nielsen-heuristics.pdf</a></p>
+
+Identify at least 6 potential usability issues.
+The most important or severe issues you identify should be provided first.
+If you identify additional issues you want to share with the group you are evaluating, you may provide more.
+
+For each issue identified in evaluation, record:
+- Where in the prototype you identified a potential usability issue.
+  This should include at least one image of the relevant portion of the prototype.
+  Copy that image from the other group's Assignment 4.1 deck into your own Assignment 4.2 deck,
+  being careful you do not accidentally modify the other group's paper prototype.
+  Within your own deck, annotate the image as necessary to highlight the potential usability issue.
+- A heuristic that appears violated.
+- A description of the potential usability issue.
+
+__Provide your heuristic evaluation__ to the group you evaluated.
+
+As your group works toward usability testing,
+__review heuristic evaluations__ provided to your group to determine how to iterate on your paper prototype.
+This should include fixing major issues before additional usability tests.
+If desired, you may also conduct a heuristic evaluation or cognitive walkthrough of your own paper prototype.
+Keep a detailed record of revisions (e.g., images of the relevant portion of the prototype before and after revision).
+Assignment 4.3 includes a need to report revisions throughout your iterative design process.
+
+Your tasks and associated stories are likely stable, but revise them if your evaluation reveals a need.
+
+<InformalDrawingTool />
+
+If you use an informal drawing tool,
+you will need to have physical copies of your paper prototype available for usability testing.
+You will also need the ability to quickly iterate on your paper prototype.
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_4_2} />
+
+Within the Drive folder for course project files:
+
+- Sign up for a heuristic evaluation slot of another group.
+
+- Identify the Slides deck corresponding to Assignment 4.1 for that group.
+  You must not modify that deck, but will use it to review their paper prototype.
+
+- Identify the Slides deck corresponding to this assignment for that group.
+  There will be multiple decks for this assignment,
+  be sure to identify the deck corresponding to the slot for which you signed up.
+  The deck provides a template for this assignment.
+  Edit the deck in-place, so that group can easily access your heuristic evaluation.
+
+- Prepare a Slides deck with the following structure:
+
+  - 1 slide: Name of the person conducting the heuristic evaluation.
+
+  - 1 slide for each potential usability issue (at least 6):
+    - Where in the prototype you identify a potential usability issue.
+    - A heuristic that appears violated.
+    - A description of the potential usability issue.
+
+Reminders and requirements:
+
+- Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
+
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+
+- <IndividualAssignment />
+- <ClarityAndPresentationReference />
+
+The Drive folder for course project files is here:
+
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_4_2} />
+
+## Completion Grading
+
+This assignment will be graded on completion of the following components:
+
+1. __Potential Usability Issues__
+
+   Identify at least 6 potential usability issues.
+   The most important or severe issues you identify should be provided first.
+   If you identify additional issues you want to share with the group you are evaluating, you may provide more.
+
+   For each issue identified in evaluation, provide:
+   - Where in the prototype you identify a potential usability issue,
+     including at least one image of the relevant portion of the prototype.
+     Annotate the image as necessary to highlight the potential usability issue.
+   - A heuristic that appears violated.
+   - A description of the potential usability issue.
+
+2. __Clarity and Presentation__
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+<ProjectMilestoneSamples milestone='assignment3c' />

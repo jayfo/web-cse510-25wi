@@ -1,0 +1,247 @@
+import { Alert } from "@mui/material";
+
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { TBD } from "@/components/TBD";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as InformalDrawingTool } from '@/contentcomponents/InformalDrawingTool.mdx';
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
+import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
+import { SiteLinks } from "@/data/SiteLinks";
+
+# Assignment 4.3: Usability Testing
+
+<UnderDevelopment display={false} />
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_4_3} />
+
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_4_top}/>.
+Be sure you have reviewed that larger context for this assignment.
+
+The goal of this milestone is to document revisions resulting from heuristic evaluation,
+then to continue rapidly iterating on your paper prototype
+informed by usability testing of your prototype with participants.
+
+Complete a total of at least three usability tests examining your two focus tasks.
+Target appropriate participants based on your design research and resulting design.
+Finalize your paper prototype according to what you learn.
+
+Be sure to divide your team into roles when conducting a usability test.
+There is simply too much required for a single person to effectively conduct a test.
+As discussed in class, roles include the facilitator, the computer, and one or more observers.
+
+As part of your introduction, have your facilitator show the participant how to interact with your design.
+Do not show participants how to perform your focus tasks that you will later test.
+Instead show them how paper prototyping works, how your system generally works,
+and give an example of something specific that is sufficiently different from your tasks.
+
+Ask participants to talk aloud during usability tests.
+Maintain a log of critical incidents, including both positive and negative events.
+For example, a person might comment on something they like or might make a mistake in a task.
+Capture the incident along with a description of the context of the incident.
+
+Consider recording your tests to allow you to see and show exactly what happened.
+If you do this, obtain permission from the participant and ensure your recording preserves participant anonymity.
+Frame your recording so you capture interaction with the prototype without unnecessarily capturing the participant.
+
+Each participant should perform both of your focus tasks.
+Keep the data separate for each participant and each focus task.
+Remember participation must be voluntary, participants must be free to stop at any time,
+and you should emphasize that your focus is on identifying usability issues in the design.
+
+Revise your paper prototype based on what you learn in usability testing.
+This can and should include fixing major issues as soon as they are detected, before additional tests.
+
+Your focus tasks and stories are likely stable, but revise them if your evaluation reveals a need.
+
+Present your iterative revisions, the results of your usability testing, and your final paper prototype:
+
+- Present **3 revisions made in response to inspection-based evaluation**.
+
+  These will most likely be revisions made in response to heuristic evaluation in Assignment 4.2,
+  but you may also revisit inspection of your own paper prototype for potential usability issues.
+  Revisions may be small or large, depending on the identified usability issue.
+
+  For each revision, include:
+  - Where in the prototype you identified a potential usability issue.
+    Include at least one image of the relevant portion of the prototype.
+  - A heuristic that is violated. A description of the usability issue.
+  - A description of the revision.
+  - At least one image of revisions to the relevant portion of the prototype.
+
+- Provide a description of your **usability testing method**.
+
+  Describe your testing method and participants, emphasizing how you structured usability testing to learn
+  (e.g., how you structured the usability testing sessions,
+  any details of usability testing you designed to support learning about your prototype,
+  how you presented usability testing tasks to participants,
+  any relevant details of participants in usability testing).
+
+  If your method changed between sessions, explain what changes you made and why you made them.
+
+- Present **4 revisions made in response to usability testing**.
+
+  Revisions may be small or large, depending on the identified usability issue.
+  For each revision, include:
+  - At least one image of the relevant portion of the prototype.
+  - Description of the critical incident that prompted revision,
+    remembering that these can be either positive or negative.
+  - A description of the revision.
+  - At least one image of revisions to the relevant portion of the prototype.
+
+- Present **1 revision made to address unintentional exclusion in your design**.
+
+  For this revision, include:
+  - At least one image of the relevant portion of the prototype.
+  - Description of an unintentional assumption identified in your design,
+    including how this assumption would unintentionally exclude people from your design.
+  - A description of the revision.
+  - At least one image of revisions to the relevant portion of the prototype.
+
+- Present your **final paper prototype**, as revised in this process.
+  Your design may have changed more or less,
+  so this is intended to fully convey the current state of your design.
+  As before, ensure your prototype is complete, is at an appropriate level of detail, and documents each focus task.
+  Include both:
+  - An overview image that shows your entire paper prototype.
+  - Detailed images showing each step in a walkthrough of your two focus tasks.
+
+As you assemble this documentation of the iterative development of your design,
+you may find that some changes feel minor relative to the overhead of documenting those changes.
+Your goals in this documentation are to:
+- Show your work in the iterative design process, giving enough insight to understand your progress.
+- Capture a record of revisions to which you can return in communicating your design process.
+
+You may choose to not fully document minor changes, but be sure to document enough for these two goals.
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_4_3} />
+
+Within the Drive folder for course project files:
+
+- Identify the Slides deck corresponding to this assignment for your group.
+  The deck provides a template for this assignment.
+  Edit the deck in-place, so that you can easily share it in critique.
+
+- Prepare a Slides deck with the following structure:
+
+  Overview:
+    - 1 slide: Design title and brief description of its key idea or approach.
+
+  Revisions based on inspection-based evaluation (3 total):
+    - 1 or 2 slides for each revision:
+      - At least one image of the relevant portion of the prototype.
+      - A heuristic that is violated. A description of the usability issue.
+      - A description of the revision.
+      - At least one image of revisions to the relevant portion of the prototype.
+
+  Usability testing method:
+    - 1 slide: Description of method and participants.
+
+  Revisions based on usability testing (4 total):
+    - 1 or 2 slides for each revision:
+      - At least one image of the relevant portion of the prototype.
+      - A description of the critical incident that prompted revision,
+      - A description of the revision.
+      - At least one image of revisions to the relevant portion of the prototype.
+
+  Revision based on unintentional exclusion (1 total):
+    - 1 or 2 slides:
+      - At least one image of the relevant portion of the prototype.
+      - A description of an unintentional assumption identified in your design,
+        including how this assumption would unintentionally exclude people from your design.
+      - A description of the revision.
+      - At least one image of revisions to the relevant portion of the prototype.
+
+  Final paper prototype:
+    - 1 slide: Overview image of entire paper prototype.
+
+  For each focus task (2 total):
+    - 1 slide: Focus task title.
+    - 1 slide: Story providing context and details for paper prototype.
+    - Multiple slides: Step-by-step task walkthrough with the paper prototype.
+
+Reminders and requirements:
+
+- Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
+
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ParticipantAnonymity />
+
+The Drive folder for course project files is here:
+
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_4_3} />
+
+## In Class
+
+For Friday's section, bring your paper prototype for any final critique or help in identifying unintentional exclusion.
+
+## Completion Grading
+
+This assignment will be graded on completion of the following components:
+
+1. __Design Title & Summary__
+
+   This may be taken directly from prior assignments,
+   or it might have evolved based on what you learned.
+
+2. __Revisions from Inspection Methods (3 total)__
+
+   Present revisions based on usability issues identified in Assignment 4.2
+   or through other application of inspection methods.
+
+3. __Usability Testing Method__
+
+   Describe your testing method and participants,
+   emphasizing how you structured usability testing to learn.
+
+   If your method changed between sessions, explain what changes you made and why you made them.
+
+4. __Revisions from Usability Testing (4 total)__
+    
+   Present revisions based on usability testing.
+   Revisions may be small or large, depending on the identified usability issue.
+
+5. __Revision from Unintentional Exclusion (1 total)__
+
+   Present a revision to address unintentional exclusion in your design.
+
+   Describe the assumption you identified in your design,
+   including how this assumption would unintentionally exclude people from your design.
+
+6. __Final Prototype Overview__
+
+   Present your final paper prototype, updated with revisions from this process.
+
+   Include an overview image of the entire paper prototype
+   to convey critical components of your design and the context of your focus tasks.
+
+7. __Final Prototype Task Walkthroughs (2 total)__
+
+   For each focus task, present a step-by-step task walkthrough with your paper prototype.
+
+8. __Clarity and Presentation__
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+<ProjectMilestoneSamples milestone='assignment3c' />
+
+<ProjectMilestoneSamples milestone='assignment3d' />

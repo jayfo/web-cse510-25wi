@@ -1,0 +1,108 @@
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { TBD } from "@/components/TBD";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { default as CanvasGroupsNotCreated } from '@/contentcomponents/CanvasGroupsNotCreated.mdx';
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as ExcludedTopics } from "@/contentcomponents/ExcludedTopics.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
+import { SiteLinks } from "@/data/SiteLinks";
+
+# Assignment 1.2: Group Proposals
+
+<UnderDevelopment display={false} />
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_2} />
+
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_1_top}/>.
+Be sure you have reviewed that larger context for this assignment.
+
+The goal of this assignment is to propose multiple specific problems that could form the basis of a design project for this class.
+Tuesday will then include presenting these for feedback from peers and course staff.
+
+Propose three specific problems that are potentially related to the course theme and could form the basis of a design project for this class.
+
+For each problem, in one paragraph, describe the design problem and motivation.
+State what the problem is and why it is a problem, or describe an opportunity to enhance an existing practice or approach.
+Provide enough detail to convince a reader this is a difficult and interesting problem, worth spending a quarter considering.
+
+Ensure each problem or opportunity is significantly different, not small variations on the same idea.
+
+Ensure it is clear why each idea is potentially related to the course theme.
+
+If there are already well-known and widely-available solutions to your idea,
+explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+<ExcludedTopics />
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_1_2} />
+
+Within the Drive folder for course project files:
+
+- Identify the Slides deck corresponding to this assignment for your group.
+  The deck provides a template for this assignment.
+  Edit the deck in-place, so that you can easily share it in critique.
+
+- Prepare a Slides deck with the following structure:
+
+  For each proposal (3 total):
+    - 1/2 slide: Description of the proposal.
+
+Reminders and requirements:
+
+- Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
+
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+
+  - <CanvasGroupsNotCreated />
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+
+The Drive folder for course project files is here:
+
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_1_2} />
+
+## In Class
+
+Be prepared to discuss your three proposed ideas,
+including sharing your deck with peers for critique.
+
+## Completion Grading
+
+This assignment will be graded on completion of __5 components__:
+
+1. __Problem and Motivation for Each Unique Proposed Idea__ (3 total):
+
+   Do not submit small variations on the same idea.
+
+   Do not submit ideas within an excluded topic.
+
+   Be clear why each idea offers at least some potential relationship to the course theme.
+
+2. __Novelty and Creativity__:
+
+   If there are already well-known and widely-available solutions to your proposed idea,
+   explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+3. __Clarity and Presentation__
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+<ProjectMilestoneSamples milestone='assignment1b' />

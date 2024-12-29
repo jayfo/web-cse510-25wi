@@ -1,0 +1,212 @@
+import { Alert } from "@mui/material";
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { SiteLinks } from "@/data/SiteLinks";
+import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
+
+# Milestone 4 Report
+
+<UnderDevelopment display={false} />
+
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_4_top}/>.
+Be sure you have reviewed that larger context for this assignment.
+
+The goal of this report is to communicate your paper prototype and its iterative revision.
+
+You are free to directly reuse content produced for earlier assignments in this milestone.
+However, you should revise content as needed to ensure your milestone report reflects your current work.
+Similarly, we expect that feedback received throughout this milestone will have been addressed or implemented in this report.
+
+Milestone 4 has focused on development of a paper prototype,
+using multiple methods to evaluate the paper prototype,
+and iteratively the paper prototype through insights gained in evaluation.
+In this milestone report, aim to communicate the insights and decisions that informed your design.
+
+This report should have three sections:
+
+1. __Initial Paper Prototype__
+
+   Present your initial paper prototype,
+   including an __overview image of the paper prototype__ and
+   __detailed images showing each step in a walkthrough of your two focus tasks__.
+   These may be taken directly from Assignment 4.1,
+   but ensure each walkthrough clearly communicates how the tasks were envisioned in the original paper prototype.
+
+   __Reflect on the process of designing your paper prototype__.
+   Starting from the storyboards and sketches you developed in Milestone 3,
+   identify **two design decisions** that you made in the transition from sketch to prototype.
+   These might be localized decisions
+   (e.g., details of a specific portion of the design that you needed to resolve in prototyping)
+   or they might be cross-cutting decisions
+   (e.g., decisions that spanned across and impacted many aspects of your prototype).
+   Describe each decision and the rationale for making that implementation decision.
+
+2. __Evaluation Insights and Process__
+
+   Reflect on the combination of methods you used
+   to evaluate and inform the iterative design of your paper prototype.
+
+   **Reflect on insights developed through heuristic evaluation.**
+   Describe **two key insights** corresponding to
+   your largest or most difficult issues identified in your design through heuristic evaluation.
+   A key insight might correspond to a specific part of your design
+   (e.g., a part of your design that required revision based on
+   insights raised by one or more heuristics).
+   Alternatively, a key insight might be cross-cutting
+   (e.g., an insight raised by one or more heuristics
+   which informed a need for revision across multiple aspects of your design).
+   In describing key insights, be sure to include associated heuristics.
+
+   **Reflect on insights developed through usability testing.**
+   Describe **two key insights** corresponding to
+   your largest or most difficult issues identified in your design through usability testing.
+   A key insight might correspond to a specific part of your design
+   (e.g., a part of your design that required revision based on
+   insights raised in usability testing).
+   Alternatively, a key insight might be cross-cutting
+   (e.g., an insight raised by usability testing
+   which informed a need for revision across multiple aspects of your design,
+   a high-level insight raised by participants which shaped your understanding of your design).
+
+   Finally, reflect on **differences between insights surfaced in heuristic evaluation versus usability testing**.
+   In one or two paragraphs, described differences in findings across methods. For example:
+   - What portions of your design received more feedback and revision with one method versus another?
+   - What types of insights were surfaced with one method but not with another?
+   - Did different methods surface different insights about the same portions of your design?
+   - Are there insights from usability testing that you now think could have been surfaced in heuristic evaluation?
+     What were such insights, and what heuristics might be raised them?
+   - Are there insights from usability testing that you think could have only been surfaced through usability testing?
+     What were such insights, and why would they be difficult to raise using heuristic evaluation?
+
+3. __Prototype Revisions__
+
+   Identify __three high-level themes__ that characterize major issues in your design and revisions in your paper prototype.
+   A theme might be defined by a single major insight that required revision,
+   or a theme might be defined by multiple smaller revisions that
+   contributed to an overall change in the approach or usability of your design.
+
+   For each theme:
+    - Summarize the specific evidence from your heuristic evaluations and usability tests
+      that informed your understanding of this issue and the need for revision.
+    - Document the revisions made in addressing this issue.
+      Including images showing relevant portions of the prototype
+      before and after revisions to address this issue.
+
+   Themes described here likely draw upon and may even directly overlap insights identified above
+   (e.g., if your identified insights strongly correspond to major revisions in your paper prototype).
+   However, be sure to focus on themes in how such insights motivated and contributed to revision
+   (e.g., a theme in revisions might span across multiple insights)..
+
+4. __Final Paper Prototype__
+
+   Present your final paper prototype,
+   including an __overview image of the paper prototype__ and
+   __detailed images showing each step in a walkthrough of your two focus tasks__.
+   These may be taken directly from Assignment 4.3,
+   but ensure each walkthrough clearly communicates how the tasks were envisioned in the final paper prototype.
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.milestone_4_report} />
+
+Within the Drive folder for course project files:
+
+- Identify the Slides deck corresponding to this assignment for your group.
+  The deck provides a template for this assignment.
+  Edit the deck in-place, so that you can easily share it in critique.
+
+- Prepare a Slides deck with the following structure:
+
+  Initial Paper Prototype
+    - 1 slide: Overview image of paper prototype.
+    - For each focus task (2 total):
+      - 1 slide: Focus task title.
+      - Multiple slides: Step-by-step task walkthrough with the paper prototype.
+    - 1 slide: Prototyping reflection
+
+  Evaluation Insights and Process
+    - 1 slide: Heuristic evaluation insights.
+    - 1 slide: Usability testing insights.
+    - 1 slide: Evaluation process reflection.
+
+  Prototype Revisions
+   - For each of 3 themes in revision:
+     - 1 slide: Summary of evidence informing need for revision.
+     - 1 or 2 slides: Related revisions.
+
+  Final Paper Prototype
+    - 1 slide: Overview image of paper prototype.
+    - For each focus task (2 total):
+      - 1 slide: Focus task title.
+      - Multiple slides: Step-by-step task walkthrough with the paper prototype.
+
+Reminders and requirements:
+
+- Submission via Canvas is also required, in support of grading.
+  - Remove instruction slides and template markings from your deck before submission.
+
+  - Export a PDF of your deck, via the menu: File -> Download -> PDF Document (.pdf).
+
+- <GroupAssignment />
+- <ContributionStatementReference />
+
+The Drive folder for course project files is here:
+
+<CourseDataLink linkKey={courseData.linkDriveProjectFiles} outerComponent="p"/>
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.milestone_4_report} />
+
+## Grading
+
+This milestone report will be graded on a scale of __36 points__:
+
+1. __Initial Prototype__: (4 points)
+
+   Present your initial paper prototype,
+   including an overview image of the paper prototype and
+   detailed images showing each step in a walkthrough of your two focus tasks.
+
+2. __Reflection on Initial Prototype__: (2 points)
+
+   Identify and reflect on two design decisions that you made 
+   in the transition from sketch to prototype.
+
+3. __Insights from Inspection-Based Methods__: (3 points)
+
+   Describe two key insights corresponding to
+   your largest or most difficult issues identified in your design through heuristic evaluation.
+
+4. __Insights from Usability Testing__: (3 points)
+
+   Describe two key insights corresponding to
+   your largest or most difficult issues identified in your design through usability testing.
+
+5. __Method Comparison Reflection__: (2 points)
+
+   Reflect on differences between insights surfaced in heuristic evaluation versus usability testing.
+
+6. __Prototype Revisions__: (3 x 4 points)
+
+   Identify three high-level themes that characterize major issues and revisions in your paper prototype.
+
+   For each theme:
+   - Summarize the specific evidence that informed your understanding of this issue.
+   - Document the revisions made in addressing this issue.
+     Include images showing relevant portions of the prototype
+     before and after revisions to address this issue.
+
+7. __Final Prototype__: (8 points)
+
+   Present your final paper prototype,
+   including an overview image of the paper prototype and
+   detailed images showing each step in a walkthrough of your two focus tasks.
+
+8. __Clarity and Presentation__: (2 points)

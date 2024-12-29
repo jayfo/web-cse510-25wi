@@ -1,0 +1,458 @@
+import * as React from "react";
+
+import {
+    Alert,
+} from '@mui/material';
+
+import { CollapseProjectMilestone } from "@/components/CollapseProjectMilestone";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { CourseStoreLink } from "@/components/links/CourseStoreLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { courseData } from "@/data/CourseData";
+import { SiteLinks} from "@/data/SiteLinks";
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { calendarData } from "@/data/CalendarData";
+import { Paths } from "@/paths";
+
+export const pathPosterTemplateA = '/assignments/poster-template-a-32x40.pptx';
+export const pathPosterTemplateB = '/assignments/poster-template-b-32x40.pptx';
+export const pathPosterTemplateC = '/assignments/poster-template-c-32x40.pptx';
+
+# Assignment 4: Communicating Your Design
+
+<UnderDevelopment display={true} />
+
+## Overview
+
+You have identified a problem, explored a design space, selected a promising design, and iterated on that design.
+It is now time to focus on communicating your design and your design process.
+This group assignment communicates your design through
+a __web post__ and through a __poster__ with an associated __pitch__.
+
+## Milestones and Deliverables
+
+This is a group assignment, consisting of five milestones.
+
+{/*
+  *
+  * ASSIGNMENT 4 Web
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment4web}>
+
+The goal of this milestone is to effectively communicate your design
+and your underlying design process in a post appropriate for a web portfolio.
+
+Prepare a post documenting your process of getting the right design and then getting the design right.
+Your post will be integrated into the course website via the
+<SiteLink linkKey={SiteLinks.projectsTop} /> page,
+used to both advertise the course poster session and to provide an archive of course projects.
+Your prior milestones provide significant content you can draw upon in this post,
+but this post is intended for an audience of future readers reviewing your design work.
+Not all content from prior milestones will be included,
+you should update your prior work based on feedback received throughout your design process
+(e.g., re-making a design sketch or storyboard for clarity in this communication),
+and you will ultimately emphasize a few key insights that most informed your design.
+
+Make sure all images you include are clear and legible (e.g., with appropriate contrast).
+Re-make images as necessary to ensure this
+(e.g., by taking new photos in better lighting, by instead using a scanner,
+by re-creating a piece of a paper prototype using ink that will create a better image).
+
+Remember that audience is important in storytelling,
+and be sure your post takes a tone of "presenting" and "reflecting" on your project.
+You are not "selling" the resulting design, but are instead "sharing" your work with an interested audience.
+You can express enthusiasm, but do not let that enthusiasm undermine the substance of your content.
+
+Your post should follow the outline below.
+It will be authored using Markdown and provided components for including images.
+Be sure to inspect and understand the template text provided in your project directory.
+
+1. __Title and Logo__
+
+   A short, creative, and marketable title capturing the key idea.
+
+   An attractive project logo. It will be used to link to your project from the main projects page.
+
+2. __Problem and Design Overview__:
+
+   Provide a concise statement of the problem you are addressing and a brief introduction of your design.
+
+   This might be a single paragraph or two short paragraphs.
+   You should likely include an image to help build interest.
+   Your goal is to set a context and then to motivate a reader to want to continue to learn about your work.
+
+3. __Design Research Process and Key Insights__:
+
+   _Design Research Process_
+
+   First provide a concise overview of your design research process in Assignment 2, including:
+
+   - The goals of your design research (i.e., your focus, your primary need for additional understanding).
+   - The methods and participants you engaged in your design research.
+   - Your rationale (i.e., why you chose your specific methods and participants).
+
+   Your goal is to set a context for the insights this process revealed.
+
+   This might be a single paragraph.
+
+   _3 Key Insights_
+
+   Then provide 3 key insights from your design research process in Assignment 2.
+   Your goal is to convey key insights that informed your design and how each insight is based in your design process.
+
+   - For each insight, discuss how the insight emerged
+     (e.g., how your understanding was shaped by design research,
+     how your understanding was shaped by critique or feedback).
+   - Use specific evidence whenever possible
+     (e.g., quotes or stories from participants,
+     pictures captured during observations,
+     pivots in your approach or thinking that resulted from critique or feedback,
+     key reasons you chose one design over alternatives,
+     key reasons you combined ideas from multiple design alternatives).
+   - Do not number your insights (e.g., "Insight 1", "Insight 2", "Insight 3").
+     Instead give them a descriptive title (e.g., "Minimizing Burden", "Creating Social Connections")
+     or consider that each paragraph could begin with a single bolded sentence summarizing the insight.
+   - Use images as appropriate for conveying the insight (e.g., images from your design sketches or storyboards).
+
+   These might each be a single paragraph with a descriptive heading.
+
+4. __Iterative Design Process and Key Insights__:
+
+   _Iterative Design Process_
+
+   First provide a concise overview of your iterative design process in Assignment 3, including:
+
+   - Your design focus (i.e., the tasks on which you focused iterative design).
+   - Your process (e.g., your paper prototyping, inspection, usability testing, and digital mockup).
+
+   Your goal is to set a context for the insights this process revealed.
+
+   This might be a single paragraph.
+   You should likely include an overview image of your paper prototype.
+
+   _3 Key Insights_
+
+   Then provide 3 key insights from your iterative design process in Assignment 3.
+   Your goal is to convey key insights that informed your design and how each insight is based in your design process.
+
+   - For each insight, discuss how the insight emerged
+     (e.g., the state of a design element prior to the insight,
+     the activity, observation, critique, or feedback that prompted you to iterate upon a design element,
+     an aspect of transitioning to a digital mockup that required re-working your design)
+     and how you iterated upon the design in result
+     (e.g., showing a design element before and after an iteration).
+   - Use specific evidence whenever possible
+     (e.g., quotes from or observations of participants).
+   - Do not number your insights (e.g., "Insight 1", "Insight 2", "Insight 3").
+     Instead give them a descriptive title (e.g., "Simplifying Data Collection", "Improving Legibility", "Removing Gender Assumptions")
+     or consider that each paragraph could begin with a single bolded sentence summarizing the insight.
+   - Use images as appropriate for conveying the insight (e.g., images from your paper prototyping or digital mockup).
+
+   These might each be a single paragraph with a descriptive heading.
+
+5. __Resulting Design__:
+
+   Present key elements of your final design.
+   Convey the critical aspects of your design,
+   including the two primary tasks demonstrated in your digital mockup
+   (e.g., as scenarios demonstrating the task with images from your digital mockup).
+
+   This section may primarily be a set of images,
+   but be sure you organize those images with enough text for a reader to understand the resulting design.
+
+#### Submission
+
+Evidence from Medium suggests that effective posts can be read in approximately 7 minutes:
+
+[https://medium.com/data-lab/the-optimal-post-is-7-minutes-74b9f41509b](https://medium.com/data-lab/the-optimal-post-is-7-minutes-74b9f41509b)
+
+Author your post such that it conveys the necessary content while remaining easy to skim and read within approximately 7 minutes.
+We estimate posts will be between 1500 and 2000 words in length.
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+- <ParticipantAnonymity />
+
+Submit your post as a pull request against the course website GitHub repository:
+
+- <CourseStoreLink outerComponent="p" linkKey='linkGitHub' />
+
+- You will need to fork the course website, clone it to your local machine,
+  make and commit your edits, then eventually open a pull request to the course website,
+  which we will then merge and publish.
+
+- See the repository README.md for guidance on using `yarn dev` to run a local build of the website.
+  Served at `localhost:3000`, this will dynamically update as you modify your content.
+
+- Prior to opening your pull request, use `yarn export` to ensure that your code builds without errors.
+
+- All edits included in your pull request should be contained within your provided project directory:
+
+  - Each project has a directory within `src/app/projects`.
+  - Edit the provided `page.mdx` with the contents of your post.
+  - Place images in the provided directories in `public/images/projects`
+    (i.e., for pictures of your team and for pictures used in your post).
+    Remove any images that are not in use.
+  - Replace the provided `project_thumb.png` with a 150x150 PNG to be used in linking to your project page.
+
+- You may submit multiple pull requests as you work on your post, and we will merge them as quickly as possible.
+
+- If a change is needed in the overall projects page or in the location of your project directory
+  (e.g., because you have changed your project name), contact and coordinate with the course staff.
+  Do not attempt this yourself, as the current website implementation is relatively fragile.
+
+- In an emergency where you are unable to submit your content via a pull request,
+  you may document the status of your post by emailing the staff a Zip archive of your project directory.
+  We will then work with you on posting your content.
+
+Submit your contribution statement via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment4web} />
+
+#### Grading
+
+Your post should be complete for critique and feedback, but only the final version will be graded.
+
+We will also be available to coordinate with you around integrating your post into the course website (e.g., any formatting issues).
+
+#### Samples of Prior Submissions
+
+<Alert severity='warning'>
+    <div>Some samples are from a significantly revised prior milestone.</div>
+</Alert>
+
+This is a relatively new assignment, in which we have:
+
+1. Removed submission of a report after Assignment 2 and then again after Assignment 3.
+
+2. Instead required a single web post as part of Assignment 4.
+
+3. Structured that post to emphasize your distillation of a handful of key insights.
+
+Examples of reports and posts are linked from projects in prior offerings,
+but be sure your submission is designed for the new format and emphasis of this assignment:
+
+Winter 2023 Projects: [https://courses.cs.washington.edu/courses/cse440/23wi/projects](https://courses.cs.washington.edu/courses/cse440/23wi/projects)
+
+Spring 2022 Projects: [https://courses.cs.washington.edu/courses/cse440/22sp/projects](https://courses.cs.washington.edu/courses/cse440/22sp/projects)
+
+Winter 2020 Projects: [https://courses.cs.washington.edu/courses/cse440/20wi/projects](https://courses.cs.washington.edu/courses/cse440/20wi/projects)
+
+Winter 2019 Projects: [https://courses.cs.washington.edu/courses/cse440/19wi/projects](https://courses.cs.washington.edu/courses/cse440/19wi/projects)
+
+Autumn 2017 Projects: [https://courses.cs.washington.edu/courses/cse440/17au/projects.html](https://courses.cs.washington.edu/courses/cse440/17au/projects.html)
+
+Winter 2017 Projects: [https://courses.cs.washington.edu/courses/cse440/17wi/projects.html](https://courses.cs.washington.edu/courses/cse440/17wi/projects.html)
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 4 Web Final
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment4web_final}>
+
+Appropriately revise your web post according to critique and feedback.
+
+If you are unsure what revisions are appropriate, communicate with the course staff well before the final web post is due.
+
+#### Submission
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+- <ParticipantAnonymity />
+
+Your post should be complete and will be evaluated as such.
+We will then coordinate with you around any modifications as we integrate your post into the course website
+(e.g., to correct any formatting issues).
+
+Update your post via one or more pull requests against the course website GitHub repository:
+
+- <CourseStoreLink outerComponent="p" linkKey='linkGitHub' />
+
+Submit your contribution statement via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment4web_final} />
+
+#### Grading
+
+The content for this post will be graded on a scale of __32 points__:
+
+1.  __Title__: (1 point)
+2.  __Project Logo / Thumbnail__: (1 point)
+2.  __Team Member Images and Names__: (1 point)
+3.  __Problem and Design Overview__: (2 points)
+4.  __Design Research Process__: (2 points)
+5.  __Design Research Key Insights__: (3 x 2 points)
+6.  __Iterative Design Process__: (2 points)
+7.  __Iterative Design Key Insights__: (3 x 2 points)
+8.  __Resulting Design__: (3 points)
+9.  __Clarity and Presentation__: (4 points)
+10. __Preparation and Process__: (4 points)
+    - Original post was sufficient to support critique and feedback.
+    - Appropriately act upon feedback to improve final post.
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 4 Poster
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment4poster}>
+
+The goal of this milestone is to create a poster and a pitch that communicate your design to a broad audience.
+
+Create a poster that communicates your design and your design process.
+Present your work in a visual form that quickly conveys its most important aspects.
+Your poster should include:
+
+- Project Title
+- Logo
+- Your Names
+- Problem
+- Value Proposition
+- Key Functionality
+- Key Design Insights
+
+Your poster should emphasize images and include limited amounts of text.
+For consistency and ease of display, it should be 32"x40" (i.e., portrait, vertical).
+
+The staff have assembled several templates you can use as a starting point:
+
+<CourseDataLink linkKey={courseData.linkFigmaPosterTemplates} outerComponent="p"/>
+<p><a href={Paths.basePath + pathPosterTemplateA}>Powerpoint Template A</a></p>
+<p><a href={Paths.basePath + pathPosterTemplateB}>Powerpoint Template B</a></p>
+<p><a href={Paths.basePath + pathPosterTemplateC}>Powerpoint Template C</a></p>
+
+You should heavily modify the template to be unique and represent your project.
+
+Make sure all images you include are clear and legible (e.g., with appropriate contrast).
+Re-make images as necessary to ensure this
+(e.g., by taking new photos in better lighting, by instead using a scanner,
+by re-creating a piece of a paper prototype using ink that will create a better image).
+
+During the final poster session, your team will give a one minute pitch to a small group of judges.
+Create a pitch that summarizes the problem and your design.
+This pitch should convince an audience that your problem was worth investigating and that your design suggests a compelling direction.
+
+#### Submission
+
+Due to challenges that frequently arise in printing, submit both:
+
+- A PDF of your poster.
+- The source file for your poster (e.g., a PPTX file, a text file containing a Figma link with edit access).
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+- <ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment4poster} />
+
+#### In Class
+
+We will bring 8.5"x11" printed copies of your poster to class.
+You will need these for in-class critique and refinement.
+
+#### Grading
+
+Your poster should be complete for critique and feedback, but only the final version will be graded.
+Note that grading of the final poster does allocate points to your sufficient preparation for critique and feedback.
+
+Critique and refinement will help further improve your poster before a final version.
+
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment4poster' />
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 4 Poster Final
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment4poster_final}>
+
+Appropriately revise your poster according to critique and feedback.
+
+If you are unsure what revisions are appropriate, communicate with the course staff well before the final poster is due.
+
+During the final poster session, your team will give a one minute pitch to a small group of judges.
+Rehearse a pitch that summarizes the problem and your design.
+This pitch should convince an audience that your problem was worth investigating and that your design suggests a compelling direction.
+
+#### Submission
+
+Due to challenges that frequently arise in printing, submit both:
+
+- A PDF of your poster.
+- The source file for your poster (e.g., a PPTX file, a text file containing a Figma link with edit access).
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+- <ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment4poster_final} />
+
+We will then coordinate with you for proofreading and printing.
+
+#### Grading
+
+This milestone will be graded on a scale of __12 points__:
+
+- __Content__: (5 points)
+  - Includes all of the key content listed above.
+  - Key functionality of the design is clear.
+  - Gives insight into the design process.
+- __Clarity and Presentation__: (5 points)
+  - Appropriately large images that convey key aspects of the design.
+  - Text is minimal and appropriate, large and legible.
+  - Colors and fonts are a pleasing combination and easy to read.
+- __Preparation and Process__: (2 points)
+  - Original poster submission was sufficient to support critique and feedback.
+  - Appropriately act upon feedback to improve final poster.
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 4 Poster Session
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment4poster_session}>
+
+Come to the poster session to show off your work and engage with your classmates.
+Present your pitch to a team of judges,
+and take the opportunity to discuss your work with classmates and visitors while reflecting on a busy and productive quarter.
+
+#### Grading
+
+The poster session will be graded only as part of participation.
+We intentionally will not conduct any evaluation at the poster session itself.
+
+</CollapseProjectMilestone>

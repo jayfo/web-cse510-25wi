@@ -1,0 +1,52 @@
+import { courseData} from "@/data/CourseData";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { FormattedReading } from "@/components/FormattedReading";
+
+These "vision" papers challenge a dominant pattern,
+propose going beyond mimicking prior technologies, or cast a vision of future technologies.
+This is not an exhaustive set of such papers, just a set chosen to be interesting and appropriate.
+
+<ul>
+    {props.readings.map(readingCurrent => (
+        <li key={readingCurrent.title}>
+            <FormattedReading outerComponent="p" reading={readingCurrent}/>
+        </li>
+    ))}
+</ul>
+
+### Reading Format
+
+No reading report is assigned.
+
+Each student has two responsibilities:
+
+- Organize into groups to briefly present one of the above vision papers.
+
+  Sign up for a paper here:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkVisionsSignup} />
+
+  Remember most people will not have read the paper you are presenting.
+  It is therefore your responsibility to explain the vision.
+  One useful way of breaking down and explaining the vision might be to discuss these points:
+
+  - What was the status quo at the time the authors wrote this?
+  - What was the author’s vision of future technologies?
+  - How has this vision played out since this publication?
+
+  Available time for each paper is extremely limited.
+  You will not be able to fully present these papers,
+  but aim to give your classmates insight into what they might find if they were to read the paper.
+  Rehearse your presentation to ensure you stay within the agreed time.
+
+  Prepare your presentation as 2 to 3 slides in a shared Google Slides document:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkVisionsSlides} />
+
+  Be sure to consider
+  <CourseDataLink linkKey={courseData.linkAccessiblePresentations} />.
+
+- Individually read at least one more of the above vision papers.
+
+  Reading a second paper benefits in-class discussion, helping you see these visions and explore them appropriately.
+  Because some of these papers are quite long, you can and should skim according to your needs.

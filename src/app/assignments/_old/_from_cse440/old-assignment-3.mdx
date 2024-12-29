@@ -1,0 +1,669 @@
+import * as React from "react";
+
+import { CollapseProjectMilestone } from "@/components/CollapseProjectMilestone";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as InformalDrawingTool } from '@/contentcomponents/InformalDrawingTool.mdx';
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { calendarData } from "@/data/CalendarData";
+import { Paths } from "@/paths";
+
+export const path3bNielsenHeuristics = '/assignments/3b-nielsen-heuristics.pdf';
+export const path3pPresentationStaffForm = '/assignments/3p-presentation-staff-form.pdf';
+
+# Assignment 3: Getting the Design Right
+
+<UnderDevelopment display={true} />
+
+## Overview
+
+Now that you have chosen a design, it is time to iteratively refine that design.
+This group assignment, spanning multiple weeks of the course, tackles the problem
+of getting the design right through __paper prototyping__, __inspection__, and
+__usability testing__. Design refinement culminates in a __digital mockup__.
+
+## Milestones and Deliverables
+
+This is a group assignment, consisting of six milestones.
+
+{/*
+  *
+  * ASSIGNMENT 3A
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment3a}>
+
+The goal of this milestone is to develop an initial paper prototype that will begin to allow testing of your design.
+
+Develop a paper prototype for your design.
+It should convey critical components of your design, including support for testing your two primary tasks.
+
+- Include an overview image that shows your entire paper prototype.
+- The prototype should be complete for each task,
+  including enough detail to show how to complete each step in the task.
+  This should include the desired / expected / intended path, but also likely error conditions
+  (e.g., what happens if some participant input is invalid?).
+- The prototype should be at an appropriate level of detail,
+  supporting understanding of critical components of your design and the context of the your primary tasks.
+- The documentation in your report should explain how the components of your prototype are related.
+  This should include detailed images showing each component as you walk through your two primary tasks.
+
+This prototype has been informed by your prior sketching and storyboarding.
+But it also contains more details than your prior exploratory designs.
+If necessary or appropriate, revise your tasks or scenarios based on what you learn in prototyping.
+
+<InformalDrawingTool />
+
+If you use an informal drawing tool,
+you will need to have physical copies of your paper prototype throughout upcoming milestones.
+You will also need the ability to quickly iterate on your paper prototype.
+
+#### Submission
+
+No more than one page of text in PDF format, to include:
+
+- An overview image that shows your entire paper prototype.
+- Detailed images showing each component as you walk through your two primary tasks.
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+- <ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment3a} />
+
+#### In Class
+
+Bring your paper prototype to class.
+You will need it to conduct a heuristic evaluation during class.
+
+#### Grading
+
+This milestone will be graded on a scale of __10 points__:
+
+1. __Overall Completeness and Appropriateness of Paper Prototype__: (2 points)
+
+   Include an overview image.
+
+   Include enough detail to support understanding of
+   critical components of your design and the context of your primary tasks.
+
+2. __Completeness, Appropriateness, and Documentation of Each Task__: (2 x 3 points)
+
+   Include each step in the task, with enough detail to show how to complete each step.
+
+3. __Clarity and Presentation__: (2 points)
+
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment3a' />
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 3B
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment3b}>
+
+The goal of this milestone is to conduct heuristic evaluations as part of rapidly iterating on your paper prototype.
+
+You will receive an evaluation in class, and you will supplement this with another evaluation.
+
+In class, pair with another team to conduct heuristic evaluations.
+One team will conduct a heuristic evaluation of the other’s paper prototype, then the two teams will reverse roles.
+Each team will therefore conduct and receive one heuristic evaluation.
+
+We will provide a worksheet with Nielsen's heuristics:
+
+<p><a href={Paths.basePath + path3bNielsenHeuristics}>3b-nielsen-heuristics.pdf</a></p>
+
+For each issue identified in evaluation, record:
+- The heuristic that is violated.
+- A description of the usability issue, including an image of the relevant portion of the prototype.
+- A severity rating (ranging from 0 for _no problem_ to 4 for _usability catastrophe_).
+
+Revise your paper prototype based on what you learn in heuristic evaluation.
+Your tasks and scenarios are likely stable, but revise them if your evaluation reveals a need.
+
+Outside of class, arrange to receive a second heuristic evaluation (e.g., with another team).
+You therefore received two heuristic evaluations of your paper prototype.
+If desired, you may also conduct a heuristic evaluation or cognitive walkthrough of your own paper prototype.
+
+#### Submission and Grading
+
+Records of your inspection-based methods will be submitted as part of later assignments (eg., see Assignment 3c).
+
+Be sure to keep detailed records, including images of relevant portions of the prototype before and after revisions.
+
+#### Samples of Prior Submissions
+
+See samples of Assignment 3c.
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 3C
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment3c}>
+
+The goal of this milestone is to document changes resulting from your inspection-based analyses
+and to begin usability testing of your revised prototype with participants.
+
+Complete one usability test with your paper prototype, examining your two primary tasks.
+
+Target an appropriate participant based on your design research and resulting design.
+
+Be sure to divide your team into roles when conducting a usability test.
+There is simply too much required for a single person to effectively conduct a test.
+As discussed in class, roles include the facilitator, the computer, and one or more observers.
+
+As part of your introduction, have your facilitator show the participant how to interact with your design.
+Do not show participants how to perform your tasks that you will later test.
+Instead show them how paper prototyping works, how your system generally works,
+and give an example of something specific that is sufficiently different from your tasks.
+
+During the test, record a log of critical incidents, including both positive and negative events.
+For example, a person might comment on something they like or might make a mistake in a task.
+Record the incident along with a description of the context of the incident.
+
+Consider recording your tests to allow you to see and show exactly what happened.
+If you do this, obtain permission from the participant and ensure your recording preserves the anonymity of the participant.
+Frame your shot such that you capture interaction with the prototype without unnecessarily capturing the participant.
+
+Each participant should perform both of your primary tasks.
+Keep the data separate for each participant and each task.
+Remember participation must be voluntary, participants should be free to stop at any time,
+and you should emphasize that your focus is on identifying usability issues in the design.
+
+Revise your paper prototype based on what you learn in usability testing.
+This can and should include fixing major issues as soon as they are detected, before additional tests.
+Your tasks and scenarios are likely stable, but revise them if your evaluation reveals a need.
+
+Present your iterative revisions and your plan going forward:
+
+- Present a table or list of results from your inspection-based methods.
+  We expect you will report at least **four** identified issues and resulting revisions, which may be small or large.
+  You may report more, but this is the expected minimum.
+  For each identified issue, include:
+  - The heuristic that is violated.
+  - A description of the usability issue, including an image of the relevant portion of the prototype.
+  - A severity rating (ranging from 0 for _no problem_ to 4 for _usability catastrophe_).
+  - An image and explanation of any revision implemented as a result.
+    If you highlight an issue without revising in response to it, provide explanation of that decision.
+
+- Discuss your first usability test.
+  - Provide a description of your testing method and participant
+    (e.g., the participant, the environment where you conducted the test,
+    why you chose this participant and environment, the test protocol,
+    and the roles of each team member who participated in the test).
+  - Discuss anything you learned about the testing process itself.
+    This should include at least one part of your method that was especially effective
+    or one revision you decided you need to make to your testing process.
+
+- Present a table or list of results from your first usability test.
+  We expect you will report at least **two** identified incidents, which may be small or large.
+  You may report more, but this is the expected minimum.
+  For each critical incident, include:
+  - An image of the relevant portion of the prototype.
+  - Description of the incident, remembering that these can be either positive or negative.
+  - For negative incidents, a severity rating (ranging from 0 for _no problem_ to 4 for _usability catastrophe_).
+  - For negative incidents, an image and explanation of any revision implemented as a result.
+  - For positive incidents, describe what was learned from this incident.
+
+- Submit detailed images of your current paper prototype, as revised in this process.
+  Your design may have changed more or less,
+  so this is intended to fully convey the current state of your design.
+  As before, ensure your prototype is complete, is at an appropriate level of detail, and documents each task.
+  Include both:
+  - An overview image that shows your entire paper prototype.
+  - Detailed images showing each component as you walk through your two primary tasks.
+
+- Present your plan for the remainder of your usability tests.
+  Describe what goals you have for the additional tests and any new approaches you will employ.
+  You will conduct one usability test in section,
+  describe your plans for recruiting an additional participant.
+
+As you assemble this documentation of the iterative improvement of your design,
+you may find that some changes feel minor relative to the overhead of documenting those changes.
+Your goals in this documentation are to:
+
+- Show your work in the iterative design process, giving enough insight to understand your progress.
+- Capture a record to which you can return in preparing your web content and presentation.
+
+You may choose to not fully document minor changes, but be sure to document enough for these two goals.
+
+#### Submission
+
+No more than three pages of text in PDF format.
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+- <ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment3c} />
+
+Be prepared to discuss your iterative revision of your paper prototype.
+
+#### In Class
+
+Bring both your submission and your paper prototype to section.
+You will need your paper prototype to conduct a usability test during section.
+
+#### Grading
+
+This milestone will be graded on a scale of __13 points__:
+
+1. __Issues Identified from Inspection, Revisions Made in Response__: (4 x 1 points)
+
+   Include the heuristic that is violated,
+   a description and image of the issue, a severity rating, and any revision.
+
+2. __Discussion of Usability Test and Plan__: (2 points)
+
+   Describe your participant, environment, your rationale for both, your test protocol, and the roles of each team member.
+
+   Discuss what you learned about your testing process itself.
+
+3. __Issues Identified in Usability Test, Revisions Made in Response__: (2 x 1 points)
+
+   Include an image of the relevant portion of the prototype and a description of the incident.
+
+   For negative incidents, include a severity rating and any revision.
+
+   For positive incidents, describe what was learned from this incident.
+
+4. __Updated Images of Paper Prototype__: (3 points)
+
+   Include an overview image.
+
+   Include enough detail to support understanding of
+   critical components of your design and the context of your primary tasks.
+
+   Include each step in the task, with enough detail to show how to complete each step.
+
+5. __Clarity and Presentation__: (2 points)
+
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment3c' />
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 3D
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment3d}>
+
+The goal of this milestone is to complete usability testing of your prototype with participants.
+
+Complete a total of at least three usability tests and finalize your paper prototype according to what you learn.
+
+Present the results of your usability testing and your final paper prototype:
+
+- Discuss your three usability tests.
+  - Provide a description of your testing method and participant
+    (e.g., the participant, the environment where you conducted the test,
+    why you chose this participant and environment, the test protocol,
+    and the roles of each team member who participated in the test).
+  - Briefly discuss anything you learned about the testing process itself.
+    This should include at least one part of your method that was especially effective
+    or one revision you decided to make to your testing process.
+
+- Present a table or list of results from your three usability tests.
+  We expect you will report at least **three** identified incidents, which may be small or large.
+  You may report more, but this is the expected minimum.
+  This may include incidents you previously reported from your first usability test,
+  but may also be completely different in order to focus on the most important incidents you want to report.
+  For each critical incident, include:
+  - An image of the relevant portion of the prototype.
+  - Description of the incident, remembering that these can be either positive or negative.
+  - For negative incidents, a severity rating (ranging from 0 for _no problem_ to 4 for _usability catastrophe_).
+  - For negative incidents, an image and explanation of any revision implemented as a result.
+  - For positive incidents, describe what was learned from this incident.
+
+- Submit detailed images of your final paper prototype, as revised in this process.
+  Your design may have changed more or less,
+  so this is intended to fully convey the current state of your design.
+  As before, ensure your prototype is complete, is at an appropriate level of detail, and documents each task.
+  Include both:
+  - An overview image that shows your entire paper prototype.
+  - Detailed images showing each component as you walk through your two primary tasks.
+
+- Discuss two to four revisions that you consider to be your most salient and important modifications
+  based on issues identified in inspection, usability testing, or critique.
+  These may already be included in the above list, but discuss them in more detail and argue why detecting and fixing them is important to your design.
+
+- Discuss at least one revision you made to promote inclusivity in your design.
+  Describe an unintentional assumption you identified in your design,
+  then describe how you revised your design to address this assumption.
+  If you are unable to identify this before this submission is due,
+  you may discuss this more in section and submit a revised assignment adding this.
+
+As you assemble this documentation of the iterative improvement of your design,
+you may find that some changes feel minor relative to the overhead of documenting those changes.
+Your goals in this documentation are to:
+
+- Show your work in the iterative design process, giving enough insight to understand your progress.
+- Capture a record to which you can return in preparing your web content and presentation.
+
+You may choose to not fully document minor changes, but be sure to document enough for these two goals.
+
+#### Submission
+
+No more than three pages of text in PDF format.
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+- <ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment3d} />
+
+#### In Class
+
+Bring both your submission and your paper prototype to section.
+You will need your paper prototype for final critique.
+
+#### Grading
+
+This milestone will be graded on a scale of __16 points__:
+
+1. __Discussion of Usability Tests__: (2 points)
+
+   Describe your participant, environment, your rationale for both, your test protocol, and the roles of each team member.
+
+   Discuss what you learned about your testing process itself.
+
+2. __Issues Identified in Usability Tests, Revisions Made in Response__: (3 x 1 points)
+
+   Include an image of the relevant portion of the prototype and a description of the incident.
+
+   For negative incidents, include a severity rating and any revision.
+
+   For positive incidents, describe what was learned from this incident.
+
+3. __Updated Images of Paper Prototype__: (3 points)
+
+   Include an overview image.
+
+   Include enough detail to support understanding of
+   critical components of your design and the context of your primary tasks.
+
+   Include each step in the task, with enough detail to show how to complete each step.
+
+4. __Discussion of Key Revisions in Design Process__: (2 x 2 points or 4 x 1 points)
+
+   Convey your most important modifications and why detecting and fixing them has been important.
+
+   If you discuss fewer examples, provide justification and explanation of that focus.
+
+5. __Discussion of Revisions to Promote Inclusivity__: (4 points)
+
+   Include an identified assumption, the revision, and how it addresses the assumption.
+
+6. __Clarity and Presentation__: (2 points)
+
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment3d' />
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 3E
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment3e}>
+
+The goal of this milestone is to transition your prototype into a digital mockup of your design.
+
+Create your digital mockup based on your final paper prototype.
+Do not begin working in digital prototyping until you finish revising your paper prototype.
+It is much easier to iterate on your design in the paper prototyping phase.
+
+As you transition into digital prototyping, you will need to consider other aspects of the design.
+This can include detail you may not have previously considered (e.g., visual design, layout, color, typography),
+but can also include constraints or mismatches introduced by the technology itself.
+Note decisions or changes you need to make as you transition from paper to a digital representation.
+
+The mockup should effectively communicate your design in a manner appropriate for your web content, presentation, and poster.
+Implement your digital mockup to include key frames that illustrate your design.
+It should convey all critical aspects of your design, including walkthroughs for your two primary tasks.
+
+We have no strong preference regarding what digital tools you use to create your mockup.
+But it must be digital (e.g., you may not use pictures of a hand-drawn sketch).
+Some tools support creation of interactive mockups (e.g., allow clicking active regions to move between screens).
+You are welcome to use such a tool, and such interactivity may be helpful.
+But interactive mockups are neither expected nor required.
+
+Figma is a widely-used web-based collaborative tool:
+
+ - [Figma](https://www.figma.com/)
+
+Other commonly-used tools include:
+
+ - [Adobe Illustrator](http://www.adobe.com/products/illustrator.html)
+ - [Adobe XD](http://www.adobe.com/products/xd.html)
+ - [Axure](http://www.axure.com/)
+ - [Balsamiq](https://balsamiq.com/)
+ - [Indigo Studio](http://www.infragistics.com/products/indigo-studio)
+ - [InkScape](http://www.inkscape.org/en/)
+ - [Microsoft Visio](http://office.microsoft.com/en-us/visio/)
+ - [Omnigraffle](http://www.omnigroup.com/omnigraffle)
+ - [Vectr](https://vectr.com/)
+
+Present your digital mockup together with discussion of the decisions and changes you made:
+
+- Submit detailed images of your digital mockup. Include both:
+  - Overview images that show your digital mockup.
+  - Detailed images showing each component as you walk through your two primary tasks.
+
+- Discuss decisions and changes you made in implementing the digital mockup.
+  - We expect you will report at least **three** decisions or changes you made, which may be small or large.
+    You may report more, but this is the expected minimum.
+  - Describe each decision or change in a few sentences,
+    including why the change was necessary or desired.
+    Include images to be sure it is easy to understand the decision or change.
+
+As you assemble this documentation of the iterative improvement of your design,
+you may find that some changes feel minor relative to the overhead of documenting those changes.
+Your goals in this documentation are to:
+
+- Show your work in the iterative design process, giving enough insight to understand your progress.
+- Capture a record to which you can return in preparing your web content and presentation.
+
+You may choose to not fully document minor changes, but be sure to document enough for these two goals.
+
+#### Submission
+
+No more than one page of text in PDF format.
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+- <ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment3e} />
+
+Be prepared to discuss your digital mockup and revisions that occurred in its creation.
+
+#### Grading
+
+This milestone will be graded on a scale of __14 points__:
+
+1. __Overall Completeness and Appropriateness of Digital Mockup__: (3 points)
+
+   Include an overview image.
+
+   Include enough detail to support understanding of
+   critical components of your design and the context of your primary tasks.
+
+2. __Completeness, Appropriateness, and Documentation of Each Task__: (2 x 3 points)
+
+   Include each step in the task, with enough detail to show how to complete each step.
+
+3. __Discussion of Decisions and Changes in Implementation__: (3 x 1 points)
+
+   Describe each decision or change and why is was necessary or desired.
+
+   Include images to convey each decision or change.
+
+4. __Clarity and Presentation__: (2 points)
+
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment3e' />
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 3P
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment3p}>
+
+The goal of this milestone is to effectively communicate your design prototyping in a presentation.
+
+Prepare a presentation of your process in getting the design right. It should encompass all of your work in Assignment 3.
+
+- Two members of your team should deliver the presentation, each speaking to relatively equal portions.
+- Presenters should be different from those for Assignment 2, such that everybody presents at least once this quarter.
+  If there is some reason this cannot work for your team, be sure you have communicated with us.
+- A 7 minute time limit will be strictly enforced, with additional time for questions.
+
+A suggested organization of this presentation is:
+
+1. __Title Slide__:
+
+   A short, creative, and marketable title capturing the key idea.
+
+   Include team member names. Be clear which team members are presenting.
+
+2. __Overall Problem__:
+
+   Convey that your problem is both important and appropriate for a design investigation.
+
+   Motivate your audience to be interested in your problem and your proposed solution.
+   Remember that you are teaching us what you learned in your process, you are not "selling" your solution.
+   Be sure to avoid simply reading slide bullets, as you need to develop a connection to your audience.
+
+3. __Initial Paper Prototype__:
+
+   Present your initial paper prototype.
+   Convey the critical aspects of your design, including the two primary tasks being refined in your paper prototype.
+
+4. __Testing Process__:
+
+   Present your process for iteratively improving your design, including:
+   - your methods (i.e., what methods did you use to improve your initial design),
+   - your participants (i.e., what participants did you engage).
+
+5. __Testing Results and Prototype Refinement__:
+
+   Present usability and design issues that you identified and iterative improvements you made to address those issues.
+   This will include changes from your heuristic evaluation, usability testing, and design critique.
+
+   Discuss identified issues as an appropriate level of detail, including:
+   - specific usability issues that were identified and corrected (e.g., consider before and after comparisons),
+   - higher-level findings and themes that emerged (e.g., consider explaining a specific issue that was identified and how it led to a larger revision of the design).
+
+6. __Final Paper Prototype__:
+
+   Present your final paper prototype.
+   Convey the critical aspects of your design, including the two primary tasks.
+   This might be shorter than your presentation of the initial paper prototype,
+   because you already presented changes and are about to present the digital mockup.
+   This might also have been part of your testing process and results, if changes were illustrated there.
+
+7. __Digital Mockup__:
+
+   Present your digital mockup.
+   Convey the critical aspects of your design, including the two primary tasks.
+   Discuss any significant changes that were required when transitioning from a paper prototype.
+
+We strongly recommend rehearsing your presentation beforehand.
+For example, arrange to practice together with another group or two, giving each other feedback on your presentations.
+
+Note that we have not set a required number of slides in each section of this presentation.
+You can deliver your presentation using as many or as few slides as you want,
+as long as your presentation successfully addresses the above points in the allowed time.
+
+#### Submission
+
+Your presentation may be in PPT, PPTX, or PDF format.
+
+To minimize switching time, we will have all presentations on a single laptop running Microsoft Windows.
+You should optimize your presentation for portability (e.g., ensure any necessary fonts are embedded).
+If we detect any obvious formatting issues on the presentation machine, we may fix them or contact you to fix them.
+But you are ultimately responsible for your presentation.
+
+<ContributionStatementReference />
+
+<ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment3p} />
+
+### Grading
+
+The course staff will have a grading form they keep during your presentation:
+
+<p><a href={Paths.basePath + path3pPresentationStaffForm}>3p-presentation-staff-form.pdf</a></p>
+
+The content of this presentation will be graded on a scale of __16 points__:
+
+- Presentations should not have an outline slide.
+  They are short enough to be told as a story of your process, and your outline is the same as every other presentation.
+  Instead use that time to tell us about your project.
+- The problem and your proposed solution should be presented in a manner that is compelling,
+  should teach us what you learned in your process rather than "selling" your solution.
+- The initial prototype should be effectively conveyed through two scenarios.
+- The process of iteratively improving the design should be effectively conveyed and appropriate for the design.
+- Findings and iterative improvements of the design should be effectively conveyed.
+- The final design, as represented by your digital mockup, should be effectively conveyed through two scenarios.
+- Presentations should show appropriate preparation,
+  with slides that are legible and content that is effective, properly prepared, and properly employed.
+- Presentations should cover the required scope within the allowed time.
+
+The delivery of this presentation will be graded on a scale of __4 points__:
+
+- Presenter makes eye contact with the audience.
+- Presenter projects their voice well and is audible throughout the room.
+- Presenter feels engaged with the content, not just reading slides.
+- Presenter covers the required scope within the allowed time.
+
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment3p' />
+
+</CollapseProjectMilestone>

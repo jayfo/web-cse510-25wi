@@ -1,0 +1,168 @@
+import { Alert } from "@mui/material";
+
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { TBD } from "@/components/TBD";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
+import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
+import { SiteLinks } from "@/data/SiteLinks";
+import { Paths } from "@/paths";
+
+export const pathPosterTemplateA = '/assignments/poster-template-a-32x40.pptx';
+export const pathPosterTemplateB = '/assignments/poster-template-b-32x40.pptx';
+export const pathPosterTemplateC = '/assignments/poster-template-c-32x40.pptx';
+
+# Assignment 5: Poster
+
+<UnderDevelopment display={false} />
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_poster_initial} />
+
+Revision Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_poster_final} />
+
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_5_top}/>.
+Be sure you have reviewed that larger context for this assignment.
+
+The goal of this assignment is to create a poster and a pitch that communicate your design to a broad audience.
+
+**Create a poster** that communicates your design and your design process.
+Present your work in a visual form that quickly conveys its most important aspects.
+Your poster should include:
+
+- Project Title
+- Logo
+- Group Names
+- Problem
+- Key Idea or Approach
+- Key Functionality
+- Key Design Insights
+
+Your poster should emphasize images and include limited amounts of text.
+For consistency and ease of printing and display, your poster should be 32" x 40" (i.e., portrait, vertical).
+
+The staff have assembled several templates you can use as a starting point:
+- <CourseDataLink linkKey={courseData.linkFigmaPosterTemplates} outerComponent="span"/>
+- <a href={Paths.basePath + pathPosterTemplateA}>Powerpoint Template A</a>
+- <a href={Paths.basePath + pathPosterTemplateB}>Powerpoint Template B</a>
+- <a href={Paths.basePath + pathPosterTemplateC}>Powerpoint Template C</a>
+
+You should heavily modify the template to be unique and represent your project.
+
+Make sure all images you include are clear and legible (e.g., with appropriate contrast).
+Re-make images as necessary to ensure this
+(e.g., by taking new photos in better lighting, by instead using a scanner,
+by re-creating a piece of a paper prototype using ink that will create a better image).
+
+## Poster Session
+
+During the final poster session, your team should be ready
+to give a 30-second pitch to a small group of judges.
+Prepare a pitch that summarizes the problem and your design.
+This pitch should convince an audience that your problem was worth investigating
+and that your design suggests a compelling direction.
+
+The final poster session is not graded, but instead serves as a celebration of your work.
+
+## Submission
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_poster_initial} />
+
+Revision Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_poster_final} />
+
+Submission via Canvas is required.
+Due to frequent challenges in printing, submit both:
+- A PDF of your poster.
+- The source file for your poster (e.g., a PPTX file, a text file containing a Figma link with edit access).
+
+Be sure:
+
+- <GroupAssignment />
+- <ClarityAndPresentationReference />
+- <ParticipantAnonymity />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_5_poster_initial} />
+
+Submit a revision via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_5_poster_final} />
+
+## In Class
+
+We will bring 8.5" x 11" printed copies of your initial poster for in-class critique and refinement.
+
+## Completion Grading
+
+Initial submission of this assignment will be graded on completion of the following components:
+
+1. __Complete Draft__
+
+   A complete draft sufficient for in-class discussion and critique.
+   This draft should include an appropriate attempt at each of the final components of the poster.
+   It might also include specific notes or questions to support in-class discussion.
+
+## Grading
+
+Final submission of this assignment will be graded on a scale of __28 points__:
+
+1. __Design Name__: (2 points)
+
+   Choose a short, creative, and marketable name that captures the key idea or approach in your design.
+
+2. __Logo__: (2 points)
+
+   Include an attractive project logo.
+
+   This may be the same logo you prepare for your web post,
+   or you may use a variation that you feel is more effective in a poster format.
+
+3. __Group Member Names__: (1 point)
+
+   Appropriately include the full names of each member of your group.
+
+4. __Problem__: (3 points)
+
+   Concisely and effectively convey the problem your design addresses.
+
+5. __Key Idea or Approach__: (3 points)
+
+   Concisely and effectively convey the key idea or approach of your design.
+
+   If needed as context for key functionality,
+   include an image that provides high-level design context for key functionality.
+
+6. __Key Functionality__: (6 points)
+
+   Concisely and effectively convey at least 2 key aspects of design functionality.
+
+   This does not require walkthrough of your focus tasks,
+   but should instead effectively convey key functionality in a poster format.
+
+7. __Key Design Insights__: (6 points)
+
+   Concisely and effectively convey at least 2 key design insights that shaped your design.
+   These can be key insights you want to share from any point in your design process
+   (e.g., developed during your design research, developed during your iterative prototyping).
+
+   Provide enough context for a person to understand how you reached these insights
+   (e.g., concisely convey evidence from design research or iterative prototyping).
+
+8. __Clarity and Presentation__: (5 points)
+
+   Clarity and presentation are weighted more heavily than in prior assignments,
+   corresponding to the expectation of a polished presentation of your work.
+
+## Prior Samples
+
+<PriorSamplesWarning />
+
+<ProjectMilestoneSamples milestone='assignment4poster' />

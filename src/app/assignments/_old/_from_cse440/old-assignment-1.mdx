@@ -1,0 +1,367 @@
+import * as React from "react";
+
+import { CollapseProjectMilestone } from "@/components/CollapseProjectMilestone";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { default as CanvasGroupsNotCreated } from '@/contentcomponents/CanvasGroupsNotCreated.mdx';
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as ContributionStatementReference } from "@/contentcomponents/ContributionStatementReference.mdx";
+import { default as ExcludedTopics } from "@/contentcomponents/ExcludedTopics.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as IndividualAssignment } from "@/contentcomponents/IndividualAssignment.mdx";
+import { calendarData } from "@/data/CalendarData";
+
+# Assignment 1: Project Proposal
+
+<UnderDevelopment display={true} />
+
+## Overview
+
+You are to propose a __problem__ and an __approach__ that could form the basis of a project for this course.
+Successful projects will observe the need for good human-centered design in an interactive computing system,
+analyze the needs and opportunities in the problem, explore potential designs, and propose a compelling solution.
+
+
+### Project Theme
+
+The theme for projects in this course is __self-tracking and everyday interaction with personal data__.
+
+People have long sought to better understand themselves, but continuing technology advances enable new approaches.
+Students will examine problems people encounter in gathering and gaining value from personal data,
+then explore how design insights
+can help go beyond simple data fetishes to support people in using personal data as part of reaching their goals.
+
+Understanding and designing for self-tracking is also known as personal informatics:
+
+<blockquote className="blockquote">
+  Personal informatics systems are systems that help people collect
+  personally relevant information for the purpose of self-reflection and gaining self-knowledge.
+  <footer className="blockquote-footer">
+    [[Li et al., 2010](https://doi.org/10.1145/1753326.1753409)]
+  </footer>
+</blockquote>
+
+Self-tracking and personal informatics are related to the [Quantified Self](http://quantifiedself.com/) movement, which describes itself as:
+
+<blockquote className="blockquote">
+  Self-knowledge through numbers.
+  <footer className="blockquote-footer">
+    [[Wolf, 2010](https://archive.wired.com/medtech/health/magazine/17-07/lbnp_knowthyself)]
+  </footer>
+</blockquote>
+
+Instead of limiting self-tracking to dashboards for an isolated self-analyst,
+consider the many different ways people might gather and interact with personal data,
+and how they might gain meaningful value from these activities.
+
+Tracking can therefore take many forms:
+
+- wearable sensors
+- phone and watch applications
+- appliances and other artifacts in the environment
+- hybrid and multi-device forms (e.g., mobile capture with later annotation or review)
+
+Tracking can include many social contexts:
+
+- people seeking help from peers (e.g., social sharing, support networks)
+- people seeking help from experts (e.g., health providers)
+- co-located relationships (e.g., families, friends, co-workers)
+- remote relationships (e.g., families, friends, co-workers)
+- communities organizing (e.g., people in a building, community volunteers)
+
+Tracking can explore new forms of interaction:
+
+- conversational interfaces
+- tangible interfaces
+- ubiquitous computing interfaces
+- artificial intelligence
+
+Any problem where people gather or seek value in personal data
+introduces opportunities and challenges in designing for effective interaction around that data.
+
+### Thinking Big
+
+Your proposal must go beyond a technology-centric proposal of a website, phone application, or interaction.
+Instead think about the problems that people face in their lives,
+how we can approach those problems, and the role for interactive computing.
+This first assignment is your opportunity to think broadly about identifying a problem.
+Subsequent assignments will provide opportunities to focus on designing a specific technological solution to a specific set of tasks.
+
+You should identify and consider goals and activities that are important to people. Potential domains include:
+
+ - living a healthy life
+ - managing finances effectively
+ - managing time effectively
+ - reducing environmental impact
+
+Activities within personal informatics can include:
+
+ - planning to track
+ - helping remember to track
+ - the actual act of tracking
+ - identifying activity patterns
+ - sharing accomplishments with friends and family
+ - deciding to abandon tracking
+
+Do not start with a focus on concrete one-time tasks (e.g., logging into your bank account).
+Instead identify problems in long-lived activities that span many different social or technological contexts.
+If you want to help people manage their money, do not immediately propose a website that addresses one specific task.
+Instead consider the range of other opportunities (e.g., personal mobile devices, shared family computers, point of sale systems).
+
+Focus on creating or improving a specific application or service that addresses the issues of specific people.
+Design is rarely for "everybody", but instead generally more compelling with a more clear focus.
+You must be able to create and evaluate a design within the timeframe of this course,
+so consider whether you can reasonably gain access to the necessary people.
+
+We encourage you to think big, expanding your thinking to include new ideas for interaction techniques or technology platforms.
+Do not feel constrained by current devices or immediate implementation,
+but instead aim to explore an exciting design that could potentially motivate the development of new enabling technology.
+
+{/* TODO Enable examples link
+Projects from prior offerings can also help you be comfortable thinking beyond immediate implementation:
+
+<app-assignment-samples sampleToLink="website" format="list-only"></app-assignment-samples>
+*/}
+
+Finally, the project theme requires your proposal present some opportunity for __self-tracking and everyday interaction with personal data__.
+But you will ultimately follow your design process where it leads you, which may or may not emphasize self-tracking or personal data.
+Focusing on problems and opportunities, rather than specific design features,
+will leave room for your design to emerge and be refined in the course of this project.
+
+## Milestones and Deliverables
+
+This is an individual assignment, consisting of three milestones.
+
+{/*
+  *
+  * ASSIGNMENT 1A
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment1a}>
+
+The goal of this milestone is to help get you started in thinking of some ideas for a potential projects.
+Friday's section will then build on these in brainstorming additional potential directions for project proposals.
+
+Propose three starting points for brainstorming domains, problems, and goals that might be supported via self-tracking.
+
+By domain, we mean an aspect of life. Domains that are already common in self-tracking include:
+
+- finances (e.g., tracking spending, a budget, investments)
+- wellness (e.g., tracking physical activity, sleep, weight)
+- health (e.g., tracking for post-surgical pain management, allergies or other personal triggers, major weight loss)
+- mood (e.g., tracking mood, identifying depressive symptoms)
+
+Be sure to focus on problems and goals, not potential design solutions.
+One way to help yourself identify a hierarchy of problems and goals is to ask "Why?". For example:
+
+- Why is a person using a budgeting app?
+- Why is a person tracking their spending?
+- Why do they want to know how much they spend on leisure activities?
+- Why do they have a goal of saving for a major purchase?
+
+Each idea should be just a sentence or two, identifying the domain and the problem, goal, or idea.
+
+Your ideas must be significantly different, not small variations on the same idea.
+- At most one of your ideas may come from any of the domains above.
+- Your other two ideas should come from two domains that are not in the above list and are different from each other.
+
+<ExcludedTopics />
+
+#### Submission
+
+No more than one page of text in PDF format.
+
+- <IndividualAssignment />
+
+- <ClarityAndPresentationReference />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment1a} />
+
+If you are unable to access the submission system, submit via the staff email address.
+
+#### In Class
+
+Be prepared to contribute your initial ideas as part of a larger brainstorm.
+
+Bring a printed copy of your submission, or otherwise have it readily available (e.g., as a photo on your phone).
+
+#### Grading
+
+This milestone will be graded on a scale of __3 points__:
+
+1. __Each Unique Proposed Idea__: (3 x 1 point)
+
+   Do not submit small variations on the same idea.
+
+   Do not submit ideas within an excluded topic.
+
+   Be clear why each idea is potentially related to the course theme.
+
+   At most one of your ideas may come from the domains listed above (i.e., finances, wellness, health, mood).
+
+   Be clear regarding the domain of each idea, ensure each idea is from a different domain.
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 1B
+  *
+  */}
+<CollapseProjectMilestone
+    assignment={calendarData.assignments.assignment1b}
+    revisionAssignment={calendarData.assignments.assignment1b_rev}
+>
+
+The goal of this milestone is to propose multiple specific problems that could form the basis of a design project for this class.
+Tuesday and Friday will then include presenting these for feedback from peers and course staff.
+
+Propose three specific problems that are potentially related to the course theme and could form the basis of a design project for this class.
+
+For each problem, in one paragraph, describe the design problem and motivation.
+This description should convince the reader that this is a difficult and interesting problem, worth spending a quarter considering.
+State what the problem is and why it is a problem, or describe a new idea and why it will enhance an existing application or practice.
+
+Ensure each problem or idea is significantly different, not small variations on the same problem or idea.
+
+Ensure it is clear why each problem or idea is potentially related to the course theme.
+
+If there are already well-known and widely-available solutions to your proposed problem,
+explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+After receiving critique on Tuesday, update your proposals ahead of additional critique on Friday.
+
+As part of prompting you to deeply engage with and consider critique,
+your submitted revision must completely modify at least one of your original ideas
+(e.g., replacing at least one idea with a completely different idea,
+completely re-writing an idea to emphasize a different perspective).
+
+<ExcludedTopics />
+
+#### Submission
+
+No more than one page of text in PDF format.
+
+- <GroupAssignment />
+- <CanvasGroupsNotCreated />
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+- After receiving critique on Tuesday, submit an updated version.
+  In the same additional separate PDF as your Contribution Statement,
+  also provide a brief explanation of revisions (e.g., one paragraph on what you revised, why you revised it).
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment1b} />
+
+After receiving critique on Tuesday, submit an updated version via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment1b_rev} />
+
+#### In Class
+
+Be prepared to discuss your three proposed problems.
+
+Bring several printed copies of your submission,
+so you can easily share them with peers for critique.
+
+#### Grading
+
+This milestone will be graded on a scale of __10 points__:
+
+1. __Problem and Motivation for Each Unique Proposed Idea__: (3 x 2 points)
+
+   Do not submit small variations on the same idea.
+
+   Do not submit ideas within an excluded topic.
+
+   Be clear why each idea is potentially related to the course theme.
+
+   Completely modify at least one idea as part of revision after initial critique.
+
+2. __Novelty and Creativity__: (2 points)
+
+   If there are already well-known and widely-available solutions to your proposed problem,
+   explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+3. __Clarity and Presentation__: (2 points)
+
+   In the same additional separate PDF as your Contribution Statement,
+   also provide a brief explanation of revisions (e.g., one paragraph on what you revised, why you revised it).
+
+We will primarily grade the revised version of your submission,
+but may also apply a penalty if the original submission was severely underdeveloped or otherwise problematic.
+
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment1b' />
+
+</CollapseProjectMilestone>
+
+{/*
+  *
+  * ASSIGNMENT 1C
+  *
+  */}
+<CollapseProjectMilestone assignment={calendarData.assignments.assignment1c}>
+
+The goal of this milestone is to propose and analyze a problem that will form the basis of a design project for this class.
+You should build upon the feedback you have received from peers and course staff.
+Although your project will iterate and evolve from this point, your group should have coalesced around an idea.
+
+In one paragraph, describe the design problem and motivation.
+State what the problem is and why it is a problem, or describe a new idea and why it will enhance an existing application or practice.
+Provide enough detail to convince the reader that this is a difficult and interesting problem, worth spending a quarter considering.
+
+In another paragraph, analyze the problem or idea to give more background and context to convey how your project might evolve to be compelling.
+Do not just focus on the negative aspects of the current situation, but also identify some positive aspects that may be beneficial to retain.
+A few salient examples from existing systems or practices could be used to support those claims.
+If appropriate, you may conduct this analysis by describing a scenario that illustrates how someone might encounter and resolve the problem.
+
+If there are already well-known and widely-available solutions to your proposed problem,
+explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+<ExcludedTopics />
+
+#### Submission
+
+No more than one page of text in PDF format.
+
+- <GroupAssignment />
+- <CanvasGroupsNotCreated />
+- <ClarityAndPresentationReference />
+- <ContributionStatementReference />
+
+Submit via Canvas here:
+
+<AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment1c} />
+
+#### Grading
+
+Submitting a finalized project proposal as part of a group is a requirement for proceeding in the class.
+
+This milestone will be graded on a scale of __10 points__:
+
+1. __Problem and Motivation__: (3 points)
+
+   Provide enough detail to convince the reader that this is a difficult and interesting problem, worth spending a quarter considering.
+
+2. __Analysis of Problem__: (3 points)
+
+   Give enough background and context to convey how your project might evolve to be compelling.
+
+3. __Novelty and Creativity__: (2 points)
+
+   If there are already well-known and widely-available solutions to your proposed problem,
+   explain how these existing solutions fall short or suggest how you may explore a different approach.
+
+4. __Clarity and Presentation__: (2 points)
+
+#### Samples of Prior Submissions
+
+<ProjectMilestoneSamples milestone='assignment1c' />
+
+</CollapseProjectMilestone>

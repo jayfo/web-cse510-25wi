@@ -1,0 +1,22 @@
+# IDE configurations.
+/.idea/
+/.vscode/
+
+# OS files
+**/.DS_Store
+
+# Node dependencies.
+/node_modules/
+
+# Build cache.
+/.next/
+
+# Build output.
+/dist/
+
+# Optimized images.
+/public/images/next-image-export-optimizer-hashes.json
+/public/**/images-optimized/
+
+# Temporary build file.
+next-env.d.ts
