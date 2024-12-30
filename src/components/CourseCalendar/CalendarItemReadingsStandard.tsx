@@ -42,7 +42,9 @@ export const CalendarItemReadingsStandard: React.FunctionComponent<{
           Post a reading report in the appropriate thread(s), by 11:59pm the
           night before class:
         </p>
-        <CourseDataLink linkKey={courseData.linkCanvasDiscussion}>Canvas</CourseDataLink>
+        <CourseDataLink linkKey={courseData.linkCanvasDiscussion}>
+          Canvas
+        </CourseDataLink>
       </React.Fragment>
     );
   } else {

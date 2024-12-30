@@ -29,7 +29,6 @@ import {
   endOfWeek,
 } from "date-fns";
 
-
 const dayOfWeekValues = [
   "Mon",
   "Tue",
@@ -149,7 +148,6 @@ export const calendarData: {
     start: verifyCalendarDate("2023-09-27", "Wed"),
     end: verifyCalendarDate("2023-12-15", "Fri"),
   },
-
 
   assignments: {
     projectProposal: {
@@ -1018,11 +1016,9 @@ export const calendarData: {
     },
   ],
 
-  officeHours: [
+  officeHours: [],
 
-  ],
-
-  studios: []
+  studios: [],
 };
 
 /*
