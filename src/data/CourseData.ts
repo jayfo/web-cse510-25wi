@@ -18,11 +18,6 @@ export const courseData = {
     href: "https://canvas.uw.edu/courses/1786160/discussion_topics",
   },
 
-  // Link to course Drive.
-  linkDrive: {
-    //   href: "https://drive.google.com/drive/folders/1Sm12CpuMNsKBqk6E_Ri875hfFs0A-IRS?usp=drive_link",
-  },
-
   // Link to course GitHub.
   linkGitHub: {
     href: "https://github.com/uwcse510/web-cse510-25wi",
@@ -38,7 +33,14 @@ export const courseData = {
     href: "https://registrar.washington.edu/curriculum/syllabus-guidelines",
   },
 
-  linkVisionsSlides: {},
+  // Link to course Drive.
+  linkDrive: {
+    href: "https://drive.google.com/drive/folders/13vHGA0QND7_KURsE6gJNiPZzF26Kxk65?usp=sharing",
+  },
 
-  linkVisionsSignup: {},
+  // Link to the Visions of HCI folder.
+  linkDriveVisionsOfHciFolder: {
+    href: "https://drive.google.com/drive/folders/1FHNwj8cUjizBpK-KvmpmzV8PvXubnDqe?usp=sharing",
+    anchor: "01/09: Visions of HCI",
+  },
 } as const;

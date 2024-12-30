@@ -1,7 +1,6 @@
 import * as React from "react";
 
 import { FormattedReading } from "@/components/FormattedReading";
-import { CourseStoreLink } from "@/components/links/CourseStoreLink";
 import { CalendarItem } from "@/types/CalendarData";
 
 export const CalendarItemAdditionalResourceReadings: React.FunctionComponent<{
