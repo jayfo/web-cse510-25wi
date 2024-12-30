@@ -138,14 +138,87 @@ export const calendarData: {
     start: CalendarDate;
     end: CalendarDate;
   };
+  assignments: { [key: string]: AssignmentCalendarItem };
+  events: EventCalendarItem[];
   holidays: HolidayCalendarItem[];
   lectures: LectureCalendarItem[];
-  assignments: { [key: string]: AssignmentCalendarItem };
+  officeHours: OfficeHourCalendarItem[];
+  studios: StudioCalendarItem[];
 } = {
   datesOfInstruction: {
     start: verifyCalendarDate("2023-09-27", "Wed"),
     end: verifyCalendarDate("2023-12-15", "Fri"),
   },
+
+
+  assignments: {
+    projectProposal: {
+      type: "assignment",
+      title: "Project Proposal",
+      // link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2023-10-15", "Sun"),
+      submission: "canvas",
+      submitCanvasTime: "11:59pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1665830/assignments/8670194",
+    },
+    projectMilestoneReport1: {
+      type: "assignment",
+      title: "Project Milestone Report 1",
+      // link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2023-10-30", "Mon"),
+      submission: "canvas",
+      submitCanvasTime: "11:59pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1665830/assignments/8670192",
+    },
+    projectMilestonePresentation1Day1: {
+      type: "assignment",
+      title: "Project Milestone Presentation",
+      // link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2023-10-31", "Tue"),
+    },
+    projectMilestonePresentation1Day2: {
+      type: "assignment",
+      title: "Project Milestone Presentation",
+      // link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2023-11-02", "Thu"),
+    },
+    projectMilestoneReport2: {
+      type: "assignment",
+      title: "Project Milestone Report 2",
+      // link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2023-11-27", "Mon"),
+      submission: "canvas",
+      submitCanvasTime: "11:59pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1665830/assignments/8670193",
+    },
+    projectMilestonePresentation2Day1: {
+      type: "assignment",
+      title: "Project Milestone Presentation",
+      // link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2023-11-28", "Tue"),
+    },
+    projectMilestonePresentation2Day2: {
+      type: "assignment",
+      title: "Project Milestone Presentation",
+      // link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2023-11-30", "Thu"),
+    },
+    projectFinalReport: {
+      type: "assignment",
+      title: "Project Final Report",
+      // link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2023-12-12", "Tue"),
+      submission: "canvas",
+      submitCanvasTime: "11:59pm",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1665830/assignments/8670191",
+    },
+  },
+
+  events: [],
 
   holidays: [
     {
@@ -945,106 +1018,11 @@ export const calendarData: {
     },
   ],
 
-  assignments: {
-    projectProposal: {
-      type: "assignment",
-      title: "Project Proposal",
-      link: SiteLinks.assignmentsProjectTop.href,
-      date: verifyCalendarDate("2023-10-15", "Sun"),
-      submission: "canvas",
-      submitCanvasTime: "11:59pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1665830/assignments/8670194",
-    },
-    projectMilestoneReport1: {
-      type: "assignment",
-      title: "Project Milestone Report 1",
-      link: SiteLinks.assignmentsProjectTop.href,
-      date: verifyCalendarDate("2023-10-30", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "11:59pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1665830/assignments/8670192",
-    },
-    projectMilestonePresentation1Day1: {
-      type: "assignment",
-      title: "Project Milestone Presentation",
-      link: SiteLinks.assignmentsProjectTop.href,
-      date: verifyCalendarDate("2023-10-31", "Tue"),
-    },
-    projectMilestonePresentation1Day2: {
-      type: "assignment",
-      title: "Project Milestone Presentation",
-      link: SiteLinks.assignmentsProjectTop.href,
-      date: verifyCalendarDate("2023-11-02", "Thu"),
-    },
-    projectMilestoneReport2: {
-      type: "assignment",
-      title: "Project Milestone Report 2",
-      link: SiteLinks.assignmentsProjectTop.href,
-      date: verifyCalendarDate("2023-11-27", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "11:59pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1665830/assignments/8670193",
-    },
-    projectMilestonePresentation2Day1: {
-      type: "assignment",
-      title: "Project Milestone Presentation",
-      link: SiteLinks.assignmentsProjectTop.href,
-      date: verifyCalendarDate("2023-11-28", "Tue"),
-    },
-    projectMilestonePresentation2Day2: {
-      type: "assignment",
-      title: "Project Milestone Presentation",
-      link: SiteLinks.assignmentsProjectTop.href,
-      date: verifyCalendarDate("2023-11-30", "Thu"),
-    },
-    projectFinalReport: {
-      type: "assignment",
-      title: "Project Final Report",
-      link: SiteLinks.assignmentsProjectTop.href,
-      date: verifyCalendarDate("2023-12-12", "Tue"),
-      submission: "canvas",
-      submitCanvasTime: "11:59pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1665830/assignments/8670191",
-    },
+  officeHours: [
 
-    statisticsLabAvailable: {
-      type: "assignment",
-      title: "Statistics Lab Available",
-      link: SiteLinks.assignmentsStatisticsLabTop.href,
-      date: verifyCalendarDate("2023-10-26", "Thu"),
-    },
-    statisticsLab: {
-      type: "assignment",
-      title: "Statistics Lab",
-      link: SiteLinks.assignmentsStatisticsLabTop.href,
-      date: verifyCalendarDate("2023-11-19", "Sun"),
-      submission: "canvas",
-      submitCanvasTime: "11:59pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1665830/assignments/8670195",
-    },
+  ],
 
-    examAvailable: {
-      type: "assignment",
-      title: "Exam Available",
-      link: SiteLinks.assignmentsExamTop.href,
-      date: verifyCalendarDate("2023-12-07", "Thu"),
-    },
-    exam: {
-      type: "assignment",
-      title: "Exam",
-      link: SiteLinks.assignmentsExamTop.href,
-      date: verifyCalendarDate("2023-12-11", "Mon"),
-      submission: "canvas",
-      submitCanvasTime: "11:59pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1665830/assignments/8670190",
-    },
-  },
+  studios: []
 };
 
 /*
