@@ -14,7 +14,7 @@ export function assertIsCourseStoreLinkKey(
 ): asserts courseStoreLinkKey is CourseStoreLinkKey {
   // TODO: This is impossible while there are no key values defined
   // if (!CourseStoreLinkKeyValues.includes(courseStoreLinkKey)) {
-    throw new AssertionError({ message: "Invalid CourseStoreLinkKey" });
+  throw new AssertionError({ message: "Invalid CourseStoreLinkKey" });
   // }
 }
 
