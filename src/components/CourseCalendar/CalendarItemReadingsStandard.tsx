@@ -1,8 +1,9 @@
 import * as React from "react";
 
 import { FormattedReading } from "@/components/FormattedReading";
-import { CourseStoreLink } from "@/components/links/CourseStoreLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
+import { courseData } from "@/data/CourseData";
 import { SiteLinks } from "@/data/SiteLinks";
 import { CalendarItem } from "@/types/CalendarData";
 
@@ -41,7 +42,7 @@ export const CalendarItemReadingsStandard: React.FunctionComponent<{
           Post a reading report in the appropriate thread(s), by 11:59pm the
           night before class:
         </p>
-        <CourseStoreLink outerComponent="p" linkKey={"linkCanvasDiscussion"} />
+        <CourseDataLink linkKey={courseData.linkCanvasDiscussion}>Canvas</CourseDataLink>
       </React.Fragment>
     );
   } else {

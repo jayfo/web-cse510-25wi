@@ -3,24 +3,32 @@ import * as React from "react";
 import { ok as assert } from "assert";
 
 import { FormattedReading } from "@/components/FormattedReading";
-import { CourseStoreLink } from "@/components/links/CourseStoreLink";
-import { default as ContentContributionsInHCI } from "@/contentcomponents/ContributionsInHCI.mdx";
-import { default as ContentNoReading } from "@/contentcomponents/NoReading.mdx";
-import { default as ContentVisionsOfHCI } from "@/contentcomponents/VisionsOfHCI.mdx";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { default as ContentContributionsInHCI } from "@/content/ContributionsInHCI.mdx";
+import { default as ContentNoReading } from "@/content/NoReading.mdx";
+import { default as ContentVisionsOfHCI } from "@/content/VisionsOfHCI.mdx";
 import { SiteLinks } from "@/data/SiteLinks";
 import {
   AssignmentCalendarItem,
   CalendarDate,
   CalendarItem,
+  CalendarWeek,
+  EventCalendarItem,
   HolidayCalendarItem,
   LectureCalendarItem,
+  OfficeHourCalendarItem,
+  StudioCalendarItem,
 } from "@/types/CalendarData";
 import {
+  clamp as clampDate,
   format as datefnsFormat,
   isValid as datefnsIsValid,
   parse as datefnsParse,
   eachDayOfInterval,
+  eachWeekOfInterval,
+  endOfWeek,
 } from "date-fns";
+
 
 const dayOfWeekValues = [
   "Mon",
@@ -161,7 +169,7 @@ export const calendarData: {
     // Week 1
     {
       date: verifyCalendarDate("2023-09-28", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Introductions and Overview",
       contentNonstandard: <ContentNoReading />,
@@ -169,7 +177,7 @@ export const calendarData: {
     // Week 2
     {
       date: verifyCalendarDate("2023-10-03", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Visions of Human-Computer Interaction",
       contentNonstandard: (
@@ -284,7 +292,7 @@ export const calendarData: {
     },
     {
       date: verifyCalendarDate("2023-10-05", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Contributions in Human-Computer Interaction",
       contentNonstandard: (
@@ -491,14 +499,14 @@ export const calendarData: {
     // Week 3
     {
       date: verifyCalendarDate("2023-10-10", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "In-Class Work on Project Proposals",
       contentNonstandard: <ContentNoReading />,
     },
     {
       date: verifyCalendarDate("2023-10-12", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Human-Computer Interaction History",
       contentNonstandard: <ContentNoReading />,
@@ -515,7 +523,7 @@ export const calendarData: {
     // Week 4
     {
       date: verifyCalendarDate("2023-10-17", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Usability Evaluation Considered Harmful",
       readingsStandard: {
@@ -544,7 +552,7 @@ export const calendarData: {
     },
     {
       date: verifyCalendarDate("2023-10-19", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title:
         "Research Topic: Information and Communication Technologies and Development",
@@ -583,7 +591,7 @@ export const calendarData: {
     // Week 5
     {
       date: verifyCalendarDate("2023-10-24", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Design Tools",
       readingsStandard: {
@@ -616,14 +624,14 @@ export const calendarData: {
     },
     {
       date: verifyCalendarDate("2023-10-26", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Experimental Design and Analysis",
     },
     // Week 7
     {
       date: verifyCalendarDate("2023-11-07", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Accessibility",
       guest: {
@@ -659,7 +667,7 @@ export const calendarData: {
     },
     {
       date: verifyCalendarDate("2023-11-09", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Computing Education and Learning",
       guest: {
@@ -696,7 +704,7 @@ export const calendarData: {
     // Week 8
     {
       date: verifyCalendarDate("2023-11-14", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Interaction with AI",
       guest: {
@@ -731,7 +739,7 @@ export const calendarData: {
     },
     {
       date: verifyCalendarDate("2023-11-16", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Designing with Children",
       guest: {
@@ -768,7 +776,7 @@ export const calendarData: {
     // Week 9
     {
       date: verifyCalendarDate("2023-11-21", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: CSCW and Social Computing",
       guest: {
@@ -816,75 +824,75 @@ export const calendarData: {
     // Week 11
     {
       date: verifyCalendarDate("2023-12-05", "Tue"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Personal Health Informatics",
       guest: {
         name: "Sean Munson",
         link: "https://www.smunson.com/",
       },
-      contentNonstandard: (
-        <React.Fragment>
-          <p>Read both framing papers:</p>
-          <ul>
-            <li>
-              <p>
-                <FormattedReading
-                  reading={{
-                    authorText: "Ian Li, Anind Dey, Jodi Forlizzi",
-                    title:
-                      "A Stage-Based Model of Personal Informatics Systems",
-                    publicationText: "CHI 2010",
-                    link: "https://canvas.uw.edu/files/112522023",
-                  }}
-                />
-              </p>
-            </li>
-            <li>
-              <p>
-                <FormattedReading
-                  reading={{
-                    authorText: "Charlotte P. Lee",
-                    title:
-                      "Boundary Negotiating Artifacts: Unbinding the Routine of Boundary Objects and Embracing Chaos in Collaborative Work",
-                    publicationText: "CSCW 2007",
-                    link: "https://canvas.uw.edu/files/112522025/",
-                  }}
-                />
-              </p>
-            </li>
-          </ul>
-          <p>Optional instance reading:</p>
-          <ul>
-            <li>
-              <p>
-                <FormattedReading
-                  reading={{
-                    authorText:
-                      "Chia-Fang Chung, Qiaosi Wang, Jessica Schroeder, Allison Cole, Jasmine Zia, James Fogarty, Sean A. Munson",
-                    title:
-                      "Identifying and Planning for Individualized Change: Patient-Provider Collaboration Using Lightweight Food Diaries in Healthy Eating and Irritable Bowel Syndrome",
-                    publicationText: "UbiComp 2019",
-                    link: "https://canvas.uw.edu/files/112522022",
-                  }}
-                />
-              </p>
-            </li>
-          </ul>
-          <p>
-            Post a reading report in the appropriate thread(s), by 11:59pm the
-            night before class:
-          </p>
-          <CourseStoreLink
-            outerComponent="p"
-            linkKey={"linkCanvasDiscussion"}
-          />
-        </React.Fragment>
-      ),
+      // contentNonstandard: (
+      //   <React.Fragment>
+      //     <p>Read both framing papers:</p>
+      //     <ul>
+      //       <li>
+      //         <p>
+      //           <FormattedReading
+      //             reading={{
+      //               authorText: "Ian Li, Anind Dey, Jodi Forlizzi",
+      //               title:
+      //                 "A Stage-Based Model of Personal Informatics Systems",
+      //               publicationText: "CHI 2010",
+      //               link: "https://canvas.uw.edu/files/112522023",
+      //             }}
+      //           />
+      //         </p>
+      //       </li>
+      //       <li>
+      //         <p>
+      //           <FormattedReading
+      //             reading={{
+      //               authorText: "Charlotte P. Lee",
+      //               title:
+      //                 "Boundary Negotiating Artifacts: Unbinding the Routine of Boundary Objects and Embracing Chaos in Collaborative Work",
+      //               publicationText: "CSCW 2007",
+      //               link: "https://canvas.uw.edu/files/112522025/",
+      //             }}
+      //           />
+      //         </p>
+      //       </li>
+      //     </ul>
+      //     <p>Optional instance reading:</p>
+      //     <ul>
+      //       <li>
+      //         <p>
+      //           <FormattedReading
+      //             reading={{
+      //               authorText:
+      //                 "Chia-Fang Chung, Qiaosi Wang, Jessica Schroeder, Allison Cole, Jasmine Zia, James Fogarty, Sean A. Munson",
+      //               title:
+      //                 "Identifying and Planning for Individualized Change: Patient-Provider Collaboration Using Lightweight Food Diaries in Healthy Eating and Irritable Bowel Syndrome",
+      //               publicationText: "UbiComp 2019",
+      //               link: "https://canvas.uw.edu/files/112522022",
+      //             }}
+      //           />
+      //         </p>
+      //       </li>
+      //     </ul>
+      //     <p>
+      //       Post a reading report in the appropriate thread(s), by 11:59pm the
+      //       night before class:
+      //     </p>
+      //     <CourseStoreLink
+      //       outerComponent="p"
+      //       linkKey={"linkCanvasDiscussion"}
+      //     />
+      //   </React.Fragment>
+      // ),
     },
     {
       date: verifyCalendarDate("2023-12-07", "Thu"),
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Sustained HCI Research In-the-Wild",
       guests: [
@@ -931,7 +939,7 @@ export const calendarData: {
         verifyCalendarDate("2023-11-28", "Tue"),
         verifyCalendarDate("2023-11-30", "Thu"),
       ],
-      timeAndLocation: LECTURE_TIME_AND_LOCATION,
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Project Milestone Presentations",
     },
@@ -1038,32 +1046,6 @@ export const calendarData: {
     },
   },
 };
-
-
-
-
-import { CourseStoreLink } from "@/components/links/CourseStoreLink";
-import { SiteLinks } from "@/data/SiteLinks";
-import {
-  AssignmentCalendarItem,
-  CalendarDate,
-  CalendarItem,
-  CalendarWeek,
-  EventCalendarItem,
-  HolidayCalendarItem,
-  LectureCalendarItem,
-  OfficeHourCalendarItem,
-  StudioCalendarItem,
-} from "@/types/CalendarData";
-import {
-  clamp as clampDate,
-  format as datefnsFormat,
-  isValid as datefnsIsValid,
-  parse as datefnsParse,
-  eachDayOfInterval,
-  eachWeekOfInterval,
-  endOfWeek,
-} from "date-fns";
 
 /*
 

@@ -8,9 +8,14 @@ export type CourseDataLinkKey = {
 };
 
 export const courseData = {
-  // Link to course Canvas. No trailing slash.
+  // Link to course Canvas.
   linkCanvas: {
     href: "https://canvas.uw.edu/courses/1786160",
+  },
+
+  // Link to discussion in course Canvas.
+  linkCanvasDiscussion: {
+    href: "https://canvas.uw.edu/courses/1786160/discussion_topics",
   },
 
   // Link to course Drive.
