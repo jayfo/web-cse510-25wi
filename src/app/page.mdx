@@ -1,16 +1,20 @@
 {/*
-import { Alert, Box } from '@mui/material';
-import Image from "next-image-export-optimizer";
+import { Alert } from '@mui/material';
 
 import { TBD } from "@/components/TBD";
 import { CourseStoreLink } from "@/components/links/CourseStoreLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { default as AssignmentsOverview } from "@/contentcomponents/AssignmentsOverview.mdx";
 import { SiteLinks} from "@/data/SiteLinks";
-import { Paths } from "@/paths";
 */}
 
+import { Box } from '@mui/material';
+import Image from "next-image-export-optimizer";
+
+import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { courseData } from "@/data/CourseData";
+import { Paths } from "@/paths";
 
 import imgPhotoJames from "public/images/photo_james.jpg";
 import imgPhotoAnant from "public/images/photo_placeholder.png";
@@ -35,35 +39,39 @@ This course is explicitly not focused on iterative design methods or associated 
 We do not assume a strong background in HCI (i.e., there is no undergraduate HCI prerequisite),
 but students seeking an introduction to effective design or an iterative design process will be better served by CSE 440.
 
-{/*
-
-The course project will require hands-on experience with HCI, while remaining open to different possibilities.
-You might choose to design and implement a new piece of HCI technology,
-or you might choose to design and execute an appropriately compelling study with HCI research implications.
-
-We will emphasize learning through discussion and feedback in all aspects of the course.
-
 ## Learning Objectives
 
 - Be able to differentiate forms of contribution in HCI research.
 - Be able to describe prior fundamental results that now frame areas of HCI research.
-- Be able to articulate new contributions in such areas of HCI research.
-- Be able to apply and evaluate relevance of common HCI research methods.
-- Be able to contribute advice and perspective across multiple HCI research projects.
+- Be able to articulate new contributions relative to such framings of areas of HCI research.
+- Be able to consider relevance, evaluate, and apply common HCI research methods.
 
 ## Course Staff
 
+{/* TODO: Make a component to clean up this mess of markup */}
 <Box display="flex" flexDirection="row" alignItems="flex-start">
   <Box marginTop={-2} marginBottom={-2} marginRight={2}>
     <p>James Fogarty</p>
+    <p>he/him</p>
     <p>
-      <Image src={imgPhotoJames} basePath={Paths.basePath} height="150" alt="Photo of James Fogarty." />
+      {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoJames}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
     </p>
   </Box>
   <Box marginTop={-2} marginBottom={-2} marginRight={2}>
-    <p>Shaan Chopra</p>
+    <p>Anant Mittal</p>
+    <p>he/him</p>
     <p>
-      <Image src={imgPhotoShaan} basePath={Paths.basePath} height="150" alt="Photo of Shaan Chopra." />
+      {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoAnant}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
     </p>
   </Box>
 </Box>
@@ -78,7 +86,60 @@ We will emphasize learning through discussion and feedback in all aspects of the
 
   Tuesdays & Thursdays, 10:00-11:20.
 
-  [CSE2](https://www.washington.edu/maps/#!/cse2) Room G04.
+  [CSE2](https://www.washington.edu/maps/#!/cse2) Room G10.
+
+{/*
+
+- Contact
+
+  Email course staff at &lt;cse440-staff [at] cs.washington.edu&gt;.
+
+  Please do not email individual course staff.
+  Using the course staff email list promotes both staff coordination and a more prompt response.
+
+- Course Time & Location
+
+  Tuesdays & Thursdays, 10:00-11:20.
+  [CSE2](https://www.washington.edu/maps/#!/cse2)
+  Room [G10](https://www.washington.edu/classroom/CSE2+G10)
+
+  The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
+
+*/}
+
+- Office Hours
+
+  By appointment.
+
+- Canvas
+
+  <CourseDataLink linkKey={courseData.linkCanvas} outerComponent="p"/>
+
+- Drive
+
+  <CourseDataLink linkKey={courseData.linkDrive} outerComponent="p"/>
+
+Course information and material will provided primarily on this website.
+
+Canvas and Drive will be used when appropriate for limiting access to course information and materials.
+
+
+
+## Contributing
+
+This course website lives on GitHub:
+
+<CourseDataLink linkKey={courseData.linkGitHub} outerComponent="p"/>
+
+
+{/*
+
+The course project will require hands-on experience with HCI, while remaining open to different possibilities.
+You might choose to design and implement a new piece of HCI technology,
+or you might choose to design and execute an appropriately compelling study with HCI research implications.
+
+We will emphasize learning through discussion and feedback in all aspects of the course.
+
 
 Class may be conducted via Zoom if necessary
 (e.g., due to requirements of a guest, due to instructor illness),
@@ -87,18 +148,6 @@ which will be indicated in the
 We also may support participation via Zoom as an accommodation (e.g., due to illness).
 Zoom participation will use meeting information provided by email and in
 <CourseStoreLink linkKey="linkCanvas">Canvas</CourseStoreLink>.
-
-- Office Hours
-
-  By appointment.
-
-- Canvas
-
-  <CourseStoreLink outerComponent="p" linkKey="linkCanvas" />
-
-Course information and material will primarily be provided on this website.
-
-Canvas will be used when appropriate for limiting access to course information and materials.
 
 ## Assignments
 
@@ -145,6 +194,10 @@ The overall course grade will be computed as follows:
 
   If you will be unable to participate in a course activity, email course staff beforehand.
 
+
+<adjust grades based on contribution>
+
+
 ## Wellness and Safety
 
 Our goal is for this course to provide an opportunity for learning without undermining wellness or safety.
@@ -180,123 +233,10 @@ Additional university policies apply
 
 Please do not hesitate to contact the course staff regarding these or any other accommodations.
 
-## Contributing
-
-This course website lives on GitHub:
-
-<CourseStoreLink outerComponent="p" linkKey='linkGitHub' />
 
 
-
-## Course Description
-
-This course provides an introduction to human-computer interaction and the design process.
-Students will learn methods and skills for designing and prototyping interactive systems.
-The course covers a design process from the initial formulation of a design problem to creation of digital prototypes.
-Importantly, the course does not emphasize development but instead fully focuses on design.
-
-The course structure is a mix of lectures, hands-on activities, and design critiques by peers and course staff.
-The course is overwhelmingly organized around a group project, in which students:
-
-- Ideate and Propose Design Problems
-- Study Existing Practices and Challenges
-- Explore Potential Design Opportunities and Tradeoffs
-- Evaluate and Iterate Upon a Design
-- Communicate a Problem and Resulting Design
-
-## Learning Objectives
-
-- Process-Focused Perspective on Interaction Design
-- Design Research Methods and Skills
-- Task-Focused Scenario Development, Sketching, and Storyboarding
-- Rapid Prototyping and Iteration
-- Critical Perspective on Design Solutions
-
-## Course Staff
-
-<Box display="flex" flexDirection="row" alignItems="flex-start">
-  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
-    <p>James Fogarty</p>
-    <p>he/him</p>
-    <p>
-      {/* alt="", Treat as decorative, because name is read above /}
-      <Image src={imgPhotoJames}
-             basePath={Paths.basePath}
-             height="150"
-             alt=""
-      />
-    </p>
-  </Box>
-  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
-    <p>Jesse Martinez</p>
-    <p>he/they</p>
-    <p>
-      {/* alt="", Treat as decorative, because name is read above /}
-      <Image src={imgPhotoJesse}
-             basePath={Paths.basePath}
-             height="150"
-             alt=""
-      />
-    </p>
-  </Box>
-  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
-    <p>Katelyn Mei</p>
-    <p>she/her</p>
-    <p>
-      {/* alt="", Treat as decorative, because name is read above /}
-      <Image src={imgPhotoKatelyn}
-             basePath={Paths.basePath}
-             height="150"
-             alt=""
-      />
-    </p>
-  </Box>
-</Box>
 
 ## Course Coordination
-
-- Contact
-
-  Email course staff at &lt;cse440-staff [at] cs.washington.edu&gt;.
-
-  Please do not email individual course staff.
-  Using the course staff email list promotes both staff coordination and a more prompt response.
-
-- Course Time & Location
-
-  Tuesdays & Thursdays, 10:00-11:20.
-  [CSE2](https://www.washington.edu/maps/#!/cse2)
-  Room [G10](https://www.washington.edu/classroom/CSE2+G10)
-
-  The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
-
-- Section Times & Location
-
-  - Section B: Fridays, 11:30-12:20 [MGH](https://uw.edu/maps/?mgh)
-    Room [058](https://www.washington.edu/classroom/MGH+058).
-  - Section D: Fridays, 1:30-2:20 [MGH](https://uw.edu/maps/?mgh)
-    Room [058](https://www.washington.edu/classroom/MGH+058).
-
-  The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
-
-- Office Hours
-
-  - James, by appointment.
-  - Jesse, Thursdays 12:00 to 1:00, [CSE2](https://uw.edu/maps/?cse2) 152.
-  - Katelyn, Wednesdays 3:00 to 4:00, [CSE2](https://uw.edu/maps/?cse2) 152.
-
-  Scheduled office hours require that you email beforehand (i.e., at least one hour beforehand).
-  If nobody has emailed regarding an office hour, course staff may not be available.
-  Hours are scheduled most weeks, but check the <SiteLink linkKey={SiteLinks.calendarTop} />.
-  Other meetings are by appointment.
-
-- Canvas
-
-  <CourseStoreLink outerComponent="p" linkKey="linkCanvas" />
-
-Course information and material will primarily be provided on this website.
-
-Canvas will be used for submissions and for necessary limitation of access to course materials.
 
 ## Assignments
 
@@ -467,14 +407,5 @@ Additional university policies apply
 
 Please do not hesitate to contact the course staff regarding these or any other accommodations.
 We are happy that you are here and want to support your engagement in this learning environment.
-
-## Course Website
-
-This course website lives on GitHub:
-
-<CourseStoreLink outerComponent="p" linkKey='linkGitHub' />
-
-You can submit pull requests to update the website,
-and you will publish elements of your project to the website via pull request.
 
 */}
