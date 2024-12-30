@@ -351,8 +351,7 @@ export const calendarData: {
               link: "https://canvas.uw.edu/files/128522142/",
             },
             {
-              authorText:
-                "Chris Harrison, Hrvoje Benko, and Andrew D. Wilson",
+              authorText: "Chris Harrison, Hrvoje Benko, and Andrew D. Wilson",
               title: "OmniTouch: Wearable Multitouch Interaction Everywhere",
               publicationText: "UIST 2011",
               link: "https://canvas.uw.edu/files/128558642/",

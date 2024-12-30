@@ -38,11 +38,7 @@ export const courseData = {
     href: "https://registrar.washington.edu/curriculum/syllabus-guidelines",
   },
 
-  linkVisionsSlides: {
+  linkVisionsSlides: {},
 
-  },
-
-  linkVisionsSignup: {
-
-  },
+  linkVisionsSignup: {},
 } as const;
