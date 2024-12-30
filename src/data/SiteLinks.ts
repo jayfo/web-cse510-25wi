@@ -13,6 +13,11 @@ export const SiteLinks = {
     anchor: "Assignments",
   },
 
+  assignmentsReadingsTop: {
+    href: "/assignments/readings/#readings",
+    anchor: "Readings",
+  },
+
   calendarTop: {
     href: "/calendar/#calendar",
     anchor: "Calendar",

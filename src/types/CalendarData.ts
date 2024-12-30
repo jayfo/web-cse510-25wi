@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import { Reading } from "@/types/Reading";
+
 /**
  * Type for links.
  */
@@ -39,13 +41,13 @@ export type BaseCalendarItemGuests =
   | {
       guest: {
         name: string;
-        link?: string;
+        link?: LinkHREF;
       };
     }
   | {
       guests: {
         name: string;
-        link?: string;
+        link?: LinkHREF;
       }[];
     };
 
@@ -76,20 +78,20 @@ export type AssignmentCalendarItemSubmission =
   | {
       submission: "canvas";
       submitCanvasTime: string;
-      submitCanvasLink: string;
+      submitCanvasLink: LinkHREF;
     };
 
 export type AssignmentCalendarItem = {
   type: "assignment";
   title: string;
-  link?: string;
+  link?: LinkHREF;
 } & BaseCalendarItemDate &
   AssignmentCalendarItemSubmission;
 
 export type EventCalendarItem = {
   type: "event";
   title: string;
-  slides?: LinkHREF;
+  link?: LinkHREF;
 } & BaseCalendarItemDates &
   BaseCalendarItemTimeAndLocations;
 
@@ -98,13 +100,29 @@ export type HolidayCalendarItem = {
   title: string;
 } & BaseCalendarItemDates;
 
+export type LectureCalendarItemContent =
+  | {}
+  | { contentNonstandard: React.ReactNode }
+  | {
+      readingsStandard: {
+        framing: Reading;
+        instances: Reading[];
+      };
+    };
+
+export type LectureCalendarItemAdditionalResourceReadings =
+  | {}
+  | { additionalResourceReadings: Reading[] };
+
 export type LectureCalendarItem = {
   type: "lecture";
   title: string;
-  slides?: LinkHREF;
+  link?: LinkHREF;
 } & BaseCalendarItemDates &
   BaseCalendarItemGuests &
-  BaseCalendarItemTimeAndLocations;
+  BaseCalendarItemTimeAndLocations &
+  LectureCalendarItemContent &
+  LectureCalendarItemAdditionalResourceReadings;
 
 export type OfficeHourCalendarItem = {
   type: "officeHour";

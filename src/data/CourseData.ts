@@ -8,14 +8,14 @@ export type CourseDataLinkKey = {
 };
 
 export const courseData = {
-  // Link to course Canvas. No trailing slash.
+  // Link to course Canvas.
   linkCanvas: {
     href: "https://canvas.uw.edu/courses/1786160",
   },
 
-  // Link to course Drive.
-  linkDrive: {
-    //   href: "https://drive.google.com/drive/folders/1Sm12CpuMNsKBqk6E_Ri875hfFs0A-IRS?usp=drive_link",
+  // Link to discussion in course Canvas.
+  linkCanvasDiscussion: {
+    href: "https://canvas.uw.edu/courses/1786160/discussion_topics",
   },
 
   // Link to course GitHub.
@@ -31,5 +31,16 @@ export const courseData = {
   // Link to UW syllabus guidelines.
   linkUniversitySyllabusGuidelines: {
     href: "https://registrar.washington.edu/curriculum/syllabus-guidelines",
+  },
+
+  // Link to course Drive.
+  linkDrive: {
+    href: "https://drive.google.com/drive/folders/13vHGA0QND7_KURsE6gJNiPZzF26Kxk65?usp=sharing",
+  },
+
+  // Link to the Visions of HCI folder.
+  linkDriveVisionsOfHciFolder: {
+    href: "https://drive.google.com/drive/folders/1FHNwj8cUjizBpK-KvmpmzV8PvXubnDqe?usp=sharing",
+    anchor: "01/09: Visions of HCI",
   },
 } as const;
