@@ -145,8 +145,8 @@ export const calendarData: {
   studios: StudioCalendarItem[];
 } = {
   datesOfInstruction: {
-    start: verifyCalendarDate("2023-09-27", "Wed"),
-    end: verifyCalendarDate("2023-12-15", "Fri"),
+    start: verifyCalendarDate("2025-01-06", "Mon"),
+    end: verifyCalendarDate("2025-03-21", "Fri"),
   },
 
   assignments: {
@@ -219,21 +219,16 @@ export const calendarData: {
   events: [],
 
   holidays: [
-    // {
-    //   date: verifyCalendarDate("2023-11-10", "Fri"),
-    //   type: "holiday",
-    //   title: "Veterans Day Observed",
-    // },
-    // {
-    //   date: verifyCalendarDate("2023-11-23", "Thu"),
-    //   type: "holiday",
-    //   title: "Thanksgiving",
-    // },
-    // {
-    //   date: verifyCalendarDate("2023-11-24", "Fri"),
-    //   type: "holiday",
-    //   title: "Native American Heritage Day",
-    // },
+    {
+      date: verifyCalendarDate("2025-01-20", "Mon"),
+      type: "holiday",
+      title: "Martin Luther King Jr. Day",
+    },
+    {
+      date: verifyCalendarDate("2025-02-17", "Mon"),
+      type: "holiday",
+      title: "Presidents' Day",
+    },
   ],
 
   lectures: [
