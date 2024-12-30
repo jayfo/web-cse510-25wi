@@ -1,10 +1,3 @@
-{/*
-import { Alert } from '@mui/material';
-
-import { CourseStoreLink } from "@/components/links/CourseStoreLink";
-import { default as AssignmentsOverview } from "@/contentcomponents/AssignmentsOverview.mdx";
-*/}
-
 import { Box } from '@mui/material';
 import Image from "next-image-export-optimizer";
 
@@ -12,6 +5,7 @@ import { TBD } from "@/components/TBD";
 import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { default as AssignmentsOverview } from "@/content/AssignmentsOverview.mdx";
 import { courseData } from "@/data/CourseData";
 import { SiteLinks} from "@/data/SiteLinks";
 import { Paths } from "@/paths";
@@ -110,6 +104,95 @@ Course information and material will provided primarily on this website.
 
 Canvas and Drive will be used when appropriate for limiting access to course information and materials.
 
+## Assignments
+
+<AssignmentsOverview />
+
+## Grading
+
+Much of the grading in this course is necessarily subjective.
+We will attempt to communicate expectations and feedback throughout the course,
+but it is your responsibility to communicate with us if you would like additional guidance in this regard.
+
+<TBD outerComponent="div">
+Overview of Grading TBD.
+
+- XX%: Project
+
+  - X%: Proposal Preparation and Document
+  - X%: Milestone 1 Report and Presentation
+  - X%: Milestone 2 Report and Presentation
+  - XX%: Final Report
+
+- XX%: Reading Reports and In-Class Small Group Discussion
+
+- XX%: Student-Led Presentations
+
+- XX%: Reflection Reports
+
+- XX%: Participation
+
+{/*
+The overall course grade will be computed as follows:
+
+- 20%: Reading Reports and In-Class Small Group Discussion
+
+  Reading reports will be graded 0 to 2 points as described in [Reading Reports](/assignments/readings#reading-reports).
+
+- 45%: Project
+
+  - 5%: Proposal Preparation and Document
+  - 5%: Milestone 1 Report and Presentation
+  - 5%: Milestone 2 Report and Presentation
+  - 30%: Final Report
+
+  Project proposal and milestone grading will emphasize progress and preparation to engage with direction and feedback.
+  Strong grades will result from honest presentation of project status
+  and useful scaffolding of a conversation that can support the project
+  (e.g., realistic and concrete proposals, clear discussion of advice that a project currently needs).
+  Proposals or milestones that are less than candid and thoughtful (e.g., vague, incomplete, oversold)
+  all fail to take full advantage of an opportunity for feedback.
+
+  Final project report grading will then emphasize overall project execution
+  and appropriate presentation of project activities (e.g., clarity of activities, methods, and contributions).
+
+- 10%: Statistics Lab, as described in [Statistics Lab](/assignments/statisticslab).
+- 15%: Exam, as described in [Exam](/assignments/exam).
+- 10%: Participation
+
+  A participation grade corresponds to course goals for students to
+  actively develop skills in discussing research activities and contributions
+  (e.g., when discussing existing research, when discussing ongoing research).
+  Participation will therefore include presence and participation in in-class discussions,
+  participation in asynchronous and in-class project discussions, and other course activities.
+
+  If you will be unable to participate in a course activity, email course staff beforehand.
+*/}
+
+</TBD>
+
+Grades may also be adjusted based on participation and contribution in assignments.
+
+### Late Policy
+
+We generally expect all assignments will be submitted according to deadlines in the assignment description.
+If there is a constraint or an emergency impacting your ability to submit an assignment,
+contact the course staff before the assignment deadline by email to the course staff list.
+
+We will do our best to be accommodating amidst requirements and expectations of the course
+(e.g., expecting clear and early communication regarding any constraints,
+understanding that assignments supporting in-class discussion serve little purpose after that discussion,
+understanding that assignments support engagement and grading throughout the course).
+
+### Regrade Policy
+
+Any request for grade clarification or a re-grade must be submitted by email to the course staff list.
+Requests will only be considered within 7 days of the release of a grade.
+
+Upon calculation of final grades, we will explicitly check for any particularly unfortunate effects of rounding
+(e.g., adjusting a pre-rounding final grade of 3.649 to instead give a 3.7).
+This is intended to provide peace of mind that final grades were not defined by any minor point deduction.
+
 ## Expectation of In-Person Participation
 
 The course heavily emphasizes required in-person activities, including student-led presentations and discussions.
@@ -159,31 +242,6 @@ This course website lives on GitHub:
 
 <CourseDataLink linkKey={courseData.linkGitHub} outerComponent="p"/>
 
-## Grading
-
-<TBD outerComponent="p">Overview of Grading TBD.</TBD>
-
-### Late Policy
-
-We generally expect all assignments will be submitted according to deadlines in the assignment description.
-If there is a constraint or an emergency impacting your ability to submit an assignment,
-contact the course staff before the assignment deadline by email to the course staff list.
-
-We will do our best to be accommodating amidst requirements and expectations of the course
-(e.g., expecting clear and early communication regarding any constraints,
-understanding that assignments supporting in-class discussion serve little purpose after that discussion,
-understanding that assignments support engagement and grading throughout the course).
-
-### Regrade Policy
-
-Any request for grade clarification or a re-grade must be submitted by email to the course staff list.
-Requests will only be considered within 7 days of the release of a grade.
-
-Upon calculation of final grades, we will explicitly check for any particularly unfortunate effects of rounding
-(e.g., adjusting a pre-rounding final grade of 3.649 to instead give a 3.7).
-This is intended to provide peace of mind that final grades were not defined by any minor point deduction.
-
-
 
 {/*
 
@@ -193,78 +251,10 @@ or you might choose to design and execute an appropriately compelling study with
 
 We will emphasize learning through discussion and feedback in all aspects of the course.
 
-## Assignments
-
-<AssignmentsOverview />
-
-## Grading
-
-Much of the grading in this course is necessarily subjective.
-We will attempt to communicate expectations and feedback throughout the course,
-but it is your responsibility to communicate with us if you would like additional guidance in this regard.
-
-The overall course grade will be computed as follows:
-
-- 20%: Reading Reports and In-Class Small Group Discussion
-
-  Reading reports will be graded 0 to 2 points as described in [Reading Reports](/assignments/readings#reading-reports).
-
-- 45%: Project
-
-  - 5%: Proposal Preparation and Document
-  - 5%: Milestone 1 Report and Presentation
-  - 5%: Milestone 2 Report and Presentation
-  - 30%: Final Report
-
-  Project proposal and milestone grading will emphasize progress and preparation to engage with direction and feedback.
-  Strong grades will result from honest presentation of project status
-  and useful scaffolding of a conversation that can support the project
-  (e.g., realistic and concrete proposals, clear discussion of advice that a project currently needs).
-  Proposals or milestones that are less than candid and thoughtful (e.g., vague, incomplete, oversold)
-  all fail to take full advantage of an opportunity for feedback.
-
-  Final project report grading will then emphasize overall project execution
-  and appropriate presentation of project activities (e.g., clarity of activities, methods, and contributions).
-
-- 10%: Statistics Lab, as described in [Statistics Lab](/assignments/statisticslab).
-- 15%: Exam, as described in [Exam](/assignments/exam).
-- 10%: Participation
-
-  A participation grade corresponds to course goals for students to
-  actively develop skills in discussing research activities and contributions
-  (e.g., when discussing existing research, when discussing ongoing research).
-  Participation will therefore include presence and participation in in-class discussions,
-  participation in asynchronous and in-class project discussions, and other course activities.
-
-  If you will be unable to participate in a course activity, email course staff beforehand.
-
-
-<adjust grades based on contribution>
-
-
-
-
-
-
-
-
-
-
-
-## Course Coordination
-
-## Assignments
-
-<AssignmentsOverview />
-
 ## Grading
 
 Strive to do good work because you care about your own opportunities to learn,
 including the opportunities this course provides working with a group in an intensive project.
-
-Design is an inherently subjective practice, and so grading in this course is necessarily subjective.
-The stated project requirements are often the minimum,
-intended to leave room for groups to earn strong grades through strong work.
 
 ### Project Milestones, Assignments, and Reports
 
@@ -306,54 +296,5 @@ Assignment quality ratings are on a scale from ⭐ to ⭐⭐⭐⭐ and can rough
 
   Such work does not accomplish the intended goal and will need much more work.
   If you do not already know why an assignment receives this rating, we encourage you to reach out to the course staff.
-
-#### Milestone Reports and Final Deliverables
-The bulk of project grading is then associated with milestone reports and final deliverables,
-which are evaluated more directly on their quality.
-Each milestone report will be predominantly composed of material you prepared in that milestone's assignments,
-with additional expectation of revision and refinement of previously-submitted content
-together with reflection on your design process.
-
-Each milestone report will provide a point breakdown conveying how it will be graded.
-
-### Overall Course Grade
-
-An overall course grade will be computed as follows:
-
-- __65%__: Group Project
-  - __5%__: <SiteLink linkKey={SiteLinks.milestone_1_top} outerComponent="span" />: Project Proposal & Ideation
-    - Assignment Completion (2%)
-      - 1.1: Individual Brainstorm
-      - 1.2: Group Proposals
-      - 1.3: Finalized Proposal
-      - 1.4: Design Ideation
-    - Milestone 1 Report (3%)
-  - __15%__: <SiteLink linkKey={SiteLinks.milestone_2_top} outerComponent="span" />: Design Research
-    - Assignment Completion (9%)
-      - 2.1: Design Research Plan
-      - 2.2: Design Research Check-in
-    - Milestone 2 Report (6%)
-  - __15%__: <SiteLink linkKey={SiteLinks.milestone_3_top} outerComponent="span" />: Getting the Right Design
-    - Assignment Completion (9%)
-      - 3.1: Task Review
-      - 3.2: Design Review
-      - 3.3: Design Presentations
-      - 3.4: Design Scenarios and Storyboards
-    - Milestone 3 Report (6%)
-  - __15%__: <SiteLink linkKey={SiteLinks.milestone_4_top} outerComponent="span" />: Getting the Design Right
-    - Assignment Completion (9%)
-      - 4.1: Paper Prototype
-      - 4.2: Heuristic Evaluation
-      - 4.3: Usability Testing
-    - Milestone 4 Report (6%)
-  - __15%__: <SiteLink linkKey={SiteLinks.milestone_5_top} outerComponent="span" />: Communicating the Design
-    - Assignment Completion (5%)
-      - Digital Mockup
-      - Initial Poster
-      - Initial Web Post
-    - Final Poster (5%)
-    - Final Web Post (5%)
-- __10%__: Participation
-- __25%__: Exam
 
 */}
