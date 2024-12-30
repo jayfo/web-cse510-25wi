@@ -232,130 +232,135 @@ export const calendarData: {
   ],
 
   lectures: [
-    // // Week 1
-    // {
-    //   date: verifyCalendarDate("2023-09-28", "Thu"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
-    //   title: "Introductions and Overview",
-    //   contentNonstandard: <ContentNoReading />,
-    // },
+    // Week 1
+    {
+      date: verifyCalendarDate("2025-01-07", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "Introductions and Overview",
+      contentNonstandard: <ContentNoReading />,
+    },
     // // Week 2
-    // {
-    //   date: verifyCalendarDate("2023-10-03", "Tue"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
-    //   title: "Visions of Human-Computer Interaction",
-    //   contentNonstandard: (
-    //     <ContentVisionsOfHCI
-    //       readings={[
-    //         {
-    //           // Because this paper is reviewed in history discussion,
-    //           // text below clarifies it can be read but will not be presented
-    //           authorText: "Vannevar Bush",
-    //           title: "As We May Think",
-    //           publicationText: "The Atlantic, 1945",
-    //           link: "https://theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/",
-    //         },
-    //         {
-    //           authorText: "Mark Weiser",
-    //           title: "The Computer for the 21st Century",
-    //           publicationText: "Scientific American, 1991",
-    //           link: "https://canvas.uw.edu/files/109669385/",
-    //         },
-    //         {
-    //           authorText:
-    //             "Roy Want, Andy Hopper, Veronica Falcão, Jonathan Gibbons",
-    //           title: "The Active Badge Location System",
-    //           publicationText: "TOIS 1992",
-    //           link: "https://canvas.uw.edu/files/109669381/",
-    //         },
-    //         {
-    //           authorText: "James D. Hollan, Scott Stornetta",
-    //           title: "Beyond Being There",
-    //           publicationText: "CHI 1992",
-    //           link: "https://canvas.uw.edu/files/109669382/",
-    //         },
-    //         {
-    //           authorText: "Pierre Wellner",
-    //           title: "Interacting with Paper on the DigitalDesk",
-    //           publicationText: "CACM 1993",
-    //           link: "https://canvas.uw.edu/files/109669377/",
-    //         },
-    //         {
-    //           authorText: "Benjamin B. Bederson, James D. Hollan",
-    //           title:
-    //             "Pad++: A Zooming Graphical Interface for Exploring Alternate Interface Physics",
-    //           publicationText: "UIST 1994",
-    //           link: "https://canvas.uw.edu/files/109669378/",
-    //         },
-    //         {
-    //           authorText: "Hiroshi Ishii, Brygg Ullmer",
-    //           title:
-    //             "Tangible Bits: Towards Seamless Interfaces between People, Bits and Atoms",
-    //           publicationText: "CHI 1997",
-    //           link: "https://canvas.uw.edu/files/109669372/",
-    //         },
-    //         {
-    //           authorText: "Eric Horvitz",
-    //           title: "Principles of Mixed-Initiative User Interfaces",
-    //           publicationText: "CHI 1999",
-    //           link: "https://canvas.uw.edu/files/109669379/",
-    //         },
-    //         {
-    //           authorText:
-    //             "Ken Hinckley, Jeff Pierce, Mike Sinclair, Eric Horvitz",
-    //           title: "Sensing Techniques for Mobile Interaction",
-    //           publicationText: "UIST 2000",
-    //           link: "https://canvas.uw.edu/files/109669380/",
-    //         },
-    //         {
-    //           authorText: "Claudio S. Pinhanez",
-    //           title:
-    //             "The Everywhere Displays Projector: A Device to Create Ubiquitous Graphical Interfaces",
-    //           publicationText: "UbiComp 2001",
-    //           link: "https://canvas.uw.edu/files/109669383/",
-    //         },
-    //         {
-    //           authorText: "Saul Greenberg, Chester Fitchett",
-    //           title:
-    //             "Phidgets: Easy Development of Physical Interfaces through Physical Widgets",
-    //           publicationText: "UIST 2001",
-    //           link: "https://canvas.uw.edu/files/109669384/",
-    //         },
-    //         {
-    //           authorText:
-    //             "Roy Want, Trevor Pering, Gunner Danneels, Muthu Kumar, Murali Sundar, John Light",
-    //           title:
-    //             "The Personal Server: Changing the Way We Think about Ubiquitous Computing",
-    //           publicationText: "UbiComp 2002",
-    //           link: "https://canvas.uw.edu/files/109669375/",
-    //         },
-    //         {
-    //           authorText:
-    //             "Jonathan Lester, Tanzeem Choudhury, Gaetano Borriello",
-    //           title: "A Practical Approach to Recognizing Physical Activities",
-    //           publicationText: "Pervasive 2006",
-    //           link: "https://canvas.uw.edu/files/109669374/",
-    //         },
-    //         {
-    //           authorText: "Bret Victor",
-    //           title:
-    //             "Magic Ink: Information Software and the Graphical Interface",
-    //           publicationText: "2006",
-    //           link: "http://worrydream.com/MagicInk/",
-    //         },
-    //         {
-    //           authorText:
-    //             "Michael S. Bernstein, Greg Little, Robert C. Miller, Björn Hartmann, Mark S. Ackerman, David R. Karger, David Crowell, Katrina Panovich",
-    //           title: "Soylent: A Word Processor with a Crowd Inside",
-    //           publicationText: "UIST 2010",
-    //           link: "https://canvas.uw.edu/files/109669648/",
-    //         },
-    //       ]}
-    //     />
-    //   ),
-    // },
+    {
+      date: verifyCalendarDate("2025-01-09", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "Visions of Human-Computer Interaction",
+      contentNonstandard: (
+        <ContentVisionsOfHCI
+          readings={[
+            {
+              // Because this paper is reviewed in history discussion,
+              // text below clarifies it can be read but will not be presented
+              authorText: "Vannevar Bush",
+              title: "As We May Think",
+              publicationText: "The Atlantic, 1945",
+              link: "https://theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/",
+            },
+            {
+              authorText: "Mark Weiser",
+              title: "The Computer for the 21st Century",
+              publicationText: "Scientific American, 1991",
+              link: "https://canvas.uw.edu/files/128522123/",
+            },
+            // {
+            //   authorText:
+            //     "Roy Want, Andy Hopper, Veronica Falcão, Jonathan Gibbons",
+            //   title: "The Active Badge Location System",
+            //   publicationText: "TOIS 1992",
+            // },
+            {
+              authorText: "James D. Hollan, Scott Stornetta",
+              title: "Beyond Being There",
+              publicationText: "CHI 1992",
+              link: "https://canvas.uw.edu/files/128522136/",
+            },
+            {
+              authorText: "Pierre Wellner",
+              title: "Interacting with Paper on the DigitalDesk",
+              publicationText: "CACM 1993",
+              link: "https://canvas.uw.edu/files/128522133/",
+            },
+            {
+              authorText: "Benjamin B. Bederson, James D. Hollan",
+              title:
+                "Pad++: A Zooming Graphical Interface for Exploring Alternate Interface Physics",
+              publicationText: "UIST 1994",
+              link: "https://canvas.uw.edu/files/128522138/",
+            },
+            {
+              authorText: "Hiroshi Ishii, Brygg Ullmer",
+              title:
+                "Tangible Bits: Towards Seamless Interfaces between People, Bits and Atoms",
+              publicationText: "CHI 1997",
+              link: "https://canvas.uw.edu/files/128522130/",
+            },
+            {
+              authorText: "Eric Horvitz",
+              title: "Principles of Mixed-Initiative User Interfaces",
+              publicationText: "CHI 1999",
+              link: "https://canvas.uw.edu/files/128522135/",
+            },
+            {
+              authorText:
+                "Ken Hinckley, Jeff Pierce, Mike Sinclair, Eric Horvitz",
+              title: "Sensing Techniques for Mobile Interaction",
+              publicationText: "UIST 2000",
+              link: "https://canvas.uw.edu/files/128522137/",
+            },
+            // {
+            //   authorText: "Claudio S. Pinhanez",
+            //   title:
+            //     "The Everywhere Displays Projector: A Device to Create Ubiquitous Graphical Interfaces",
+            //   publicationText: "UbiComp 2001",
+            // },
+            {
+              authorText: "Saul Greenberg, Chester Fitchett",
+              title:
+                "Phidgets: Easy Development of Physical Interfaces through Physical Widgets",
+              publicationText: "UIST 2001",
+              link: "https://canvas.uw.edu/files/128522141/",
+            },
+            {
+              authorText:
+                "Roy Want, Trevor Pering, Gunner Danneels, Muthu Kumar, Murali Sundar, John Light",
+              title:
+                "The Personal Server: Changing the Way We Think about Ubiquitous Computing",
+              publicationText: "UbiComp 2002",
+              link: "https://canvas.uw.edu/files/128522131/",
+            },
+            {
+              authorText:
+                "Jonathan Lester, Tanzeem Choudhury, Gaetano Borriello",
+              title: "A Practical Approach to Recognizing Physical Activities",
+              publicationText: "Pervasive 2006",
+              link: "https://canvas.uw.edu/files/128522134/",
+            },
+            {
+              authorText: "Bret Victor",
+              title:
+                "Magic Ink: Information Software and the Graphical Interface",
+              publicationText: "2006",
+              link: "http://worrydream.com/MagicInk/",
+            },
+            {
+              authorText:
+                "Michael S. Bernstein, Greg Little, Robert C. Miller, Björn Hartmann, Mark S. Ackerman, David R. Karger, David Crowell, Katrina Panovich",
+              title: "Soylent: A Word Processor with a Crowd Inside",
+              publicationText: "UIST 2010",
+              link: "https://canvas.uw.edu/files/128522142/",
+            },
+            {
+              authorText:
+                "Chris Harrison, Hrvoje Benko, and Andrew D. Wilson",
+              title: "OmniTouch: Wearable Multitouch Interaction Everywhere",
+              publicationText: "UIST 2011",
+              link: "https://canvas.uw.edu/files/128558642/",
+            },
+          ]}
+        />
+      ),
+    },
     // {
     //   date: verifyCalendarDate("2023-10-05", "Thu"),
     //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
