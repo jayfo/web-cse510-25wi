@@ -3,17 +3,17 @@ import { Alert } from '@mui/material';
 
 import { TBD } from "@/components/TBD";
 import { CourseStoreLink } from "@/components/links/CourseStoreLink";
-import { SiteLink } from "@/components/links/SiteLink";
 import { default as AssignmentsOverview } from "@/contentcomponents/AssignmentsOverview.mdx";
-import { SiteLinks} from "@/data/SiteLinks";
 */}
 
 import { Box } from '@mui/material';
 import Image from "next-image-export-optimizer";
 
 import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { courseData } from "@/data/CourseData";
+import { SiteLinks} from "@/data/SiteLinks";
 import { Paths } from "@/paths";
 
 import imgPhotoJames from "public/images/photo_james.jpg";
@@ -78,44 +78,31 @@ but students seeking an introduction to effective design or an iterative design 
 
 ## Course Coordination
 
-- Contact
+- **Contact**
 
-  Email all instructors at cse510-staff [at] cs.washington.edu.
-
-- Course Time & Location
-
-  Tuesdays & Thursdays, 10:00-11:20.
-
-  [CSE2](https://www.washington.edu/maps/#!/cse2) Room G10.
-
-{/*
-
-- Contact
-
-  Email course staff at &lt;cse440-staff [at] cs.washington.edu&gt;.
+  Email course staff at &lt;cse510-staff [at] cs.washington.edu&gt;.
 
   Please do not email individual course staff.
   Using the course staff email list promotes both staff coordination and a more prompt response.
 
-- Course Time & Location
+- **Course Time & Location**
 
   Tuesdays & Thursdays, 10:00-11:20.
+
   [CSE2](https://www.washington.edu/maps/#!/cse2)
-  Room [G10](https://www.washington.edu/classroom/CSE2+G10)
+  Room [G10](https://www.washington.edu/classroom/CSE2+G10).
 
   The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
 
-*/}
-
-- Office Hours
+- **Office Hours**
 
   By appointment.
 
-- Canvas
+- **Canvas**
 
   <CourseDataLink linkKey={courseData.linkCanvas} outerComponent="p"/>
 
-- Drive
+- **Drive**
 
   <CourseDataLink linkKey={courseData.linkDrive} outerComponent="p"/>
 
@@ -123,13 +110,57 @@ Course information and material will provided primarily on this website.
 
 Canvas and Drive will be used when appropriate for limiting access to course information and materials.
 
+## Expectation of In-Person Participation
 
+The course heavily emphasizes required in-person activities, including student-led presentations and discussions.
+Full engagement with and contribution in group project activities also requires in-person participation.
+In-person participation is therefore a required component of the course,
+will be included in participation grading,
+and can also impact grading of other course activities.
+Remote participation will not be supported.
+
+### COVID-19 Safety, Absences, Recordings, and Zoom
+
+There may be reasons you cannot or should not participate in-person, including COVID-19 exposure or symptoms.
+Our goal is for this course to provide an opportunity for learning without undermining safety,
+and we all share responsibility for preserving safety of this learning environment.
+Please review and adhere to COVID-19 related guidance, including:
+
+<CourseDataLink linkKey={courseData.linkUniversityCovidGuidelines} outerComponent="p"/>
+
+If you will be absent for any reason, contact the course staff by email before class.
+We will track absence-related communication as part of the expectation of in-person participation,
+and we will do our best to be accommodating amidst requirements and expectations of the course.
+
+We will aim to record course sessions (e.g., unless a guest indicates they do not want to be recorded).
+Recorded sessions will be available for review within
+<CourseDataLink linkKey={courseData.linkCanvas}>Canvas</CourseDataLink>.
+However, we expect recordings will be of relatively poor quality
+and they are obviously an incomplete proxy for a discussion-focused course.
+Nevertheless, recording may sometimes be the best available option.
+
+We may also use Zoom as an accommodation (e.g., due to illness, due to requirements of a guest).
+Zoom participation will use meeting information provided by email and in
+<CourseDataLink linkKey={courseData.linkCanvas}>Canvas</CourseDataLink>.
+
+## Accommodations and University Policies
+
+Additional university policies apply
+(e.g., regarding Academic Integrity, Conduct, Disability Resources, Face Coverings, Religious Accommodations):
+
+<CourseDataLink linkKey={courseData.linkUniversitySyllabusGuidelines} outerComponent="p"/>
+
+Please do not hesitate to contact the course staff regarding these or any other accommodations.
+We are happy that you are here and want to support your engagement in this learning environment.
 
 ## Contributing
 
 This course website lives on GitHub:
 
 <CourseDataLink linkKey={courseData.linkGitHub} outerComponent="p"/>
+
+
+
 
 
 {/*
@@ -139,15 +170,6 @@ You might choose to design and implement a new piece of HCI technology,
 or you might choose to design and execute an appropriately compelling study with HCI research implications.
 
 We will emphasize learning through discussion and feedback in all aspects of the course.
-
-
-Class may be conducted via Zoom if necessary
-(e.g., due to requirements of a guest, due to instructor illness),
-which will be indicated in the
-<SiteLink linkKey={SiteLinks.calendarTop} />.
-We also may support participation via Zoom as an accommodation (e.g., due to illness).
-Zoom participation will use meeting information provided by email and in
-<CourseStoreLink linkKey="linkCanvas">Canvas</CourseStoreLink>.
 
 ## Assignments
 
@@ -198,40 +220,11 @@ The overall course grade will be computed as follows:
 <adjust grades based on contribution>
 
 
-## Wellness and Safety
 
-Our goal is for this course to provide an opportunity for learning without undermining wellness or safety.
 
-Consistent with university guidance and policies, this is an in-person course.
-Class may be conducted via Zoom when indicated in the <SiteLink linkKey={SiteLinks.calendarTop} />
-(e.g., due to requirements of a guest, due to instructor illness).
 
-This course heavily emphasizes discussion and participation.
-In-person attendance is generally expected and is part of participation grading,
-but there may be reasons you cannot or should not attend in-person (e.g., COVID symptoms, COVID exposure).
-In these circumstances, contact the course staff.
-Prior to class, we will accept email indicating that a student cannot attend for reasons of wellness or safety.
-We will work to ensure this does not negatively impact students (e.g., in their participation grade).
-If you are unsure whether you should attend, please reach out and know that we will do our best to be accommodating.
-Our goal is to encourage and support you in decisions that preserve safety.
 
-We will aim to record course sessions (e.g., unless a guest indicates they do not want to be recorded).
-Recorded sessions will be made available for asynchronous review within
-<CourseStoreLink linkKey="linkCanvas">Canvas</CourseStoreLink>.
-However, we expect recordings will be of relatively poor quality
-and they are obviously an incomplete proxy for a discussion-focused course.
-Nevertheless, recording may sometimes be the best available option relative to our wellness and safety goals.
 
-We also welcome any additional feedback in how we can best structure this course while ensuring this goal.
-
-## Accommodations and University Policies
-
-Additional university policies apply
-(e.g., regarding Academic Integrity, Conduct, Disability Resources, Face Coverings, Religious Accommodations):
-
-<CourseStoreLink outerComponent="p" linkKey='linkUniversitySyllabusGuidelines' />
-
-Please do not hesitate to contact the course staff regarding these or any other accommodations.
 
 
 
@@ -364,48 +357,5 @@ Requests will only be considered within 7 days of the release of a grade.
 Upon calculation of final grades, we will explicitly check for any particularly unfortunate effects of rounding
 (e.g., adjusting a pre-rounding final grade of 3.649 to instead give a 3.7).
 This is intended to provide peace of mind that final grades were not defined by any minor point deduction.
-
-## Participation and COVID-19 Safety
-
-Our goal is for this course to provide an opportunity for learning without undermining wellness or safety.
-Active participation in activities is central to this course,
-and we all share responsibility for preserving safety of this learning environment.
-Please review and adhere to related policies, including
-[UW COVID-19 Illness and Exposure Guidance](https://www.ehs.washington.edu/covid-19-prevention-and-response/covid-19-illness-and-exposure-guidance).
-
-### Expectation of In-Person Participation
-
-The course heavily emphasizes a group project and participation in associated in-class activities.
-In-person participation is expected for both lecture and section,
-is part of participation grading,
-and can also impact grading of your contribution to the group project.
-
-### Remote Participation and Recordings
-
-There may be reasons you cannot or should not attend in-person
-(e.g., COVID exposure, COVID symptoms).
-In these circumstances, contact the course staff for permission to attend remotely.
-If you are unsure whether you should attend,
-please reach out and know that we will do our best to be accommodating.
-Our goal is to encourage and support you in decisions that preserve everybody's safety.
-
-Students with permission may attend via the Zoom link provided in <CourseStoreLink linkKey="linkCanvas">Canvas</CourseStoreLink>.
-A member of the course staff will also aim to monitor the Zoom chat for questions.
-If class splits into project group activities,
-the Zoom meeting will end and remote students should join their group
-via a video call with a member of their group.
-
-We will also use the in-room Panopto system to record lecture components of the course.
-This can support review of material, but is not a substitute for in-person activities.
-
-## Accommodations and University Policies
-
-Additional university policies apply
-(e.g., regarding Academic Integrity, Conduct, Disability Resources, Face Coverings, Religious Accommodations):
-
-<CourseStoreLink outerComponent="p" linkKey='linkUniversitySyllabusGuidelines' />
-
-Please do not hesitate to contact the course staff regarding these or any other accommodations.
-We are happy that you are here and want to support your engagement in this learning environment.
 
 */}

@@ -22,4 +22,14 @@ export const courseData = {
   linkGitHub: {
     href: "https://github.com/uwcse510/web-cse510-25wi",
   },
+
+  // Link to UW COVID guidelines.
+  linkUniversityCovidGuidelines: {
+    href: "https://www.ehs.washington.edu/covid-19-prevention-and-response/covid-19-illness-and-exposure-guidance",
+  },
+
+  // Link to UW syllabus guidelines.
+  linkUniversitySyllabusGuidelines: {
+    href: "https://registrar.washington.edu/curriculum/syllabus-guidelines",
+  }
 } as const;
