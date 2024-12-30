@@ -31,5 +31,5 @@ export const courseData = {
   // Link to UW syllabus guidelines.
   linkUniversitySyllabusGuidelines: {
     href: "https://registrar.washington.edu/curriculum/syllabus-guidelines",
-  }
+  },
 } as const;
