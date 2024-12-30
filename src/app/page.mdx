@@ -1,7 +1,6 @@
 {/*
 import { Alert } from '@mui/material';
 
-import { TBD } from "@/components/TBD";
 import { CourseStoreLink } from "@/components/links/CourseStoreLink";
 import { default as AssignmentsOverview } from "@/contentcomponents/AssignmentsOverview.mdx";
 */}
@@ -9,6 +8,7 @@ import { default as AssignmentsOverview } from "@/contentcomponents/AssignmentsO
 import { Box } from '@mui/material';
 import Image from "next-image-export-optimizer";
 
+import { TBD } from "@/components/TBD";
 import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
@@ -128,7 +128,7 @@ Please review and adhere to COVID-19 related guidance, including:
 
 <CourseDataLink linkKey={courseData.linkUniversityCovidGuidelines} outerComponent="p"/>
 
-If you will be absent for any reason, contact the course staff by email before class.
+If you will be absent for any reason, contact the course staff before class by email to the course staff list.
 We will track absence-related communication as part of the expectation of in-person participation,
 and we will do our best to be accommodating amidst requirements and expectations of the course.
 
@@ -159,7 +159,29 @@ This course website lives on GitHub:
 
 <CourseDataLink linkKey={courseData.linkGitHub} outerComponent="p"/>
 
+## Grading
 
+<TBD outerComponent="p">Overview of Grading TBD.</TBD>
+
+### Late Policy
+
+We generally expect all assignments will be submitted according to deadlines in the assignment description.
+If there is a constraint or an emergency impacting your ability to submit an assignment,
+contact the course staff before the assignment deadline by email to the course staff list.
+
+We will do our best to be accommodating amidst requirements and expectations of the course
+(e.g., expecting clear and early communication regarding any constraints,
+understanding that assignments supporting in-class discussion serve little purpose after that discussion,
+understanding that assignments support engagement and grading throughout the course).
+
+### Regrade Policy
+
+Any request for grade clarification or a re-grade must be submitted by email to the course staff list.
+Requests will only be considered within 7 days of the release of a grade.
+
+Upon calculation of final grades, we will explicitly check for any particularly unfortunate effects of rounding
+(e.g., adjusting a pre-rounding final grade of 3.649 to instead give a 3.7).
+This is intended to provide peace of mind that final grades were not defined by any minor point deduction.
 
 
 
@@ -333,29 +355,5 @@ An overall course grade will be computed as follows:
     - Final Web Post (5%)
 - __10%__: Participation
 - __25%__: Exam
-
-### Late Policy
-
-We generally expect all assignments will be submitted according to the deadline in Canvas and the assignment description.
-This is a fast-paced course, with many elements of the project depending on prior elements.
-The course staff's ability to give feedback also relies on timely submissions
-(e.g., course staff will often review submissions soon after they are submitted to be ready for course activities).
-
-If your group feels that you would really benefit from an extension,
-or if there is an emergency impacting your ability to submit an assignment,
-contact the course staff before the submission deadline.
-
-We will do our best to be flexible and work with you so that your group stays on track.
-Extensions of a few hours can often be facilitated.
-Except in extreme circumstances, we will typically not be able to give an extension of more than 1 day.
-
-### Regrade Policy
-
-Any request for grade clarification or a re-grade must be submitted via the course staff email list.
-Requests will only be considered within 7 days of the release of a grade.
-
-Upon calculation of final grades, we will explicitly check for any particularly unfortunate effects of rounding
-(e.g., adjusting a pre-rounding final grade of 3.649 to instead give a 3.7).
-This is intended to provide peace of mind that final grades were not defined by any minor point deduction.
 
 */}
