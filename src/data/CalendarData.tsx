@@ -240,7 +240,6 @@ export const calendarData: {
       title: "Introductions and Overview",
       contentNonstandard: <ContentNoReading />,
     },
-    // // Week 2
     {
       date: verifyCalendarDate("2025-01-09", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
@@ -360,10 +359,127 @@ export const calendarData: {
         />
       ),
     },
-    // {
-    //   date: verifyCalendarDate("2023-10-05", "Thu"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
+    // Week 2
+    {
+      date: verifyCalendarDate("2025-01-14", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    {
+      date: verifyCalendarDate("2025-01-16", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    // Week 3
+    {
+      date: verifyCalendarDate("2025-01-21", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    {
+      date: verifyCalendarDate("2025-01-23", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    // Week 4
+    {
+      date: verifyCalendarDate("2025-01-28", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    {
+      date: verifyCalendarDate("2025-01-30", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    // Week 5
+    {
+      date: verifyCalendarDate("2025-02-04", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    {
+      date: verifyCalendarDate("2025-02-06", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    // Week 6
+    {
+      date: verifyCalendarDate("2025-02-11", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    {
+      date: verifyCalendarDate("2025-02-13", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    // Week 7
+    {
+      date: verifyCalendarDate("2025-02-18", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    {
+      date: verifyCalendarDate("2025-02-20", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    // Week 8
+    {
+      date: verifyCalendarDate("2025-02-25", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    {
+      date: verifyCalendarDate("2025-02-27", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    // Week 9
+    {
+      date: verifyCalendarDate("2025-03-04", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    {
+      date: verifyCalendarDate("2025-03-06", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    // Week 10
+    {
+      date: verifyCalendarDate("2025-03-11", "Tue"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+    {
+      date: verifyCalendarDate("2025-03-13", "Thu"),
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "TBD",
+    },
+
+    // title: "In-Class Work on Project Proposals",
+    // contentNonstandard: <ContentNoReading />,
+
     //   title: "Contributions in Human-Computer Interaction",
     //   contentNonstandard: (
     //     <ContentContributionsInHCI
@@ -565,15 +681,8 @@ export const calendarData: {
     //       link: "https://canvas.uw.edu/files/109669330/",
     //     },
     //   ],
-    // },
-    // // Week 3
-    // {
-    //   date: verifyCalendarDate("2023-10-10", "Tue"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
-    //   title: "In-Class Work on Project Proposals",
-    //   contentNonstandard: <ContentNoReading />,
-    // },
+
+    // Week 3
     // {
     //   date: verifyCalendarDate("2023-10-12", "Thu"),
     //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
@@ -1034,28 +1143,6 @@ export const calendarData: {
   officeHours: OfficeHourCalendarItem[];
   assignments: { [key: string]: AssignmentCalendarItem };
 } = {
-  datesOfInstruction: {
-    start: verifyCalendarDate("2024-09-25", "Wed"),
-    end: verifyCalendarDate("2024-12-09", "Mon"),
-  },
-
-  holidays: [
-    {
-      type: "holiday",
-      title: "Veterans Day",
-      date: verifyCalendarDate("2024-11-11", "Mon"),
-    },
-    {
-      type: "holiday",
-      title: "Thanksgiving",
-      date: verifyCalendarDate("2024-11-28", "Thu"),
-    },
-    {
-      type: "holiday",
-      title: "Native American Heritage Day",
-      date: verifyCalendarDate("2024-11-29", "Fri"),
-    },
-  ],
 
   lectures: [
     {
