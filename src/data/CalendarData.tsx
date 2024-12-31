@@ -10,6 +10,7 @@ import { default as ContentVisionsOfHCI } from "@/content/VisionsOfHCI.mdx";
 import { SiteLinks } from "@/data/SiteLinks";
 import {
   AssignmentCalendarItem,
+  AwayCalendarItem,
   CalendarDate,
   CalendarItem,
   CalendarWeek,
@@ -94,6 +95,7 @@ export function calendarWeeks(): CalendarWeek[] {
 export function calendarItems(): CalendarItem[] {
   return [
     ...Object.values(calendarData.assignments),
+    ...calendarData.aways,
     ...calendarData.events,
     ...calendarData.holidays,
     ...calendarData.lectures,
@@ -138,6 +140,7 @@ export const calendarData: {
     end: CalendarDate;
   };
   assignments: { [key: string]: AssignmentCalendarItem };
+  aways: AwayCalendarItem[];
   events: EventCalendarItem[];
   holidays: HolidayCalendarItem[];
   lectures: LectureCalendarItem[];
@@ -215,6 +218,19 @@ export const calendarData: {
     //     "https://canvas.uw.edu/courses/1665830/assignments/8670191",
     // },
   },
+
+  aways: [
+    {
+      date: verifyCalendarDate("2025-02-06", "Thu"),
+      type: "away",
+      title: "James Away",
+    },
+    {
+      date: verifyCalendarDate("2025-02-20", "Thu"),
+      type: "away",
+      title: "Anant Away",
+    },
+  ],
 
   events: [],
 
