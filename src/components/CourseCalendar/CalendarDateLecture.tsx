@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { CalendarItemAdditionalResourceReadings } from "@/components/CourseCalendar/CalendarItemAdditionalResourceReadings";
 import { CalendarItemAssignments } from "@/components/CourseCalendar/CalendarItemAssignments";
+import { CalendarItemAways } from "@/components/CourseCalendar/CalendarItemAways";
 import { CalendarItemContentNonstandard } from "@/components/CourseCalendar/CalendarItemContentNonstandard";
 import { CalendarItemGuests } from "@/components/CourseCalendar/CalendarItemGuests";
 import { CalendarItemReadingsStandard } from "@/components/CourseCalendar/CalendarItemReadingsStandard";
@@ -11,6 +12,7 @@ import {
   CalendarDate,
   CalendarItem,
   filterAssignmentCalendarItems,
+  filterAwayCalendarItems,
   LectureCalendarItem,
 } from "@/types/CalendarData";
 import { idAnchorText } from "@/utils/idAnchorText";
@@ -47,6 +49,7 @@ export const CalendarDateLecture: React.FunctionComponent<{
   })();
 
   const assignmentCalendarItems = filterAssignmentCalendarItems(calendarItems);
+  const awayCalendarItems = filterAwayCalendarItems(calendarItems);
 
   return (
     <Grid
@@ -134,6 +137,7 @@ export const CalendarDateLecture: React.FunctionComponent<{
               }}
             >
               <CalendarItemGuests calendarItem={lectureCalendarItem} />
+              <CalendarItemAways awayCalendarItems={awayCalendarItems} />
               <CalendarItemAssignments
                 assignmentCalendarItems={assignmentCalendarItems}
               />

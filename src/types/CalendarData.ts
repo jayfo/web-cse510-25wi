@@ -88,6 +88,11 @@ export type AssignmentCalendarItem = {
 } & BaseCalendarItemDate &
   AssignmentCalendarItemSubmission;
 
+export type AwayCalendarItem = {
+  type: "away";
+  title: string;
+} & BaseCalendarItemDates;
+
 export type EventCalendarItem = {
   type: "event";
   title: string;
@@ -139,6 +144,7 @@ export type StudioCalendarItem = {
 
 export type CalendarItem =
   | AssignmentCalendarItem
+  | AwayCalendarItem
   | EventCalendarItem
   | HolidayCalendarItem
   | LectureCalendarItem
@@ -151,6 +157,14 @@ export function filterAssignmentCalendarItems(
   return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
     return calendarItemCurrent.type === "assignment";
   }) as AssignmentCalendarItem[];
+}
+
+export function filterAwayCalendarItems(
+  calendarItems: CalendarItem[],
+): AwayCalendarItem[] {
+  return calendarItems.filter((calendarItemCurrent: CalendarItem): boolean => {
+    return calendarItemCurrent.type === "away";
+  }) as AwayCalendarItem[];
 }
 
 export function filterEventCalendarItems(
