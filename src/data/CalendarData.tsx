@@ -347,6 +347,14 @@ export const calendarData: {
               },
               {
                 authorText:
+                  "Anthony LaMarca, Yatin Chawathe, Sunny Consolvo, Jeffrey Hightower, Ian Smith, James Scott, Timothy Sohn, James Howard, Jeff Hughes, Fred Potter, Jason Tabert, Pauline Powledge, Gaetano Borriello, Bill Schilit",
+                title:
+                  "Place Lab: Device Positioning Using Radio Beacons in the Wild",
+                publicationText: "Pervasive 2005",
+                link: "https://canvas.uw.edu/files/128624083/",
+              },
+              {
+                authorText:
                   "Jonathan Lester, Tanzeem Choudhury, Gaetano Borriello",
                 title:
                   "A Practical Approach to Recognizing Physical Activities",
