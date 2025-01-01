@@ -347,7 +347,7 @@ export const calendarData: {
               },
               {
                 authorText:
-                  "Anthony LaMarca, Yatin Chawathe, Sunny Consolvo, Jeffrey Hightower, Ian Smith1, James Scott, Timothy Sohn, James Howard, Jeff Hughes, Fred Potter, Jason Tabert, Pauline Powledge, Gaetano Borriello, Bill Schilit",
+                  "Anthony LaMarca, Yatin Chawathe, Sunny Consolvo, Jeffrey Hightower, Ian Smith, James Scott, Timothy Sohn, James Howard, Jeff Hughes, Fred Potter, Jason Tabert, Pauline Powledge, Gaetano Borriello, Bill Schilit",
                 title:
                   "Place Lab: Device Positioning Using Radio Beacons in the Wild",
                 publicationText: "Pervasive 2005",
