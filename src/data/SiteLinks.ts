@@ -13,9 +13,9 @@ export const SiteLinks = {
     anchor: "Assignments",
   },
 
-  assignmentsReadingsTop: {
-    href: "/assignments/readings/#readings",
-    anchor: "Readings",
+  assignmentsReadingsAndDiscussionPostsTop: {
+    href: "/assignments/readingsanddiscussionposts/#readingsanddiscussionposts",
+    anchor: "Readings and Discussion Posts",
   },
 
   calendarTop: {

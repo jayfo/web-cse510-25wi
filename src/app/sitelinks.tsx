@@ -1,16 +1,35 @@
+import * as React from "react";
+
+import { ok as assert } from "assert";
+
 import { SiteLinks } from "@/data/SiteLinks";
 
 export const SITE_LINKS = [
   SiteLinks.homeTop,
-  // SiteLinks.projectsTop,
   SiteLinks.assignmentsTop,
-  // [
-  //   SiteLinks.milestone_1_top,
-  //   SiteLinks.milestone_2_top,
-  //   SiteLinks.milestone_3_top,
-  //   SiteLinks.milestone_4_top,
-  //   SiteLinks.milestone_5_top,
-  // ],
+  [
+    {
+      href: SiteLinks.assignmentsReadingsAndDiscussionPostsTop.href,
+      anchor: (() => {
+        assert(
+          SiteLinks.assignmentsReadingsAndDiscussionPostsTop.anchor ===
+            "Readings and Discussion Posts",
+        );
+
+        return (
+          <React.Fragment>
+            Readings and
+            <br />
+            Discussion Posts
+          </React.Fragment>
+        );
+      })(),
+    },
+    //   SiteLinks.milestone_2_top,
+    //   SiteLinks.milestone_3_top,
+    //   SiteLinks.milestone_4_top,
+    //   SiteLinks.milestone_5_top,
+  ],
   SiteLinks.calendarTop,
 ];
 

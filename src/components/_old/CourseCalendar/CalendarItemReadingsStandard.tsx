@@ -15,7 +15,10 @@ export const CalendarItemReadingsStandard: React.FunctionComponent<{
         <h3>Standard Reading Format</h3>
         <p>
           As described in{" "}
-          <SiteLink linkKey={SiteLinks.assignmentsReadingsTop} />.
+          <SiteLink
+            linkKey={SiteLinks.assignmentsReadingsAndDiscussionPostsTop}
+          />
+          .
         </p>
         <p>Read the framing paper:</p>
         <ul>
