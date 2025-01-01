@@ -263,115 +263,119 @@ export const calendarData: {
       title: "Visions of Human-Computer Interaction",
       contentNonstandard: (
         <ContentVisionsOfHCI
-          readings={[
-            {
-              // Because this paper is reviewed in history discussion,
-              // text below clarifies it can be read but will not be presented
-              authorText: "Vannevar Bush",
-              title: "As We May Think",
-              publicationText: "The Atlantic, 1945",
-              link: "https://theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/",
-            },
-            {
-              authorText: "Mark Weiser",
-              title: "The Computer for the 21st Century",
-              publicationText: "Scientific American, 1991",
-              link: "https://canvas.uw.edu/files/128522123/",
-            },
-            // {
-            //   authorText:
-            //     "Roy Want, Andy Hopper, Veronica Falcão, Jonathan Gibbons",
-            //   title: "The Active Badge Location System",
-            //   publicationText: "TOIS 1992",
-            // },
-            {
-              authorText: "James D. Hollan, Scott Stornetta",
-              title: "Beyond Being There",
-              publicationText: "CHI 1992",
-              link: "https://canvas.uw.edu/files/128522136/",
-            },
-            {
-              authorText: "Pierre Wellner",
-              title: "Interacting with Paper on the DigitalDesk",
-              publicationText: "CACM 1993",
-              link: "https://canvas.uw.edu/files/128522133/",
-            },
-            {
-              authorText: "Benjamin B. Bederson, James D. Hollan",
-              title:
-                "Pad++: A Zooming Graphical Interface for Exploring Alternate Interface Physics",
-              publicationText: "UIST 1994",
-              link: "https://canvas.uw.edu/files/128522138/",
-            },
-            {
-              authorText: "Hiroshi Ishii, Brygg Ullmer",
-              title:
-                "Tangible Bits: Towards Seamless Interfaces between People, Bits and Atoms",
-              publicationText: "CHI 1997",
-              link: "https://canvas.uw.edu/files/128522130/",
-            },
-            {
-              authorText: "Eric Horvitz",
-              title: "Principles of Mixed-Initiative User Interfaces",
-              publicationText: "CHI 1999",
-              link: "https://canvas.uw.edu/files/128522135/",
-            },
-            {
-              authorText:
-                "Ken Hinckley, Jeff Pierce, Mike Sinclair, Eric Horvitz",
-              title: "Sensing Techniques for Mobile Interaction",
-              publicationText: "UIST 2000",
-              link: "https://canvas.uw.edu/files/128522137/",
-            },
-            // {
-            //   authorText: "Claudio S. Pinhanez",
-            //   title:
-            //     "The Everywhere Displays Projector: A Device to Create Ubiquitous Graphical Interfaces",
-            //   publicationText: "UbiComp 2001",
-            // },
-            {
-              authorText: "Saul Greenberg, Chester Fitchett",
-              title:
-                "Phidgets: Easy Development of Physical Interfaces through Physical Widgets",
-              publicationText: "UIST 2001",
-              link: "https://canvas.uw.edu/files/128522141/",
-            },
-            {
-              authorText:
-                "Roy Want, Trevor Pering, Gunner Danneels, Muthu Kumar, Murali Sundar, John Light",
-              title:
-                "The Personal Server: Changing the Way We Think about Ubiquitous Computing",
-              publicationText: "UbiComp 2002",
-              link: "https://canvas.uw.edu/files/128522131/",
-            },
-            {
-              authorText:
-                "Jonathan Lester, Tanzeem Choudhury, Gaetano Borriello",
-              title: "A Practical Approach to Recognizing Physical Activities",
-              publicationText: "Pervasive 2006",
-              link: "https://canvas.uw.edu/files/128522134/",
-            },
-            {
-              authorText: "Bret Victor",
-              title:
-                "Magic Ink: Information Software and the Graphical Interface",
-              publicationText: "2006",
-              link: "http://worrydream.com/MagicInk/",
-            },
-            {
-              authorText:
-                "Michael S. Bernstein, Greg Little, Robert C. Miller, Björn Hartmann, Mark S. Ackerman, David R. Karger, David Crowell, Katrina Panovich",
-              title: "Soylent: A Word Processor with a Crowd Inside",
-              publicationText: "UIST 2010",
-              link: "https://canvas.uw.edu/files/128522142/",
-            },
-            {
-              authorText: "Chris Harrison, Hrvoje Benko, and Andrew D. Wilson",
-              title: "OmniTouch: Wearable Multitouch Interaction Everywhere",
-              publicationText: "UIST 2011",
-              link: "https://canvas.uw.edu/files/128558642/",
-            },
-          ]}
+          readings={{
+            visions: [
+              {
+                // Because this paper is reviewed in history discussion,
+                // text below clarifies it can be read but will not be presented
+                authorText: "Vannevar Bush",
+                title: "As We May Think",
+                publicationText: "The Atlantic, 1945",
+                link: "https://theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/",
+              },
+              {
+                authorText: "Mark Weiser",
+                title: "The Computer for the 21st Century",
+                publicationText: "Scientific American, 1991",
+                link: "https://canvas.uw.edu/files/128522123/",
+              },
+              // {
+              //   authorText:
+              //     "Roy Want, Andy Hopper, Veronica Falcão, Jonathan Gibbons",
+              //   title: "The Active Badge Location System",
+              //   publicationText: "TOIS 1992",
+              // },
+              {
+                authorText: "James D. Hollan, Scott Stornetta",
+                title: "Beyond Being There",
+                publicationText: "CHI 1992",
+                link: "https://canvas.uw.edu/files/128522136/",
+              },
+              {
+                authorText: "Pierre Wellner",
+                title: "Interacting with Paper on the DigitalDesk",
+                publicationText: "CACM 1993",
+                link: "https://canvas.uw.edu/files/128522133/",
+              },
+              {
+                authorText: "Benjamin B. Bederson, James D. Hollan",
+                title:
+                  "Pad++: A Zooming Graphical Interface for Exploring Alternate Interface Physics",
+                publicationText: "UIST 1994",
+                link: "https://canvas.uw.edu/files/128522138/",
+              },
+              {
+                authorText: "Hiroshi Ishii, Brygg Ullmer",
+                title:
+                  "Tangible Bits: Towards Seamless Interfaces between People, Bits and Atoms",
+                publicationText: "CHI 1997",
+                link: "https://canvas.uw.edu/files/128522130/",
+              },
+              {
+                authorText: "Eric Horvitz",
+                title: "Principles of Mixed-Initiative User Interfaces",
+                publicationText: "CHI 1999",
+                link: "https://canvas.uw.edu/files/128522135/",
+              },
+              {
+                authorText:
+                  "Ken Hinckley, Jeff Pierce, Mike Sinclair, Eric Horvitz",
+                title: "Sensing Techniques for Mobile Interaction",
+                publicationText: "UIST 2000",
+                link: "https://canvas.uw.edu/files/128522137/",
+              },
+              // {
+              //   authorText: "Claudio S. Pinhanez",
+              //   title:
+              //     "The Everywhere Displays Projector: A Device to Create Ubiquitous Graphical Interfaces",
+              //   publicationText: "UbiComp 2001",
+              // },
+              {
+                authorText: "Saul Greenberg, Chester Fitchett",
+                title:
+                  "Phidgets: Easy Development of Physical Interfaces through Physical Widgets",
+                publicationText: "UIST 2001",
+                link: "https://canvas.uw.edu/files/128522141/",
+              },
+              {
+                authorText:
+                  "Roy Want, Trevor Pering, Gunner Danneels, Muthu Kumar, Murali Sundar, John Light",
+                title:
+                  "The Personal Server: Changing the Way We Think about Ubiquitous Computing",
+                publicationText: "UbiComp 2002",
+                link: "https://canvas.uw.edu/files/128522131/",
+              },
+              {
+                authorText:
+                  "Jonathan Lester, Tanzeem Choudhury, Gaetano Borriello",
+                title:
+                  "A Practical Approach to Recognizing Physical Activities",
+                publicationText: "Pervasive 2006",
+                link: "https://canvas.uw.edu/files/128522134/",
+              },
+              {
+                authorText: "Bret Victor",
+                title:
+                  "Magic Ink: Information Software and the Graphical Interface",
+                publicationText: "2006",
+                link: "http://worrydream.com/MagicInk/",
+              },
+              {
+                authorText:
+                  "Michael S. Bernstein, Greg Little, Robert C. Miller, Björn Hartmann, Mark S. Ackerman, David R. Karger, David Crowell, Katrina Panovich",
+                title: "Soylent: A Word Processor with a Crowd Inside",
+                publicationText: "UIST 2010",
+                link: "https://canvas.uw.edu/files/128522142/",
+              },
+              {
+                authorText:
+                  "Chris Harrison, Hrvoje Benko, and Andrew D. Wilson",
+                title: "OmniTouch: Wearable Multitouch Interaction Everywhere",
+                publicationText: "UIST 2011",
+                link: "https://canvas.uw.edu/files/128558642/",
+              },
+            ],
+          }}
         />
       ),
     },
@@ -380,371 +384,166 @@ export const calendarData: {
       date: verifyCalendarDate("2025-01-14", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Contributions in Human-Computer Interaction",
+      contentNonstandard: (
+        <ContentContributionsInHCI
+          readings={{
+            framing: {
+              authorText: "Jacob O. Wobbrock, Julie A. Kientz",
+              title: "Research Contributions in Human-Computer Interaction",
+              publicationText: "Interactions, 2016",
+              // link: "https://canvas.uw.edu/files/109669373/",
+            },
+          }}
+        />
+      ),
+      //   additionalResourceReadings: [
+      //     {
+      //       authorText: "Herbert A. Simon",
+      //       title: "The Science of Design: Creating the Artificial",
+      //       publicationText: "Design Issues, 1988",
+      //       link: "https://canvas.uw.edu/files/109669331/",
+      //     },
+      //     {
+      //       authorText: "Donald E. Stokes",
+      //       title:
+      //         "Pasteur’s Quadrant: Basic Science and Technological Innovation",
+      //       publicationText: "Book Chapter, 1997",
+      //       link: "https://canvas.uw.edu/files/109669330/",
+      //     },
+      //   ],
     },
     {
       date: verifyCalendarDate("2025-01-16", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "In-Class Time for Project Groups",
+      contentNonstandard: <ContentNoReading />,
     },
     // Week 3
     {
       date: verifyCalendarDate("2025-01-21", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Human-Computer Interaction History",
+      contentNonstandard: <ContentNoReading />,
+      additionalResourceReadings: [
+        {
+          authorText: "Jonathan Grudin",
+          title:
+            "A Moving Target - The Evolution of Human-Computer Interaction",
+          publicationText: "Book Chapter",
+          // link: "https://canvas.uw.edu/files/109846167/",
+        },
+      ],
     },
     {
       date: verifyCalendarDate("2025-01-23", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Usability Evaluation Considered Harmful",
+      readingsStandard: {
+        framing: {
+          authorText: "Saul Greenberg, Bill Buxton",
+          title: "Usability Evaluation Considered Harmful (Some of the Time)",
+          publicationText: "CHI 2008",
+          // link: "https://canvas.uw.edu/files/109846204/",
+        },
+        instances: [
+          {
+            authorText: "Dan R. Olsen, Jr",
+            title: "Evaluating User Interface Systems Research",
+            publicationText: "UIST 2007",
+            // link: "https://canvas.uw.edu/files/109846207/",
+          },
+          {
+            authorText: "James Fogarty",
+            title: "Code and Contribution in Interactive Systems Research",
+            publicationText:
+              "CHI 2017 Workshop on #HCI.Tools: Strategies and Best Practices for Designing, Evaluating, and Sharing Technical HCI Toolkits",
+            // link: "https://canvas.uw.edu/files/109846202/",
+          },
+        ],
+      },
     },
     // Week 4
     {
       date: verifyCalendarDate("2025-01-28", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Research Topic: TBD",
     },
     {
       date: verifyCalendarDate("2025-01-30", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Research Topic: TBD",
     },
     // Week 5
     {
       date: verifyCalendarDate("2025-02-04", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Research Topic: TBD",
     },
     {
       date: verifyCalendarDate("2025-02-06", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
-    },
-    // Week 6
-    {
-      date: verifyCalendarDate("2025-02-11", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      type: "lecture",
-      title: "TBD",
-    },
-    {
-      date: verifyCalendarDate("2025-02-13", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      type: "lecture",
-      title: "TBD",
+      title: "Research Topic: TBD",
     },
     // Week 7
     {
       date: verifyCalendarDate("2025-02-18", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Research Topic: TBD",
     },
     {
       date: verifyCalendarDate("2025-02-20", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Research Topic: TBD",
     },
     // Week 8
     {
       date: verifyCalendarDate("2025-02-25", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Research Topic: TBD",
     },
     {
       date: verifyCalendarDate("2025-02-27", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
-    },
-    // Week 9
-    {
-      date: verifyCalendarDate("2025-03-04", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      type: "lecture",
-      title: "TBD",
-    },
-    {
-      date: verifyCalendarDate("2025-03-06", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      type: "lecture",
-      title: "TBD",
+      title: "Research Topic: TBD",
     },
     // Week 10
     {
       date: verifyCalendarDate("2025-03-11", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Research Topic: TBD",
     },
     {
       date: verifyCalendarDate("2025-03-13", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "TBD",
+      title: "Research Topic: TBD",
+    },
+    // Project Meetings, Week 6 and Week 9
+    {
+      dates: [
+        verifyCalendarDate("2025-02-11", "Tue"),
+        verifyCalendarDate("2025-02-13", "Thu"),
+        verifyCalendarDate("2025-03-04", "Tue"),
+        verifyCalendarDate("2025-03-06", "Thu"),
+      ],
+      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+      type: "lecture",
+      title: "Project Milestone Meetings",
     },
 
-    // title: "In-Class Work on Project Proposals",
-    // contentNonstandard: <ContentNoReading />,
-
-    //   title: "Contributions in Human-Computer Interaction",
-    //   contentNonstandard: (
-    //     <ContentContributionsInHCI
-    //       readings={{
-    //         framing: {
-    //           authorText: "Jacob O. Wobbrock, Julie A. Kientz",
-    //           title: "Research Contributions in Human-Computer Interaction",
-    //           publicationText: "Interactions, 2016",
-    //           link: "https://canvas.uw.edu/files/109669373/",
-    //         },
-    //         contributions: {
-    //           Empirical: [
-    //             {
-    //               authorText: "Rosanna Bellini",
-    //               title:
-    //                 "Paying the Price: When Intimate Partners Use Technology for Financial Harm",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581101",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Ananya Bhattacharjee, Joseph Jay Williams, Jonah Meyerhoff, Harsh Kumar, Alex Mariakakis, Rachel Kornfield",
-    //               title:
-    //                 "Investigating the Role of Context in the Delivery of Text Messages for Supporting Psychological Wellbeing",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3580774",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Ishita Chordia, Lena-Phuong Tran, Tala June Tayebi, Emily Parrish, Sheena Erete, Jason Yip, Alexis Hiniker",
-    //               title:
-    //                 "Deceptive Design Patterns in Safety Technologies: A Case Study of the Citizen App",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581258",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Eunkyung Jo, Daniel A. Epstein, Hyunhoon Jung, Young-Ho Kim",
-    //               title:
-    //                 "Understanding the Benefits and Challenges of Deploying Conversational AI Leveraging Large Language Models for Public Health Intervention",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581503",
-    //             },
-    //           ],
-    //           Artifact: [
-    //             {
-    //               authorText:
-    //                 "Joseph Chee Chang, Amy X. Zhang, Jonathan Bragg, Andrew Head, Kyle Lo, Doug Downey, Daniel S. Weld",
-    //               title:
-    //                 "CiteSee: Augmenting Citations in Scientific Papers with Persistent and Personalized Historical Context",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3580847",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Damien Masson, Sylvain Malacria, Daniel Vogel, Edward Lank, Géry Casiez",
-    //               title:
-    //                 "ChartDetective: Easy and Accurate Interactive Data Extraction from Complex Vector Charts",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581113",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Steven Moore, Q. Vera Liao, Hariharan Subramonyam",
-    //               title:
-    //                 "FAIlureNotes: Supporting Designers in Understanding the Limits of AI Models for Computer Vision Tasks",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581242",
-    //             },
-    //           ],
-    //           Methodological: [
-    //             {
-    //               authorText:
-    //                 "Paul T. Chiou, Ali S. Alotaibi, William G.J. Halfond",
-    //               title:
-    //                 "BAGEL: An Approach to Automatically Detect Navigation-Based Web Accessibility Barriers for Keyboard Users",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3580749",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Laura J Perovich, Bernice Rogowitz, Victoria Crabb, Jack Vogelsang, Sara Hartleben, Dietmar Offenhuber",
-    //               title:
-    //                 "The Tactile Dimension: A Method for Physicalizing Touch Behaviors",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581137",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Lara Reime, Vasiliki Tsaknaki, Marisa Leavitt Cohn",
-    //               title:
-    //                 "Walking Through Normativities of Reproductive Bodies: A Method for Critical Analysis of Tracking Applications",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581450",
-    //             },
-    //           ],
-    //           Theoretical: [
-    //             {
-    //               authorText:
-    //                 "Rachael Garrett, Kristina Popova, Claudia Núñez-Pacheco, Thorhildur Asgeirsdottir, Airi Lampinen, Kristina Höök",
-    //               title:
-    //                 "Felt Ethics: Cultivating Ethical Sensibility in Design Practice",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3580875",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Beat Rossmy, Nađa Terzimehić, Tanja Döring, Daniel Buschek, Alexander Wiethoff",
-    //               title:
-    //                 "Point of no Undo: Irreversible Interactions as a Design Strategy",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581433",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Carol F Scott, Gabriela Marcu, Riana Elyse Anderson, Mark W Newman, Sarita Schoenebeck",
-    //               title:
-    //                 "Trauma-Informed Social Media: Towards Solutions for Reducing and Healing Online Harm",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581512",
-    //             },
-    //           ],
-    //           "Benchmark / Dataset": [
-    //             {
-    //               authorText:
-    //                 "Amanda Baughan, Xuezhi Wang, Ariel Liu, Allison Mercurio, Jilin Chen, Xiao Ma",
-    //               title:
-    //                 "A Mixed-Methods Approach to Understanding User Trust after Voice Assistant Failures",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581152",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Saelyne Yang, Sangkyung Kwak, Juhoon Lee, Juho Kim",
-    //               title:
-    //                 "Beyond Instructions: A Taxonomy of Information Types in How-to Videos",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581126",
-    //             },
-    //             {
-    //               authorText: "Zehua Zeng, Leilani Battle",
-    //               title:
-    //                 "A Review and Collation of Graphical Perception Knowledge for Visualization Recommendation",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581349",
-    //             },
-    //           ],
-    //           Survey: [
-    //             {
-    //               authorText:
-    //                 "Alyxander Burns, Christiana Lee, Ria Chawla, Evan Peck, Narges Mahyar",
-    //               title:
-    //                 "Who Do We Mean When We Talk About Visualization Novices?",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581524",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Yiqun T. Chen, Angela D. R. Smith, Katharina Reinecke, Alexandra To",
-    //               title:
-    //                 "Why, When, and From Whom: Considerations for Collecting and Reporting Race and Ethnicity Data in HCI",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581122",
-    //             },
-    //             {
-    //               authorText:
-    //                 "Yixuan Zhang, Joseph D Gaggiano, Nutchanon Yongsatianchot, Nurul M Suhaimi, Miso Kim, Yifan Sun, Jacqueline Griffin, Andrea G Parker",
-    //               title:
-    //                 "What Do We Mean When We Talk about Trust in Social Media? A Systematic Review",
-    //               publicationText: "CHI 2023",
-    //               link: "https://doi.org/10.1145/3544548.3581019",
-    //             },
-    //           ],
-    //           Opinion: [
-    //             {
-    //               authorText: "Ron Wakkary, Doenja Oogjes, Armi Behzad",
-    //               title:
-    //                 "Two Years or More of Co-speculation: Polylogues of Philosophers, Designers, and a Tilting Bowl",
-    //               publicationText: "TOCHI, 2022",
-    //               link: "https://doi.org/10.1145/3514235",
-    //             },
-    //           ],
-    //         },
-    //       }}
-    //     />
-    //   ),
-    //   additionalResourceReadings: [
-    //     {
-    //       authorText: "Herbert A. Simon",
-    //       title: "The Science of Design: Creating the Artificial",
-    //       publicationText: "Design Issues, 1988",
-    //       link: "https://canvas.uw.edu/files/109669331/",
-    //     },
-    //     {
-    //       authorText: "Donald E. Stokes",
-    //       title:
-    //         "Pasteur’s Quadrant: Basic Science and Technological Innovation",
-    //       publicationText: "Book Chapter, 1997",
-    //       link: "https://canvas.uw.edu/files/109669330/",
-    //     },
-    //   ],
-
-    // Week 3
-    // {
-    //   date: verifyCalendarDate("2023-10-12", "Thu"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
-    //   title: "Human-Computer Interaction History",
-    //   contentNonstandard: <ContentNoReading />,
-    //   additionalResourceReadings: [
-    //     {
-    //       authorText: "Jonathan Grudin",
-    //       title:
-    //         "A Moving Target - The Evolution of Human-Computer Interaction",
-    //       publicationText: "Book Chapter",
-    //       link: "https://canvas.uw.edu/files/109846167/",
-    //     },
-    //   ],
-    // },
-    // // Week 4
-    // {
-    //   date: verifyCalendarDate("2023-10-17", "Tue"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
-    //   title: "Usability Evaluation Considered Harmful",
-    //   readingsStandard: {
-    //     framing: {
-    //       authorText: "Saul Greenberg, Bill Buxton",
-    //       title: "Usability Evaluation Considered Harmful (Some of the Time)",
-    //       publicationText: "CHI 2008",
-    //       link: "https://canvas.uw.edu/files/109846204/",
-    //     },
-    //     instances: [
-    //       {
-    //         authorText: "Dan R. Olsen, Jr",
-    //         title: "Evaluating User Interface Systems Research",
-    //         publicationText: "UIST 2007",
-    //         link: "https://canvas.uw.edu/files/109846207/",
-    //       },
-    //       {
-    //         authorText: "James Fogarty",
-    //         title: "Code and Contribution in Interactive Systems Research",
-    //         publicationText:
-    //           "CHI 2017 Workshop on #HCI.Tools: Strategies and Best Practices for Designing, Evaluating, and Sharing Technical HCI Toolkits",
-    //         link: "https://canvas.uw.edu/files/109846202/",
-    //       },
-    //     ],
-    //   },
-    // },
     // {
     //   date: verifyCalendarDate("2023-10-19", "Thu"),
     //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
@@ -1125,19 +924,6 @@ export const calendarData: {
     //     ],
     //   },
     // },
-    //
-    // // Project Milestone Presentations, Week 6 and Week 10
-    // {
-    //   dates: [
-    //     verifyCalendarDate("2023-10-31", "Tue"),
-    //     verifyCalendarDate("2023-11-02", "Thu"),
-    //     verifyCalendarDate("2023-11-28", "Tue"),
-    //     verifyCalendarDate("2023-11-30", "Thu"),
-    //   ],
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
-    //   title: "Project Milestone Presentations",
-    // },
   ],
 
   officeHours: [],
@@ -1159,101 +945,6 @@ export const calendarData: {
   officeHours: OfficeHourCalendarItem[];
   assignments: { [key: string]: AssignmentCalendarItem };
 } = {
-
-  lectures: [
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-09-26", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Introduction and Overview",
-      slides: "https://canvas.uw.edu/files/124292361/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-10-01", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Introduction to Critique",
-      slides: "https://canvas.uw.edu/files/124470186/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-10-03", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Design Diamond",
-      slides: "https://canvas.uw.edu/files/124602714/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-10-08", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Design Research",
-      slides: "https://canvas.uw.edu/files/124808608/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-10-10", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Design of Everyday Things",
-      slides: "https://canvas.uw.edu/files/125129909/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-10-15", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Design of Everyday Things",
-      slides: "https://canvas.uw.edu/files/125129909/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-10-17", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Task Analysis",
-      slides: "https://canvas.uw.edu/files/125310883/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-10-22", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Storyboarding and Paper Prototyping",
-      slides: "https://canvas.uw.edu/files/125517925/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-11-05", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Models and Human Performance",
-      slides: "https://canvas.uw.edu/files/126193990/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-11-07", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Inspection and Usability Testing",
-      slides: "https://canvas.uw.edu/files/126329737/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-11-12", "Tue"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Patterns and Interface Implementation",
-      slides: "https://canvas.uw.edu/files/126569767/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-11-14", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "History",
-      slides: "https://canvas.uw.edu/files/126691264/",
-    },
-    {
-      type: "lecture",
-      date: verifyCalendarDate("2024-11-21", "Thu"),
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Designing for Diverse Needs",
-      slides: "https://canvas.uw.edu/files/127038308/",
-    },
-  ],
-
   studios: [
     {
       type: "studio",
