@@ -8,6 +8,7 @@ export const SITE_LINKS = [
   SiteLinks.homeTop,
   SiteLinks.assignmentsTop,
   [
+    // Custom formatting for SiteLinks.assignmentsReadingsAndDiscussionPostsTop
     {
       href: SiteLinks.assignmentsReadingsAndDiscussionPostsTop.href,
       anchor: (() => {
@@ -25,7 +26,7 @@ export const SITE_LINKS = [
         );
       })(),
     },
-    //   SiteLinks.milestone_2_top,
+    SiteLinks.assignmentsProjectTop,
     //   SiteLinks.milestone_3_top,
     //   SiteLinks.milestone_4_top,
     //   SiteLinks.milestone_5_top,
