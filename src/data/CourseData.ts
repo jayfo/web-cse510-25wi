@@ -7,15 +7,27 @@ export type CourseDataLinkKey = {
   anchor?: React.ReactNode;
 };
 
+const LINK_CANVAS = "https://canvas.uw.edu/courses/1786160";
+
 export const courseData = {
-  // Link to course Canvas.
+  // Link to Canvas.
   linkCanvas: {
-    href: "https://canvas.uw.edu/courses/1786160",
+    href: LINK_CANVAS,
   },
 
-  // Link to discussion in course Canvas.
+  // Link to Canvas discussion.
   linkCanvasDiscussion: {
-    href: "https://canvas.uw.edu/courses/1786160/discussion_topics",
+    href: LINK_CANVAS + "/discussion_topics",
+  },
+
+  // Link to Canvas discussion for project ideas.
+  linkCanvasDiscussionProjectIdeas: {
+    href: LINK_CANVAS + "/discussion_topics/9383505",
+  },
+
+  // Link to Canvas file folder of project samples.
+  linkCanvasProjectProposalSamples: {
+    href: LINK_CANVAS + "/files/folder/project%20samples",
   },
 
   // Link to course GitHub.
@@ -38,9 +50,13 @@ export const courseData = {
     href: "https://drive.google.com/drive/folders/13vHGA0QND7_KURsE6gJNiPZzF26Kxk65?usp=sharing",
   },
 
+  // Link to project proposal document.
+  linkDriveProposalDocument: {
+    href: "https://docs.google.com/document/d/1-WoZWx0BROvs4wI8ZZxDCjlnZawnB_G7CCp4EoTL7Jw/edit?usp=sharing",
+  },
+
   // Link to the Visions of HCI folder.
   linkDriveVisionsOfHciFolder: {
     href: "https://drive.google.com/drive/folders/1FHNwj8cUjizBpK-KvmpmzV8PvXubnDqe?usp=sharing",
-    anchor: "01/09: Visions of HCI",
   },
 } as const;
