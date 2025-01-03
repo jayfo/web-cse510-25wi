@@ -193,16 +193,30 @@ export const calendarData: {
       //   submitCanvasLink:
       //     "https://canvas.uw.edu/courses/1665830/assignments/8670194",
     },
-    projectMilestoneMeetings: {
+    // Copy-paste needed because typing currently cannot handle "dates"
+    projectMilestoneMeetings1Tue: {
       type: "assignment",
       title: "Project Milestone Meetings",
       link: SiteLinks.assignmentsProjectTop.href,
-      dates: [
-        verifyCalendarDate("2025-02-11", "Tue"),
-        verifyCalendarDate("2025-02-13", "Thu"),
-        verifyCalendarDate("2025-03-04", "Tue"),
-        verifyCalendarDate("2025-03-06", "Thu"),
-      ],
+      date: verifyCalendarDate("2025-02-11", "Tue"),
+    },
+    projectMilestoneMeetings1Thu: {
+      type: "assignment",
+      title: "Project Milestone Meetings",
+      link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2025-02-13", "Thu"),
+    },
+    projectMilestoneMeetings2Tue: {
+      type: "assignment",
+      title: "Project Milestone Meetings",
+      link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2025-03-04", "Tue"),
+    },
+    projectMilestoneMeetings2Thu: {
+      type: "assignment",
+      title: "Project Milestone Meetings",
+      link: SiteLinks.assignmentsProjectTop.href,
+      date: verifyCalendarDate("2025-03-06", "Thu"),
     },
   },
 
