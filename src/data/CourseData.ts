@@ -55,8 +55,30 @@ export const courseData = {
     href: "https://docs.google.com/document/d/1-WoZWx0BROvs4wI8ZZxDCjlnZawnB_G7CCp4EoTL7Jw/edit?usp=sharing",
   },
 
+  // Link to project milestone meeting signup.
+  linkDriveProjectMilestoneMeetingsSignup1: {
+    href: "https://drive.google.com/drive/folders/1e-mnBEmL7hisTvzVKRe_KcwBjVVjiPhd?usp=sharing",
+  },
+
+  // Link to project milestone meeting signup.
+  linkDriveProjectMilestoneMeetingsSignup2: {
+    href: "https://drive.google.com/drive/folders/1SpeOaA27XHKa-ltZodJ3HLCNiMuMHyZ1?usp=sharing",
+  },
+
+  linkProjectFinalReportCHIFormat: {
+    href: "https://chi2024.acm.org/submission-guides/chi-publication-formats/",
+  },
+
   // Link to the Visions of HCI folder.
   linkDriveVisionsOfHciFolder: {
     href: "https://drive.google.com/drive/folders/1FHNwj8cUjizBpK-KvmpmzV8PvXubnDqe?usp=sharing",
+  },
+
+  // Reading on paper writing
+  readingWobbrockPaperWriting: {
+    authorText: "Jacob O. Wobbrock",
+    title: "Catchy Titles are Good: But Avoid Being Cute",
+    publicationText: "2015",
+    link: "https://faculty.washington.edu/wobbrock/pubs/Wobbrock-2015.pdf",
   },
 } as const;

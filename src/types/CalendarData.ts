@@ -85,7 +85,7 @@ export type AssignmentCalendarItem = {
   type: "assignment";
   title: string;
   link?: LinkHREF;
-} & BaseCalendarItemDate &
+} & BaseCalendarItemDates &
   AssignmentCalendarItemSubmission;
 
 export type AwayCalendarItem = {

@@ -1,8 +1,6 @@
-{/*
-import { FormattedReading } from "@/components/FormattedReading";
-*/}
-
 import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { FormattedReading } from "@/components/FormattedReading";
+import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
 import { CourseDataLink } from "@/components/links/CourseDataLink";
@@ -55,7 +53,7 @@ Proposals consist of a short document, prepared with feedback prior to the due d
 
 ### Proposal Document
 
-Within the provided Google Doc, using the provided template, prepare proposal addressing the following points:
+Within the provided document, using the provided template, prepare a proposal addressing the following points:
 
 - **Abstract**:
 
@@ -110,16 +108,16 @@ The page limit does not apply to references, which may be an additional page.
 
 ### Proposal Preparation and Early Feedback
 
-Prepare your proposal in this shared Google Doc:
+Prepare your proposal in this shared document:
 
 <CourseDataLink outerComponent="p" linkKey={courseData.linkDriveProposalDocument} />
 
-The use of a shared Google Doc for proposal preparation is intended to support early feedback.
-Feel free to use Google Doc comment functionality to tag staff and classmates with questions.
+The use of a shared document for proposal preparation is intended to support early feedback.
+Feel free to use comments to tag staff and classmates with questions.
 We will also encourage you to review and comment on each other's proposals.
 
 We have also dedicated time for in-class proposal preparation and review.
-We expect proposals will be nearly complete at this time, so as to receive maximum benefit from feedback.
+Proposals that are already beginning to develop will receive maximum benefit from feedback in this time.
 
 ### Project Ideas
 
@@ -141,78 +139,84 @@ Be sure to engage with the guidance on desired proposal format in this offering.
 
 Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.projectProposal} />.
 
-Submit your final proposal document in PDF format.
+Submit your proposal document in PDF format:
 
 <AssignmentSubmitCanvasLink outerComponent="p" assignmentKey={calendarData.assignments.projectProposal} />
 
 ## Milestone Reports
 
-<UnderDevelopment display={true} />
-
-## Final Report
-
-<UnderDevelopment display={true} />
-
-{/*
-
-
-## Milestone Reports
-
 Two milestone reports serve as a check on the trajectory of your project
-and an opportunity for feedback and guidance from staff and classmates.
+and an opportunity for feedback, guidance, and questions.
 Convey the state of your project and your plans for the remainder of the quarter.
 
-Milestone reports consist of a short document and a short in-class presentation.
+Milestone reports consist of a short document and an associated meeting with course staff.
 
-### Milestone Document
+You will also be asked to review milestone reports submitted by other groups
+and to share potential insight related to questions they have or advice they seek.
 
-Prepare a 1 page document addressing the following points:
+### Milestone Report
 
-- What you have done for this milestone, discussing current progress relative to previously stated plans.
-- What you will do before your next milestone, including any revisions based on your status or findings.
-- Any areas where you could use advice or are blocked.
+Within the provided document, using the provided template, prepare a report addressing the following points:
 
-### Milestone Presentation
+- **Current Progress**
 
-Prepare a 3 to 4 slide in-class presentation to support a class conversation about the state of your project.
+  What you have done for this milestone, discussing current progress relative to previously stated plans.
+
+- **Planned Activities**
+
+  What you will do before your next milestone, including any revisions to your plans based on your status or findings.
+
+- **Desired Feedback**
+
+  Any areas where you have questions, could use advice, or would like ideas.
 
 This is an opportunity for feedback from staff and classmates.
-Our primary goal is feedback, not a formal presentation.
+Our primary goal is feedback that helps you in the remaining aspects of the project.
 Please be appropriately candid, thoughtful, and engaged.
-You will gain maximum value from this presentation by
-considering how it can structure a conversation that is most useful to your project team.
-Your presentation should cover the same information as the document,
-as you can not assume classmates have read the document.
+You will gain maximum value from this report by
+considering how it can structure a conversation that is most useful to your project group.
 
-Be sure to consider
-<CourseDataLink linkKey={courseData.linkAccessiblePresentations} />.
+### Milestone Report Format
 
-### Milestone Submission
+Report should be 2 pages, using the same format as the provided template (i.e., an 11-point Arial format).
+
+The page limit does not apply to figures or images.
+To ensure the text of your report remains within the page limit,
+place all figures or images after the 2 pages of report text (e.g., referencing them from text as "Figure 1").
+
+The page limit does not apply to references, which may be an additional page.
+
+### Milestone Report Submission
 
 Milestone Report 1 Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.projectMilestoneReport1} />.
 
 Milestone Report 2 Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.projectMilestoneReport2} />.
 
-Submit your milestone document and milestone presentation in PDF format.
-Sign up for a presentation slot.
+Submit your milestone report in PDF format:
 
-- Milestone 1 document and presentation:
+- Milestone Report 1:
 
   <AssignmentSubmitCanvasLink outerComponent="p" assignmentKey={calendarData.assignments.projectMilestoneReport1} />
 
-- Milestone 1 presentation signup:
-
-  <CourseDataLink outerComponent="p" linkKey={courseData.linkProjectMilestoneReport1Signup} />
-
-- Milestone 2 document and presentation:
+- Milestone Report 2:
 
   <AssignmentSubmitCanvasLink outerComponent="p" assignmentKey={calendarData.assignments.projectMilestoneReport2} />
 
-- Milestone 2 presentation signup:
+### Milestone Meetings
 
-  <CourseDataLink outerComponent="p" linkKey={courseData.linkProjectMilestoneReport2Signup} />
+Sign up for a meeting with course staff to discuss your project milestone report:
+
+- Milestone Meeting 1:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkDriveProjectMilestoneMeetingsSignup1} />
+
+- Milestone Meeting 2:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkDriveProjectMilestoneMeetingsSignup2} />
 
 ## Final Report
+
+<UnderDevelopment display={true} />
 
 Prepare a final report that is 10 to 20 pages in length, excluding references.
 
@@ -226,6 +230,8 @@ Your final report should be presented in the same general structure as the paper
 
 Write according to the content you have.
 Be appropriately thorough and precise in your presentation, but do not needlessly pad your text.
+
+<TBD outerComponent="p">Define requirements for an additional reflection</TBD>
 
 Format your report according to the current single-column CHI format:
 
@@ -242,5 +248,3 @@ Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.projectFinal
 Submit your final report document in PDF format:
 
 <AssignmentSubmitCanvasLink outerComponent="p" assignmentKey={calendarData.assignments.projectFinalReport} />
-
-*/}
