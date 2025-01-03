@@ -165,7 +165,7 @@ export const calendarData: {
     },
     projectMilestoneReport1: {
       type: "assignment",
-      title: "Project Milestone Report 1",
+      title: "Project Milestone Report",
       link: SiteLinks.assignmentsProjectTop.href,
       date: verifyCalendarDate("2025-02-09", "Sun"),
       submission: "canvas",
@@ -175,7 +175,7 @@ export const calendarData: {
     },
     projectMilestoneReport2: {
       type: "assignment",
-      title: "Project Milestone Report 2",
+      title: "Project Milestone Report",
       link: SiteLinks.assignmentsProjectTop.href,
       date: verifyCalendarDate("2025-03-02", "Sun"),
       submission: "canvas",
@@ -192,6 +192,17 @@ export const calendarData: {
       submitCanvasTime: "5:00pm",
       //   submitCanvasLink:
       //     "https://canvas.uw.edu/courses/1665830/assignments/8670194",
+    },
+    projectMilestoneMeetings: {
+      type: "assignment",
+      title: "Project Milestone Meetings",
+      link: SiteLinks.assignmentsProjectTop.href,
+      dates: [
+        verifyCalendarDate("2025-02-11", "Tue"),
+        verifyCalendarDate("2025-02-13", "Thu"),
+        verifyCalendarDate("2025-03-04", "Tue"),
+        verifyCalendarDate("2025-03-06", "Thu"),
+      ],
     },
   },
 
