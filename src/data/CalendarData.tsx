@@ -493,7 +493,37 @@ export const calendarData: {
       date: verifyCalendarDate("2025-02-04", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "Research Topic: TBD",
+      title: "Research Topic: Designing with Children",
+      guest: {
+        name: "Jason Yip",
+        link: "https://bigyipper.com/",
+      },
+      // readingsStandard: {
+      //   framing: {
+      //     authorText: "Allison Druin",
+      //     title: "The Role of Children in the Design of New Technology",
+      //     publicationText: "Behaviour and Information Technology, 2002",
+      //     link: "https://canvas.uw.edu/files/109846155/",
+      //   },
+      //   instances: [
+      //     {
+      //       authorText:
+      //         "Kung Jin Lee, Wendy Roldan, Tian Qi Zhu, Harkiran Kaur Saluja, Sungmin Na, Britnie Chin, Yilin Zeng, Jin Ha Lee, Jason Yip",
+      //       title:
+      //         "The Show Must Go On: A Conceptual Model of Conducting Synchronous Participatory Design With Children Online",
+      //       publicationText: "CHI 2021",
+      //       link: "https://canvas.uw.edu/files/109846160/",
+      //     },
+      //     {
+      //       authorText:
+      //         "Jason Yip, Kelly Wong, Isabella Oh, Farisha Sultan, Wendy Roldan, Kung Jin Lee, Jimi Huh",
+      //       title:
+      //         "Co-Design Tensions Between Parents, Children, and Researchers Regarding Mobile Health Technology Design Needs and Decisions: Case Study",
+      //       publicationText: "JMIR Formative Research, 2023",
+      //       link: "https://canvas.uw.edu/files/110702877/",
+      //     },
+      //   ],
+      // },
     },
     {
       date: verifyCalendarDate("2025-02-06", "Thu"),
@@ -736,42 +766,6 @@ export const calendarData: {
     //         title: "Generative Agents: Interactive Simulacra of Human Behavior",
     //         publicationText: "UIST 2023",
     //         link: "https://canvas.uw.edu/files/110367205/",
-    //       },
-    //     ],
-    //   },
-    // },
-    // {
-    //   date: verifyCalendarDate("2023-11-16", "Thu"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
-    //   title: "Research Topic: Designing with Children",
-    //   guest: {
-    //     name: "Jason Yip",
-    //     link: "https://bigyipper.com/",
-    //   },
-    //   readingsStandard: {
-    //     framing: {
-    //       authorText: "Allison Druin",
-    //       title: "The Role of Children in the Design of New Technology",
-    //       publicationText: "Behaviour and Information Technology, 2002",
-    //       link: "https://canvas.uw.edu/files/109846155/",
-    //     },
-    //     instances: [
-    //       {
-    //         authorText:
-    //           "Kung Jin Lee, Wendy Roldan, Tian Qi Zhu, Harkiran Kaur Saluja, Sungmin Na, Britnie Chin, Yilin Zeng, Jin Ha Lee, Jason Yip",
-    //         title:
-    //           "The Show Must Go On: A Conceptual Model of Conducting Synchronous Participatory Design With Children Online",
-    //         publicationText: "CHI 2021",
-    //         link: "https://canvas.uw.edu/files/109846160/",
-    //       },
-    //       {
-    //         authorText:
-    //           "Jason Yip, Kelly Wong, Isabella Oh, Farisha Sultan, Wendy Roldan, Kung Jin Lee, Jimi Huh",
-    //         title:
-    //           "Co-Design Tensions Between Parents, Children, and Researchers Regarding Mobile Health Technology Design Needs and Decisions: Case Study",
-    //         publicationText: "JMIR Formative Research, 2023",
-    //         link: "https://canvas.uw.edu/files/110702877/",
     //       },
     //     ],
     //   },
