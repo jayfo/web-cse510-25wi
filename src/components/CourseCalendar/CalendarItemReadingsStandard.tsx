@@ -46,7 +46,7 @@ export const CalendarItemReadingsStandard: React.FunctionComponent<{
           night before class:
         </p>
         <CourseDataLink linkKey={courseData.linkCanvasDiscussion}>
-          Canvas
+          {courseData.linkCanvasDiscussion.href}
         </CourseDataLink>
       </React.Fragment>
     );
