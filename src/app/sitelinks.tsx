@@ -8,7 +8,7 @@ export const SITE_LINKS = [
   SiteLinks.homeTop,
   SiteLinks.assignmentsTop,
   [
-    // Custom formatting for SiteLinks.assignmentsReadingsAndDiscussionPostsTop
+    // Custom formatting for SiteLinks.assignmentsReadingsTop
     {
       href: SiteLinks.assignmentsReadingsTop.href,
       anchor: (() => {
@@ -26,10 +26,26 @@ export const SITE_LINKS = [
         );
       })(),
     },
+    // Custom formatting for SiteLinks.assignmentsPresentationsTop
+    {
+      href: SiteLinks.assignmentsPresentationsTop.href,
+      anchor: (() => {
+        assert(
+          SiteLinks.assignmentsPresentationsTop.anchor ===
+            "Presentations and Discussions",
+        );
+
+        return (
+          <React.Fragment>
+            Presentations
+            <br />
+            and Discussions
+          </React.Fragment>
+        );
+      })(),
+    },
     SiteLinks.assignmentsProjectTop,
-    //   SiteLinks.milestone_3_top,
-    //   SiteLinks.milestone_4_top,
-    //   SiteLinks.milestone_5_top,
+    SiteLinks.assignmentsReflectionsTop,
   ],
   SiteLinks.calendarTop,
 ];

@@ -18,9 +18,19 @@ export const SiteLinks = {
     anchor: "Readings and Discussion Posts",
   },
 
+  assignmentsPresentationsTop: {
+    href: "/assignments/presentations/#presentationsanddiscussions",
+    anchor: "Presentations and Discussions",
+  },
+
   assignmentsProjectTop: {
     href: "/assignments/project/#project",
     anchor: "Project",
+  },
+
+  assignmentsReflectionsTop: {
+    href: "/assignments/reflections/#reflections",
+    anchor: "Reflections",
   },
 
   calendarTop: {
