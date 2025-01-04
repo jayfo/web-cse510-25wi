@@ -599,18 +599,18 @@ export const calendarData: {
     //     },
     //     instances: [
     //       {
-    //         authorText: "Peitong Duan, Jeremy Warner, Yang Li, Bjoern Hartmann",
-    //         title:
-    //           "Generating Automatic Feedback on UI Mockups with Large Language Models",
-    //         publicationText: "CHI, 2024",
-    //         link: "https://canvas.uw.edu/files/128707087/",
-    //       },
-    //       {
     //         authorText:
     //           "Stefanie Mueller, Sangha Im, Serafima Gurevich, Alexander Teibrich, Lisa Pfisterer, François Guimbretière, Patrick Baudisch",
     //         title: "WirePrint: 3D Printed Previews for Fast Prototyping",
     //         publicationText: "UIST 2014",
     //         link: "https://canvas.uw.edu/files/128522165/",
+    //       },
+    //       {
+    //         authorText: "Peitong Duan, Jeremy Warner, Yang Li, Bjoern Hartmann",
+    //         title:
+    //           "Generating Automatic Feedback on UI Mockups with Large Language Models",
+    //         publicationText: "CHI, 2024",
+    //         link: "https://canvas.uw.edu/files/128707087/",
     //       },
     //     ],
     //   },
