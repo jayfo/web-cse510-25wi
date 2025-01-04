@@ -50,6 +50,14 @@ export const courseData = {
     href: "https://drive.google.com/drive/folders/13vHGA0QND7_KURsE6gJNiPZzF26Kxk65?usp=sharing",
   },
 
+  linkDrivePresentationDraftSlides: {
+    // href: "https://docs.google.com/document/d/1-WoZWx0BROvs4wI8ZZxDCjlnZawnB_G7CCp4EoTL7Jw/edit?usp=sharing",
+  },
+
+  linkDrivePresentationGroupFeedback: {
+    // href: "https://docs.google.com/document/d/1-WoZWx0BROvs4wI8ZZxDCjlnZawnB_G7CCp4EoTL7Jw/edit?usp=sharing",
+  },
+
   // Link to project proposal document.
   linkDriveProposalDocument: {
     href: "https://docs.google.com/document/d/1-WoZWx0BROvs4wI8ZZxDCjlnZawnB_G7CCp4EoTL7Jw/edit?usp=sharing",
