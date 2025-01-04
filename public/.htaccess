@@ -9,6 +9,11 @@
 RewriteEngine On
 
 RewriteRule ^assignments[/]?$ assignments.html
+RewriteRule ^assignments/readings[/]?$ assignments/readings.html
+RewriteRule ^assignments/presentations[/]?$ assignments/presentations.html
+RewriteRule ^assignments/project[/]?$ assignments/project.html
+RewriteRule ^assignments/reflections[/]?$ assignments/reflections.html
+
 RewriteRule ^calendar[/]?$ calendar.html
 
 # RewriteRule ^assignments/assignment-0[/]?$ assignments/assignment-0.html
