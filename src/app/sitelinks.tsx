@@ -10,10 +10,10 @@ export const SITE_LINKS = [
   [
     // Custom formatting for SiteLinks.assignmentsReadingsAndDiscussionPostsTop
     {
-      href: SiteLinks.assignmentsReadingsAndDiscussionPostsTop.href,
+      href: SiteLinks.assignmentsReadingsTop.href,
       anchor: (() => {
         assert(
-          SiteLinks.assignmentsReadingsAndDiscussionPostsTop.anchor ===
+          SiteLinks.assignmentsReadingsTop.anchor ===
             "Readings and Discussion Posts",
         );
 

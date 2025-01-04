@@ -13,8 +13,8 @@ export const SiteLinks = {
     anchor: "Assignments",
   },
 
-  assignmentsReadingsAndDiscussionPostsTop: {
-    href: "/assignments/readingsanddiscussionposts/#readingsanddiscussionposts",
+  assignmentsReadingsTop: {
+    href: "/assignments/readings/#readingsanddiscussionposts",
     anchor: "Readings and Discussion Posts",
   },
 
