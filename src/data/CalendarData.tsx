@@ -401,7 +401,7 @@ export const calendarData: {
               authorText: "Jacob O. Wobbrock, Julie A. Kientz",
               title: "Research Contributions in Human-Computer Interaction",
               publicationText: "Interactions, 2016",
-              // link: "https://canvas.uw.edu/files/109669373/",
+              link: "https://canvas.uw.edu/files/128522132/",
             },
           }}
         />
@@ -442,7 +442,7 @@ export const calendarData: {
           title:
             "A Moving Target - The Evolution of Human-Computer Interaction",
           publicationText: "Book Chapter",
-          // link: "https://canvas.uw.edu/files/109846167/",
+          link: "https://canvas.uw.edu/files/128522161/",
         },
       ],
     },
@@ -456,21 +456,21 @@ export const calendarData: {
           authorText: "Saul Greenberg, Bill Buxton",
           title: "Usability Evaluation Considered Harmful (Some of the Time)",
           publicationText: "CHI 2008",
-          // link: "https://canvas.uw.edu/files/109846204/",
+          link: "https://canvas.uw.edu/files/128522177/",
         },
         instances: [
           {
             authorText: "Dan R. Olsen, Jr",
             title: "Evaluating User Interface Systems Research",
             publicationText: "UIST 2007",
-            // link: "https://canvas.uw.edu/files/109846207/",
+            link: "https://canvas.uw.edu/files/128522160/",
           },
           {
             authorText: "James Fogarty",
             title: "Code and Contribution in Interactive Systems Research",
             publicationText:
               "CHI 2017 Workshop on #HCI.Tools: Strategies and Best Practices for Designing, Evaluating, and Sharing Technical HCI Toolkits",
-            // link: "https://canvas.uw.edu/files/109846202/",
+            link: "https://canvas.uw.edu/files/128522176/",
           },
         ],
       },
