@@ -160,8 +160,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-01-26", "Sun"),
       submission: "canvas",
       submitCanvasTime: "5:00pm",
-      //   submitCanvasLink:
-      //     "https://canvas.uw.edu/courses/1665830/assignments/8670194",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1786160/assignments/10004413",
     },
     projectMilestoneReport1: {
       type: "assignment",
@@ -170,8 +170,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-02-09", "Sun"),
       submission: "canvas",
       submitCanvasTime: "5:00pm",
-      //   submitCanvasLink:
-      //     "https://canvas.uw.edu/courses/1665830/assignments/8670194",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1786160/assignments/10004474",
     },
     projectMilestoneReport2: {
       type: "assignment",
@@ -180,8 +180,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-03-02", "Sun"),
       submission: "canvas",
       submitCanvasTime: "5:00pm",
-      //   submitCanvasLink:
-      //     "https://canvas.uw.edu/courses/1665830/assignments/8670194",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1786160/assignments/10004475",
     },
     projectFinalReport: {
       type: "assignment",
@@ -190,8 +190,8 @@ export const calendarData: {
       date: verifyCalendarDate("2025-03-17", "Mon"),
       submission: "canvas",
       submitCanvasTime: "5:00pm",
-      //   submitCanvasLink:
-      //     "https://canvas.uw.edu/courses/1665830/assignments/8670194",
+      submitCanvasLink:
+        "https://canvas.uw.edu/courses/1786160/assignments/10004476",
     },
     // Copy-paste needed because typing currently cannot handle "dates"
     projectMilestoneMeetings1Tue: {
