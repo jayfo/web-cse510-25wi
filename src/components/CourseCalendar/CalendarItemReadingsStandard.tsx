@@ -13,11 +13,6 @@ export const CalendarItemReadingsStandard: React.FunctionComponent<{
   if ("readingsStandard" in calendarItem) {
     return (
       <React.Fragment>
-        <h3>Standard Reading Format</h3>
-        <p>
-          As described in{" "}
-          <SiteLink linkKey={SiteLinks.assignmentsReadingsTop} />.
-        </p>
         <p>Read the framing paper:</p>
         <ul>
           <li>
@@ -38,9 +33,14 @@ export const CalendarItemReadingsStandard: React.FunctionComponent<{
             </li>
           ))}
         </ul>
+        <h3>Standard Reading Format</h3>
         <p>
-          Post a reading report in the appropriate thread(s), by 11:59pm the
-          night before class:
+          As described in{" "}
+          <SiteLink linkKey={SiteLinks.assignmentsReadingsTop} />.
+        </p>
+        <p>
+          Post a reading report in the appropriate thread, by 5pm the day before
+          class:
         </p>
         <CourseDataLink linkKey={courseData.linkCanvasDiscussion}>
           {courseData.linkCanvasDiscussion.href}

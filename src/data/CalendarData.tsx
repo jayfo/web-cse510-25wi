@@ -555,7 +555,11 @@ export const calendarData: {
       date: verifyCalendarDate("2025-02-27", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "Research Topic: TBD",
+      title: "Research Topic: Mental Health and Wellness",
+      guest: {
+        name: "Mary Czerwinski",
+        link: "https://www.microsoft.com/en-us/research/people/marycz/",
+      },
     },
     // Week 10
     {

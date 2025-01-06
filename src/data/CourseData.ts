@@ -77,11 +77,6 @@ export const courseData = {
     href: "https://chi2024.acm.org/submission-guides/chi-publication-formats/",
   },
 
-  // Link to the Visions of HCI folder.
-  linkDriveVisionsOfHciFolder: {
-    href: "https://drive.google.com/drive/folders/1FHNwj8cUjizBpK-KvmpmzV8PvXubnDqe?usp=sharing",
-  },
-
   // Reading on paper writing
   readingWobbrockPaperWriting: {
     authorText: "Jacob O. Wobbrock",
