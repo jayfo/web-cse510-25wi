@@ -556,6 +556,10 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: TBD",
+      guest: {
+        name: "Mary Czerwinski",
+        link: "https://www.microsoft.com/en-us/research/people/marycz/",
+      },
     },
     // Week 10
     {
