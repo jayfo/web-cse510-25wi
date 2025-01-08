@@ -480,12 +480,14 @@ export const calendarData: {
       date: verifyCalendarDate("2025-01-28", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
+      tbd: true,
       title: "Research Topic: TBD",
     },
     {
       date: verifyCalendarDate("2025-01-30", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
+      tbd: true,
       title: "Research Topic: TBD",
     },
     // Week 5
@@ -494,6 +496,7 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Designing with Children",
+      tbd: true,
       guest: {
         name: "Jason Yip",
         link: "https://bigyipper.com/",
@@ -530,6 +533,7 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: TBD",
+      tbd: true,
     },
     // Week 7
     {
@@ -537,12 +541,14 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: TBD",
+      tbd: true,
     },
     {
       date: verifyCalendarDate("2025-02-20", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: TBD",
+      tbd: true,
     },
     // Week 8
     {
@@ -550,12 +556,14 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: TBD",
+      tbd: true,
     },
     {
       date: verifyCalendarDate("2025-02-27", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Mental Health and Wellness",
+      tbd: true,
       guest: {
         name: "Mary Czerwinski",
         link: "https://www.microsoft.com/en-us/research/people/marycz/",
@@ -567,12 +575,14 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: TBD",
+      tbd: true,
     },
     {
       date: verifyCalendarDate("2025-03-13", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: TBD",
+      tbd: true,
     },
     // Project Meetings, Week 6 and Week 9
     {

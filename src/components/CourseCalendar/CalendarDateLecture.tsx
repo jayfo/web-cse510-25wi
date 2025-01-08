@@ -7,6 +7,7 @@ import { CalendarItemContentNonstandard } from "@/components/CourseCalendar/Cale
 import { CalendarItemGuests } from "@/components/CourseCalendar/CalendarItemGuests";
 import { CalendarItemReadingsStandard } from "@/components/CourseCalendar/CalendarItemReadingsStandard";
 import { CalendarItemTimeAndLocations } from "@/components/CourseCalendar/CalendarItemTimeAndLocations";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
 import { formatCalendarDate, parseCalendarDate } from "@/data/CalendarData";
 import {
   CalendarDate,
@@ -137,6 +138,7 @@ export const CalendarDateLecture: React.FunctionComponent<{
               }}
             >
               <CalendarItemGuests calendarItem={lectureCalendarItem} />
+              {lectureCalendarItem.tbd ? <UnderDevelopment /> : null}
               <CalendarItemAways awayCalendarItems={awayCalendarItems} />
               <CalendarItemAssignments
                 assignmentCalendarItems={assignmentCalendarItems}
