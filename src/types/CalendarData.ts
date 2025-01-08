@@ -123,6 +123,7 @@ export type LectureCalendarItem = {
   type: "lecture";
   title: string;
   link?: LinkHREF;
+  tbd?: true;
 } & BaseCalendarItemDates &
   BaseCalendarItemGuests &
   BaseCalendarItemTimeAndLocations &
