@@ -30,6 +30,23 @@ export const courseData = {
     href: LINK_CANVAS + "/files/folder/project%20samples",
   },
 
+  // Links to Canvas reflection submissions.
+  linkCanvasReflection1Required: {
+    // href: "",
+  },
+  linkCanvasReflection2Required: {
+    // href: "",
+  },
+  linkCanvasReflection3Required: {
+    // href: "",
+  },
+  linkCanvasReflection4Required: {
+    // href: "",
+  },
+  linkCanvasReflection5Optional: {
+    // href: "",
+  },
+
   // Link to course GitHub.
   linkGitHub: {
     href: "https://github.com/uwcse510/web-cse510-25wi",

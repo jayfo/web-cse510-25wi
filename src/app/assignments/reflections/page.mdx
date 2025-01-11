@@ -1,11 +1,13 @@
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
 import { SiteLink } from "@/components/links/SiteLink";
+import { courseData } from "@/data/CourseData";
 import { SiteLinks } from "@/data/SiteLinks";
 
 # Reflections
 
-<UnderDevelopment display={true} />
+<UnderDevelopment display={false} />
 
 Reflections ask you to demonstrate and apply your understanding of the course material in a more substantial format than reading reports.
 Asking you to connect concepts across readings and research,
@@ -72,4 +74,22 @@ Any submission that includes a name will be graded but then penalized for this b
 
 Submit your reflections in PDF format:
 
-- <TBD>submission link</TBD>
+- Required Reflection 1:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkCanvasReflection1Required} />
+
+- Required Reflection 2:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkCanvasReflection2Required} />
+
+- Required Reflection 3:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkCanvasReflection3Required} />
+
+- Required Reflection 4:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkCanvasReflection4Required} />
+
+- Optional Reflection 5:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkCanvasReflection5Optional} />
