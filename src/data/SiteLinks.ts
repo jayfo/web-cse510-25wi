@@ -28,6 +28,26 @@ export const SiteLinks = {
     anchor: "Project",
   },
 
+  assignmentsProjectProposalTop: {
+    href: "/assignments/project/proposal#project-proposal",
+    anchor: "Proposal",
+  },
+
+  assignmentsProjectMilestoneReport1Top: {
+    href: "/assignments/project/milestonereport#project-milestone-report",
+    anchor: "Milestone Report 1",
+  },
+
+  assignmentsProjectMilestoneReport2Top: {
+    href: "/assignments/project/milestonereport#project-milestone-report",
+    anchor: "Milestone Report 2",
+  },
+
+  assignmentsProjectFinalReportTop: {
+    href: "/assignments/project/finalreport#project-final-report",
+    anchor: "Final Report",
+  },
+
   assignmentsReflectionsTop: {
     href: "/assignments/reflections/#reflections",
     anchor: "Reflections",

@@ -50,17 +50,16 @@ export const SITE_LINKS = [
   SiteLinks.calendarTop,
 ];
 
-// export const PAGE_LINKS_MILESTONE_1 = [
-//   SiteLinks.milestone_1_top,
-//   [
-//     SiteLinks.assignment_1_1_top,
-//     SiteLinks.assignment_1_2_top,
-//     SiteLinks.assignment_1_3_top,
-//     SiteLinks.assignment_1_4_top,
-//     SiteLinks.milestone_1_report_top,
-//   ],
-// ];
-//
+export const PAGE_LINKS_PROJECT = [
+  SiteLinks.assignmentsProjectTop,
+  [
+    SiteLinks.assignmentsProjectProposalTop,
+    SiteLinks.assignmentsProjectMilestoneReport1Top,
+    SiteLinks.assignmentsProjectMilestoneReport2Top,
+    SiteLinks.assignmentsProjectFinalReportTop,
+  ],
+];
+
 // export const PAGE_LINKS_MILESTONE_2 = [
 //   SiteLinks.milestone_2_top,
 //   [
