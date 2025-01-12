@@ -1,9 +1,13 @@
 import { TBD } from "@/components/TBD";
 import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { courseData } from "@/data/CourseData";
+import { SiteLinks } from "@/data/SiteLinks";
 
 # Reflections
 
-<UnderDevelopment display={true} />
+<UnderDevelopment display={false} />
 
 Reflections ask you to demonstrate and apply your understanding of the course material in a more substantial format than reading reports.
 Asking you to connect concepts across readings and research,
@@ -23,93 +27,13 @@ or otherwise provide direct input in your preparation of a reflection.
 
 Students are asked to submit three different types of reflections, on each of:
 
-- **Contribution**: what knowledge is gained through research activities.
-- **Method**: how research activities are structured to demonstrate contributions.
-- **Framing**: why contributions are valued,
-               through motivation, language, theory, or understanding that can contextualize activities and contributions.
-
-### Contribution Reflection
-
-<UnderDevelopment display={true} />
-
-### Method Reflection
-
-<UnderDevelopment display={true} />
-
-### Framing Reflection
-
-Although the course focuses on papers organized within a day focused on a Research Topic,
-the motivations, language, theories, and understanding presented in assigned framing papers
-are often more general than the topics in which they were presented.
-A framing reflection asks you to connect concepts you learned across topics in which they were presented.
-
-#### Paper Selection
-
-Select two papers to discuss:
-
-- A framing paper from an assigned Research Topic.
-
-  This framing paper must be from a day with a calendar entry beginning with “Research Topic”.
-
-- An instance paper from a different Research Topic.
-
-  This instance paper must be from a different day that also has a calendar entry beginning with “Research Topic”.
-  Although we expect you will primarily choose papers that were originally assigned as an instance paper,
-  you may choose to discuss a paper originally assigned as the framing paper of a different Research Topic
-  (e.g., this would allow a reflection that compares and contrasts two framing papers).
-
-Papers must be from among those assigned in a course Research Topic.
-Although these ideas extend to papers outside the context of this course, framing reflections are limited to material in the course.
-
-You may not use papers from other days that framed the entire course
-(e.g., Visions of Human-Computer Interaction, Contributions in Human-Computer Interaction, Usability Evaluation Considered Harmful).
-
-You may not use a paper in more than one framing reflection
-(i.e., any two framing reflections you submit must engage a total of four different assigned papers).
-Two different framing reflections may use papers that were assigned within the same Research Topic,
-as long as papers meet all of the above constraints
-(e.g., one reflection might use the framing paper from a Research Topic,
-a different reflection might use an instance paper from that same Research Topic).
-
-Framing reflections that do not adhere to the above constraints on paper selection will not receive credit.
-
-#### Reflection
-
-Use the language and concepts of the selected framing paper to analyze and discuss the instance paper.
-The goal is for you to use the language and concepts established in the framing paper to meaningfully consider another piece of research,
-thus demonstrating you understand and can apply that framing:
-
-- First, briefly summarize elements of each paper that are most relevant to insights you intend to discuss.
-  This provides a reader with shared context for understanding insights you develop,
-  and we encourage being explicit in language and concepts you will apply
-  (e.g., using brief quotes from the framing paper, using bolded introductions of language and concepts from the framing paper).
-- Then, discuss multiple distinct insights that you develop through considering the instance paper relative to language and concepts from the framing paper.
-
-Each framing reflection may be up to 750 words. No points will be awarded beyond the allowable word count.
-
-#### Evaluation
-
-Responses will be evaluated on the understanding you demonstrate and the critical relationships you discuss between the papers you choose.
-It will be considered insufficient to only summarize papers,
-to indicate that you like or enjoy something about a paper,
-or to state that a paper gives you other ideas.
-The goal is for you to use the language and concepts established in the framing paper to meaningfully consider another piece of research,
-thus demonstrating you understand and can apply that framing.
-
-For example, a poor analysis might simply restate key points from each paper,
-perhaps use a few keywords, but not engage with any critical relationships in or between the papers.
-A better analysis might discuss how a paper is motivated or characterized by a framing,
-how re-considering a paper through a new framing might offer new insights,
-or how a paper might challenge some key aspect of a framing.
-All of these will require understanding both papers in their own contexts and then relating across them.
-
-There is no inherent reward for choosing a pair of papers that are more difficult to relate.
-If you find yourself unable to develop multiple meaningful insights, you may consider revisiting your choice of papers.
-
-Points will be allocated for correct interpretation and summary of elements of each paper
-that are most relevant to insights you intend to discuss,
-then for how substantial we find each of the multiple distinct insights
-discussed in your consideration of the instance paper relative to language and concepts from the framing paper.
+- <SiteLink linkKey={SiteLinks.assignmentsReflectionsContributionTop}/>:
+  what knowledge is gained through research activities.
+- <SiteLink linkKey={SiteLinks.assignmentsReflectionsMethodTop}/>:
+  how research activities are structured to demonstrate contributions.
+- <SiteLink linkKey={SiteLinks.assignmentsReflectionsFramingTop}/>:
+  why contributions are valued,
+  through motivation, language, theory, or understanding that can contextualize activities and contributions.
 
 ## Required and Optional Reflections
 
@@ -138,7 +62,7 @@ This is intended to provide sufficient granularity for evaluation to differentia
 while remaining coarse enough to avoid introducing distinctions that are likely to be inconsistently applied.
 We expect few submissions to receive 10 points,
 as the upper extreme of the grading scale will be reserved for reflections that differentiate themselves.
-Reflections that receive other strong grades (e.g., 8 points)
+Reflections that receive other strong grades
 may therefore meet expectations, may not be missing any expected component, and may not be incorrect in any identifiable way.
 The strongest grades will be reserved for reflections that go beyond expectations in one or more regards.
 
@@ -146,20 +70,26 @@ Do not include your name in your submission.
 Our goal is to maximize anonymity in grading of reflections.
 Any submission that includes a name will be graded but then penalized for this breach of anonymity.
 
-## Formatting and Submission
-
-Use a document format that will ensure readability of your reflection
-(e.g., the default 11-point Arial font and associated formatting of Google Docs, a similarly readable format).
-
-Using appropriate whitespace to separate components, structure the content of your document to include:
-
-- Citations and links to papers on which you have based a reflection.
-    - <TBD>For a contribution reflection, TBD...</TBD>
-	- <TBD>For a method reflection, TBD...</TBD>
-	- For a framing reflection, the selected framing paper and instance paper.
-- An explicit statement of the word count of your reflection. Do not include the above citations in this word count, and ensure the word count does not exceed the limit for this reflection.
-- The text of your reflection.
-
-Do not include your name in your submission. As emphasized above, our goal is to maximize anonymity in grading of reflections and submissions that include a name will be penalized.
+## Submission
 
 Submit your reflections in PDF format:
+
+- Required Reflection 1:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkCanvasReflection1Required} />
+
+- Required Reflection 2:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkCanvasReflection2Required} />
+
+- Required Reflection 3:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkCanvasReflection3Required} />
+
+- Required Reflection 4:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkCanvasReflection4Required} />
+
+- Optional Reflection 5:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkCanvasReflection5Optional} />

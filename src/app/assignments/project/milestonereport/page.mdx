@@ -1,0 +1,81 @@
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseDataLink } from "@/components/links/CourseDataLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { calendarData } from "@/data/CalendarData";
+import { courseData } from "@/data/CourseData";
+import { SiteLinks } from "@/data/SiteLinks";
+
+# Project Milestone Report
+
+This is a component of the <SiteLink linkKey={SiteLinks.assignmentsProjectTop}/> assignment.
+Be sure you have reviewed that larger context.
+
+Two milestone reports serve as a check on the trajectory of your project
+and an opportunity for feedback, guidance, and questions.
+Convey the state of your project and your plans for the remainder of the quarter.
+
+Milestone reports consist of a short document and an associated meeting with course staff.
+
+You will also be asked to review milestone reports submitted by other groups
+and to share potential insight related to questions they have or advice they seek.
+
+## Document
+
+Within the provided document, using the provided template, prepare a report addressing the following points:
+
+- **Current Progress**
+
+  What you have done for this milestone, discussing current progress relative to previously stated plans.
+
+- **Planned Activities**
+
+  What you will do before your next milestone, including any revisions to your plans based on your status or findings.
+
+- **Desired Feedback**
+
+  Any areas where you have questions, could use advice, or would like ideas.
+
+This is an opportunity for feedback from staff and classmates.
+Our primary goal is feedback that helps you in the remaining aspects of the project.
+Please be appropriately candid, thoughtful, and engaged.
+You will gain maximum value from this report by
+considering how it can structure a conversation that is most useful to your project group.
+
+## Format
+
+Report should be 2 pages, using the same format as the provided template (i.e., an 11-point Arial format).
+
+The page limit does not apply to figures or images.
+To ensure the text of your report remains within the page limit,
+place all figures or images after the 2 pages of report text (e.g., referencing them from text as "Figure 1").
+
+The page limit does not apply to references, which may be an additional page.
+
+## Submission
+
+Milestone Report 1 Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.projectMilestoneReport1} />.
+
+Milestone Report 2 Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.projectMilestoneReport2} />.
+
+Submit your milestone report in PDF format:
+
+- Milestone Report 1:
+
+  <AssignmentSubmitCanvasLink outerComponent="p" assignmentKey={calendarData.assignments.projectMilestoneReport1} />
+
+- Milestone Report 2:
+
+  <AssignmentSubmitCanvasLink outerComponent="p" assignmentKey={calendarData.assignments.projectMilestoneReport2} />
+
+## Meetings
+
+Sign up for a meeting with course staff to discuss your project milestone report:
+
+- Milestone Meeting 1:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkDriveProjectMilestoneMeetingsSignup1} />
+
+- Milestone Meeting 2:
+
+  <CourseDataLink outerComponent="p" linkKey={courseData.linkDriveProjectMilestoneMeetingsSignup2} />
