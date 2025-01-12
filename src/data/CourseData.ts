@@ -101,4 +101,42 @@ export const courseData = {
     publicationText: "2015",
     link: "https://faculty.washington.edu/wobbrock/pubs/Wobbrock-2015.pdf",
   },
+
+  // Readings on methods
+  readingMethodsWaysOfKnowing: {
+    authorText: "Judith S. Olson, Wendy A. Kellogg",
+    title: "Ways of Knowing in HCI",
+    publicationText: "2014",
+    link: "https://canvas.uw.edu/files/129188070/",
+  },
+
+  readingMethodsExperimentDesignAndStatisticalAnalysis: {
+    authorText: "Jacob O. Wobbrock",
+    title: "Experiment Design and Statistical Analysis in HCI",
+    publicationText: "2024",
+    link: "https://canvas.uw.edu/files/129188068/",
+  },
+
+  readingMethodsBraunAndClarke2012: {
+    authorText: "Victoria Braun, Victoria Clarke",
+    title: "Thematic Analysis",
+    publicationText: "In APA Handbook of Research Methods in Psychology. 2012",
+    link: "https://canvas.uw.edu/files/129191177/",
+  },
+
+  readingMethodsTerryHayfieldClarkeBraun2017: {
+    authorText: "Gareth Terry, Nikki Hayfield, Victoria Clarke, Virginia Braun",
+    title: "Thematic Analysis",
+    publicationText:
+      "In The SAGE Handbook of Qualitative Research in Psychology. 2017",
+    link: "https://canvas.uw.edu/files/129191175/",
+  },
+
+  readingMethodsByrne2022: {
+    authorText: "David Byrne",
+    title:
+      "A Worked Example of Braun and Clarke's Approach to Reflexive Thematic Analysis",
+    publicationText: "Quality & Quantity. 2021",
+    link: "https://canvas.uw.edu/files/129191179/",
+  },
 } as const;
