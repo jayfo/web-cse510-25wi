@@ -40,10 +40,7 @@ export const courseData = {
   linkCanvasReflection3Required: {
     // href: "",
   },
-  linkCanvasReflection4Required: {
-    // href: "",
-  },
-  linkCanvasReflection5Optional: {
+  linkCanvasReflection4Optional: {
     // href: "",
   },
 
