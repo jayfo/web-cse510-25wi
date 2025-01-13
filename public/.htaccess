@@ -11,8 +11,16 @@ RewriteEngine On
 RewriteRule ^assignments[/]?$ assignments.html
 RewriteRule ^assignments/readings[/]?$ assignments/readings.html
 RewriteRule ^assignments/presentations[/]?$ assignments/presentations.html
+
 RewriteRule ^assignments/project[/]?$ assignments/project.html
+RewriteRule ^assignments/project/proposal[/]?$ assignments/project/proposal.html
+RewriteRule ^assignments/project/milestonereport[/]?$ assignments/project/milestonereport.html
+RewriteRule ^assignments/project/finalreport[/]?$ assignments/project/finalreport.html
+
 RewriteRule ^assignments/reflections[/]?$ assignments/reflections.html
+RewriteRule ^assignments/reflections/contribution[/]?$ assignments/reflections/contribution.html
+RewriteRule ^assignments/reflections/method[/]?$ assignments/reflections/method.html
+RewriteRule ^assignments/reflections/framing[/]?$ assignments/reflections/framing.html
 
 RewriteRule ^calendar[/]?$ calendar.html
 
