@@ -487,8 +487,39 @@ export const calendarData: {
       date: verifyCalendarDate("2025-01-30", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      tbd: true,
-      title: "Research Topic: TBD",
+      title: "Research Topic: Participatory Approaches to AI",
+      guest: {
+        name: "Amy X. Zhang",
+        link: "https://homes.cs.washington.edu/~axz/",
+      },
+      readingsStandard: {
+        framing: {
+          authorText:
+            "Saleema Amershi, Maya Cakmak, W. Bradley Knox, Todd Kulesza",
+          title:
+            "Power to the People: The Role of Humans in Interactive Machine Learning",
+          publicationText: "AI Magazine. 2014",
+          link: "https://canvas.uw.edu/files/129241122/",
+        },
+        instances: [
+          {
+            authorText:
+              "Min Kyung Lee, Daniel Kusbit, Anson Kahng, Ji Tae Kim, Xinran Yuan, Allissa Chan, Daniel See, Ritesh Noothigattu, Siheon Lee, Alexandros Psomas, Ariel D. Procaccia",
+            title:
+              "WeBuildAI: Participatory Framework for Algorithmic Governance",
+            publicationText: "CSCW 2019",
+            link: "https://canvas.uw.edu/files/129241182/",
+          },
+          {
+            authorText:
+              "Mitchell L. Gordon, Michelle S. Lam, Joon Sung Park, Kayur Patel, Jeff Hancock, Tatsunori Hashimoto, Michael S. Bernstein",
+            title:
+              "Jury Learning: Integrating Dissenting Voices into Machine Learning Models",
+            publicationText: "CHI 2022",
+            link: "https://canvas.uw.edu/files/129241151/",
+          },
+        ],
+      },
     },
     // Week 5
     {
@@ -557,6 +588,10 @@ export const calendarData: {
       type: "lecture",
       title: "Research Topic: TBD",
       tbd: true,
+      guest: {
+        name: "Gagan Bansal",
+        link: "https://gagb.github.io/",
+      },
     },
     {
       date: verifyCalendarDate("2025-02-27", "Thu"),
