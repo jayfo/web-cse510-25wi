@@ -31,17 +31,17 @@ export const courseData = {
   },
 
   // Links to Canvas reflection submissions.
-  linkCanvasReflection1Required: {
-    // href: "",
+  linkCanvasReflectionRequiredContribution: {
+    href: "https://canvas.uw.edu/courses/1786160/assignments/10051205",
   },
-  linkCanvasReflection2Required: {
-    // href: "",
+  linkCanvasReflectionRequiredMethod: {
+    href: "https://canvas.uw.edu/courses/1786160/assignments/10051182",
   },
-  linkCanvasReflection3Required: {
-    // href: "",
+  linkCanvasReflectionRequiredFraming: {
+    href: "https://canvas.uw.edu/courses/1786160/assignments/10051183",
   },
-  linkCanvasReflection4Optional: {
-    // href: "",
+  linkCanvasReflectionOptional: {
+    href: "https://canvas.uw.edu/courses/1786160/assignments/10051201",
   },
 
   // Link to course GitHub.
