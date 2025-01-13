@@ -54,18 +54,18 @@ export const SiteLinks = {
   },
 
   assignmentsReflectionsContributionTop: {
-    href: "/assignments/reflections/contribution#contribution-reflections",
-    anchor: "Contribution Reflections",
+    href: "/assignments/reflections/contribution#contribution-reflection",
+    anchor: "Contribution",
   },
 
   assignmentsReflectionsMethodTop: {
-    href: "/assignments/reflections/method#method-reflections",
-    anchor: "Method Reflections",
+    href: "/assignments/reflections/method#method-reflection",
+    anchor: "Method",
   },
 
   assignmentsReflectionsFramingTop: {
-    href: "/assignments/reflections/framing#framing-reflections",
-    anchor: "Framing Reflections",
+    href: "/assignments/reflections/framing#framing-reflection",
+    anchor: "Framing",
   },
 
   calendarTop: {
