@@ -498,7 +498,7 @@ export const calendarData: {
             "Saleema Amershi, Maya Cakmak, W. Bradley Knox, Todd Kulesza",
           title:
             "Power to the People: The Role of Humans in Interactive Machine Learning",
-          publicationText: "AI Magazine 2014",
+          publicationText: "AI Magazine. 2014",
           link: "https://canvas.uw.edu/files/129241122/",
         },
         instances: [
