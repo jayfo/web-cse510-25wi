@@ -64,6 +64,10 @@ export const courseData = {
     href: "https://drive.google.com/drive/folders/13vHGA0QND7_KURsE6gJNiPZzF26Kxk65?usp=sharing",
   },
 
+  linkDrivePresentationSignup: {
+    href: "https://docs.google.com/document/d/1e8__5CSjknBdcDE1R8fYbzctd18s0l8s3hxfC9UJYXU/edit",
+  },
+
   linkDrivePresentationDraftSlides: {
     // href: "https://docs.google.com/document/d/1-WoZWx0BROvs4wI8ZZxDCjlnZawnB_G7CCp4EoTL7Jw/edit?usp=sharing",
   },
