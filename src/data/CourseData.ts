@@ -73,7 +73,7 @@ export const courseData = {
   },
 
   linkDrivePresentationGroupFeedback: {
-    // href: "https://docs.google.com/document/d/1-WoZWx0BROvs4wI8ZZxDCjlnZawnB_G7CCp4EoTL7Jw/edit?usp=sharing",
+    href: "https://forms.gle/oG4ypBB4nj9nnPfd8",
   },
 
   // Link to project proposal document.
