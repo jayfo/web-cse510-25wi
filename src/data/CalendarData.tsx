@@ -480,8 +480,33 @@ export const calendarData: {
       date: verifyCalendarDate("2025-01-28", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      tbd: true,
-      title: "Research Topic: TBD",
+      title: "Research Topic: Design Tools",
+      readingsStandard: {
+        framing: {
+          authorText:
+            "Mark W. Newman, James Lin, Jason I. Hong, James A. Landay",
+          title:
+            "DENIM: An Informal Web Site Design Tool Inspired by Observations of Practice",
+          publicationText: "HCI. 2003",
+          link: "https://canvas.uw.edu/files/128522164/",
+        },
+        instances: [
+          {
+            authorText:
+              "Stefanie Mueller, Sangha Im, Serafima Gurevich, Alexander Teibrich, Lisa Pfisterer, François Guimbretière, Patrick Baudisch",
+            title: "WirePrint: 3D Printed Previews for Fast Prototyping",
+            publicationText: "UIST 2014",
+            link: "https://canvas.uw.edu/files/128522165/",
+          },
+          {
+            authorText: "Peitong Duan, Jeremy Warner, Yang Li, Bjoern Hartmann",
+            title:
+              "Generating Automatic Feedback on UI Mockups with Large Language Models",
+            publicationText: "CHI 2024",
+            link: "https://canvas.uw.edu/files/128707087/",
+          },
+        ],
+      },
     },
     {
       date: verifyCalendarDate("2025-01-30", "Thu"),
@@ -631,39 +656,6 @@ export const calendarData: {
       type: "lecture",
       title: "Project Milestone Meetings",
     },
-    // // NOTE: Design Tools Research Topic is ready to go. James will move and uncomment once date is confirmed.
-    // {
-    //   date: verifyCalendarDate("2025-03-18", "Tue"), // TODO: Confirm date
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
-    //   title: "Research Topic: Design Tools",
-    //   readingsStandard: {
-    //     framing: {
-    //       authorText:
-    //         "Mark W. Newman, James Lin, Jason I. Hong, James A. Landay",
-    //       title:
-    //         "DENIM: An Informal Web Site Design Tool Inspired by Observations of Practice",
-    //       publicationText: "HCI, 2003",
-    //       link: "https://canvas.uw.edu/files/128522164/",
-    //     },
-    //     instances: [
-    //       {
-    //         authorText:
-    //           "Stefanie Mueller, Sangha Im, Serafima Gurevich, Alexander Teibrich, Lisa Pfisterer, François Guimbretière, Patrick Baudisch",
-    //         title: "WirePrint: 3D Printed Previews for Fast Prototyping",
-    //         publicationText: "UIST 2014",
-    //         link: "https://canvas.uw.edu/files/128522165/",
-    //       },
-    //       {
-    //         authorText: "Peitong Duan, Jeremy Warner, Yang Li, Bjoern Hartmann",
-    //         title:
-    //           "Generating Automatic Feedback on UI Mockups with Large Language Models",
-    //         publicationText: "CHI, 2024",
-    //         link: "https://canvas.uw.edu/files/128707087/",
-    //       },
-    //     ],
-    //   },
-    // },
     // {
     //   date: verifyCalendarDate("2023-10-19", "Thu"),
     //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
