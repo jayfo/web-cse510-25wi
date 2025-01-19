@@ -559,28 +559,30 @@ export const calendarData: {
       },
       readingsStandard: {
         framing: {
-          authorText: "Allison Druin",
-          title: "The Role of Children in the Design of New Technology",
-          publicationText: "Behaviour and Information Technology, 2002",
-          //     link: "https://canvas.uw.edu/files/109846155/",
+          authorText:
+            "Jason C. Yip, Kiley Sobel, Caroline Pitt, Kung Jin Lee, Sijin Chen, Kari Nasu, Laura R. Pina",
+          title:
+            "Examining Adult-Child Interactions in Intergenerational Participatory Design",
+          publicationText: "CHI 2017",
+          link: "https://canvas.uw.edu/files/129499290/",
         },
         instances: [
-          //     {
-          //       authorText:
-          //         "Kung Jin Lee, Wendy Roldan, Tian Qi Zhu, Harkiran Kaur Saluja, Sungmin Na, Britnie Chin, Yilin Zeng, Jin Ha Lee, Jason Yip",
-          //       title:
-          //         "The Show Must Go On: A Conceptual Model of Conducting Synchronous Participatory Design With Children Online",
-          //       publicationText: "CHI 2021",
-          //       link: "https://canvas.uw.edu/files/109846160/",
-          //     },
-          //     {
-          //       authorText:
-          //         "Jason Yip, Kelly Wong, Isabella Oh, Farisha Sultan, Wendy Roldan, Kung Jin Lee, Jimi Huh",
-          //       title:
-          //         "Co-Design Tensions Between Parents, Children, and Researchers Regarding Mobile Health Technology Design Needs and Decisions: Case Study",
-          //       publicationText: "JMIR Formative Research, 2023",
-          //       link: "https://canvas.uw.edu/files/110702877/",
-          //     },
+          {
+            authorText:
+              "Kung Jin Lee, Wendy Roldan, Tian Qi Zhu, Harkiran Kaur Saluja, Sungmin Na, Britnie Chin, Yilin Zeng, Jin Ha Lee, Jason Yip",
+            title:
+              "The Show Must Go On: A Conceptual Model of Conducting Synchronous Participatory Design With Children Online",
+            publicationText: "CHI 2021",
+            link: "https://canvas.uw.edu/files/129499288/",
+          },
+          {
+            authorText:
+              "Elana B. Blinder, Marshini Chetty, Jessica Vitak, Zoe Torok, Salina Fessehazion, Jason Yip, Jerry Alan Fails, Elizabeth Bonsignore, Tamara Clegg",
+            title:
+              "Evaluating the Use of Hypothetical 'Would You Rather' Scenarios to Discuss Privacy and Security Concepts with Children",
+            publicationText: "CSCW 2024",
+            link: "https://canvas.uw.edu/files/129499286/",
+          },
         ],
       },
     },
