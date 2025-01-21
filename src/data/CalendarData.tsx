@@ -552,7 +552,6 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Designing with Children",
-      tbd: true,
       guest: {
         name: "Jason Yip",
         link: "https://bigyipper.com/",
