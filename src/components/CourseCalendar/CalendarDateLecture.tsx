@@ -138,8 +138,8 @@ export const CalendarDateLecture: React.FunctionComponent<{
               }}
             >
               <CalendarItemGuests calendarItem={lectureCalendarItem} />
-              {lectureCalendarItem.tbd ? <UnderDevelopment /> : null}
               <CalendarItemAways awayCalendarItems={awayCalendarItems} />
+              {lectureCalendarItem.tbd ? <UnderDevelopment /> : null}
               <CalendarItemAssignments
                 assignmentCalendarItems={assignmentCalendarItems}
               />
