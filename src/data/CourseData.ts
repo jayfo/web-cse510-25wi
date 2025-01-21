@@ -69,7 +69,7 @@ export const courseData = {
   },
 
   linkDrivePresentationDraftSlides: {
-    // href: "https://docs.google.com/document/d/1-WoZWx0BROvs4wI8ZZxDCjlnZawnB_G7CCp4EoTL7Jw/edit?usp=sharing",
+    href: "https://forms.gle/szGmmMFeaFNCCCSR8",
   },
 
   linkDrivePresentationGroupFeedback: {
