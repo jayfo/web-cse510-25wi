@@ -634,9 +634,42 @@ export const calendarData: {
     {
       date: verifyCalendarDate("2025-02-20", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      type: "lecture",
-      title: "Research Topic: TBD",
       tbd: true,
+      type: "lecture",
+      title:
+        "Research Topic: Information and Communication Technologies and Development",
+      guest: {
+        name: "Kurtis Heimerl",
+        link: "https://kurti.sh/",
+      },
+      //   readingsStandard: {
+      //     framing: {
+      //       authorText:
+      //         "Lilly Irani, Janet Vertesi, Paul Dourish, Kavita Philip, Rebecca E. Grinter",
+      //       title: "Postcolonial Computing: A Lens on Design and Development",
+      //       publicationText: "CHI 2010",
+      //       link: "https://canvas.uw.edu/files/109846175/",
+      //     },
+      //     instances: [
+      //       {
+      //         authorText:
+      //           "Eric Brewer, Michael Demmer, Melissa Ho, R. J. Honicky, Joyojeet Pal, Madelaine Plauche, Sonesh Surana",
+      //         title:
+      //           "The Challenges of Technology Research for Developing Regions",
+      //         publicationText: "IEEE Pervasive Computing, 2006",
+      //         link: "https://canvas.uw.edu/files/109846171/",
+      //       },
+      //       {
+      //         authorText:
+      //           "Matthew William Johnson, Esther Han Beol Jang, Frankie O'Rourke, Rachel Ye, Kurtis Heimerl",
+      //         title:
+      //           "Network Capacity as Common Pool Resource: Community-Based Congestion Management in a Community Network",
+      //         publicationText: "CSCW 2021",
+      //         link: "https://canvas.uw.edu/files/109846179/",
+      //       },
+      //     ],
+      //   },
+      // },
     },
     // Week 8
     {
@@ -688,44 +721,6 @@ export const calendarData: {
       type: "lecture",
       title: "Project Milestone Meetings",
     },
-    // {
-    //   date: verifyCalendarDate("2023-10-19", "Thu"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
-    //   title:
-    //     "Research Topic: Information and Communication Technologies and Development",
-    //   guest: {
-    //     name: "Kurtis Heimerl",
-    //     link: "https://kurti.sh/",
-    //   },
-    //   readingsStandard: {
-    //     framing: {
-    //       authorText:
-    //         "Lilly Irani, Janet Vertesi, Paul Dourish, Kavita Philip, Rebecca E. Grinter",
-    //       title: "Postcolonial Computing: A Lens on Design and Development",
-    //       publicationText: "CHI 2010",
-    //       link: "https://canvas.uw.edu/files/109846175/",
-    //     },
-    //     instances: [
-    //       {
-    //         authorText:
-    //           "Eric Brewer, Michael Demmer, Melissa Ho, R. J. Honicky, Joyojeet Pal, Madelaine Plauche, Sonesh Surana",
-    //         title:
-    //           "The Challenges of Technology Research for Developing Regions",
-    //         publicationText: "IEEE Pervasive Computing, 2006",
-    //         link: "https://canvas.uw.edu/files/109846171/",
-    //       },
-    //       {
-    //         authorText:
-    //           "Matthew William Johnson, Esther Han Beol Jang, Frankie O'Rourke, Rachel Ye, Kurtis Heimerl",
-    //         title:
-    //           "Network Capacity as Common Pool Resource: Community-Based Congestion Management in a Community Network",
-    //         publicationText: "CSCW 2021",
-    //         link: "https://canvas.uw.edu/files/109846179/",
-    //       },
-    //     ],
-    //   },
-    // },
     // {
     //   date: verifyCalendarDate("2023-10-26", "Thu"),
     //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
