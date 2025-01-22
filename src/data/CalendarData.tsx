@@ -628,8 +628,12 @@ export const calendarData: {
       date: verifyCalendarDate("2025-02-18", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "Research Topic: TBD",
       tbd: true,
+      title: "Research Topic: Accessibility",
+      guest: {
+        name: "Martez Mott",
+        link: "http://www.martezmott.com/",
+      },
     },
     {
       date: verifyCalendarDate("2025-02-20", "Thu"),
