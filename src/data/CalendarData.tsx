@@ -680,11 +680,35 @@ export const calendarData: {
       date: verifyCalendarDate("2025-02-25", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "Research Topic: TBD",
-      tbd: true,
+      title: "Research Topic: Human-Agent Interaction",
       guest: {
         name: "Gagan Bansal",
         link: "https://gagb.github.io/",
+      },
+      readingsStandard: {
+        framing: {
+          authorText: "Eric Horvitz",
+          title: "Principles of Mixed-Initiative User Interfaces",
+          publicationText: "CHI 1999",
+          link: "https://canvas.uw.edu/files/129687500/",
+        },
+        instances: [
+          {
+            authorText:
+              "Adam Fourney, Gagan Bansal, Hussein Mozannar, Cheng Tan, Eduardo Salinas, Erkang (Eric) Zhu, Friederike Niedtner, Grace Proebsting, Griffin Bassman, Jack Gerrits, Jacob Alber, Peter Chang, Ricky Loynd, Robert West, Victor Dibia, Ahmed Awadallah, Ece Kamar, Rafah Hosn, Saleema Amershi",
+            title:
+              "Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks",
+            publicationText: "arXiv 2024",
+            link: "https://canvas.uw.edu/files/129687809/",
+          },
+          {
+            authorText:
+              "Gagan Bansal, Jennifer Wortman Vaughan, Saleema Amershi, Eric Horvitz, Adam Fourney, Hussein Mozannar, Victor Dibia, Daniel S. Weld",
+            title: "Challenges in Human-Agent Communication",
+            publicationText: "arXiv 2024",
+            link: "https://canvas.uw.edu/files/129687671/",
+          },
+        ],
       },
     },
     {
