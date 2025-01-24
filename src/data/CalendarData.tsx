@@ -628,11 +628,36 @@ export const calendarData: {
       date: verifyCalendarDate("2025-02-18", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      tbd: true,
       title: "Research Topic: Accessibility",
       guest: {
         name: "Martez Mott",
         link: "http://www.martezmott.com/",
+      },
+      readingsStandard: {
+        framing: {
+          authorText:
+            "Jacob O. Wobbrock, Krzysztof Z. Gajos, Shaun K. Kane, Gregg C. Vanderheiden",
+          title: "Ability-Based Design",
+          publicationText: "CACM, 2018",
+          link: "https://canvas.uw.edu/files/129729209/",
+        },
+        instances: [
+          {
+            authorText: "Rachel L. Franz, Sasa Junuzovic, Martez Mott",
+            title:
+              "Nearmi: A Framework for Designing Point of Interest Techniques for VR Users with Limited Mobility",
+            publicationText: "ASSETS 2021",
+            link: "https://canvas.uw.edu/files/129729206/",
+          },
+          {
+            authorText:
+              "Momona Yamagami, Sasa Junuzovic, Mar Gonzalez-Franco, Eyal Ofek, Edward Cutrell, John R. Porter, Andrew D. Wilson, Martez E. Mott",
+            title:
+              "Two-In-One: A Design Space for Mapping Unimanual Input into Bimanual Interactions in VR for Users with Limited Movement",
+            publicationText: "TACCESS 2022",
+            link: "https://canvas.uw.edu/files/129729434/",
+          },
+        ],
       },
     },
     {
@@ -756,42 +781,6 @@ export const calendarData: {
     //   title: "Experimental Design and Analysis",
     // },
     // // Week 7
-    // {
-    //   date: verifyCalendarDate("2023-11-07", "Tue"),
-    //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
-    //   type: "lecture",
-    //   title: "Research Topic: Accessibility",
-    //   guest: {
-    //     name: "Martez Mott",
-    //     link: "http://www.martezmott.com/",
-    //   },
-    //   readingsStandard: {
-    //     framing: {
-    //       authorText:
-    //         "Jacob O. Wobbrock, Krzysztof Z. Gajos, Shaun K. Kane, Gregg C. Vanderheiden",
-    //       title: "Ability-Based Design",
-    //       publicationText: "CACM, 2018",
-    //       link: "https://canvas.uw.edu/files/109669327/",
-    //     },
-    //     instances: [
-    //       {
-    //         authorText:
-    //           "Martez E. Mott, Radu-Daniel Vatavu, Shaun K. Kane, Jacob O. Wobbrock",
-    //         title:
-    //           "Smart Touch: Improving Touch Accuracy for People with Motor Impairments with Template Matching",
-    //         publicationText: "CHI 2016",
-    //         link: "https://canvas.uw.edu/files/109669328/",
-    //       },
-    //       {
-    //         authorText: "Rachel L. Franz, Sasa Junuzovic, Martez Mott",
-    //         title:
-    //           "Nearmi: A Framework for Designing Point of Interest Techniques for VR Users with Limited Mobility",
-    //         publicationText: "ASSETS 2021",
-    //         link: "https://canvas.uw.edu/files/109669329/",
-    //       },
-    //     ],
-    //   },
-    // },
     // {
     //   date: verifyCalendarDate("2023-11-09", "Thu"),
     //   timeAndLocation: TIME_AND_LOCATION_LECTURE,
