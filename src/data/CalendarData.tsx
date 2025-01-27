@@ -271,20 +271,20 @@ export const calendarData: {
                 // text below clarifies it can be read but will not be presented
                 authorText: "Vannevar Bush",
                 title: "As We May Think",
-                publicationText: "The Atlantic, 1945",
+                publicationText: "The Atlantic. 1945",
                 link: "https://theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/",
               },
               {
                 authorText: "Mark Weiser",
                 title: "The Computer for the 21st Century",
-                publicationText: "Scientific American, 1991",
+                publicationText: "Scientific American. 1991",
                 link: "https://canvas.uw.edu/files/128522123/",
               },
               // {
               //   authorText:
               //     "Roy Want, Andy Hopper, Veronica Falcão, Jonathan Gibbons",
               //   title: "The Active Badge Location System",
-              //   publicationText: "TOIS 1992",
+              //   publicationText: "TOIS. 1992",
               // },
               {
                 authorText: "James D. Hollan, Scott Stornetta",
@@ -295,7 +295,7 @@ export const calendarData: {
               {
                 authorText: "Pierre Wellner",
                 title: "Interacting with Paper on the DigitalDesk",
-                publicationText: "CACM 1993",
+                publicationText: "CACM. 1993",
                 link: "https://canvas.uw.edu/files/128522133/",
               },
               {
@@ -400,7 +400,7 @@ export const calendarData: {
             framing: {
               authorText: "Jacob O. Wobbrock, Julie A. Kientz",
               title: "Research Contributions in Human-Computer Interaction",
-              publicationText: "Interactions, 2016",
+              publicationText: "Interactions. 2016",
               link: "https://canvas.uw.edu/files/128522132/",
             },
           }}
@@ -638,7 +638,7 @@ export const calendarData: {
           authorText:
             "Jacob O. Wobbrock, Krzysztof Z. Gajos, Shaun K. Kane, Gregg C. Vanderheiden",
           title: "Ability-Based Design",
-          publicationText: "CACM, 2018",
+          publicationText: "CACM. 2018",
           link: "https://canvas.uw.edu/files/129729209/",
         },
         instances: [
@@ -654,7 +654,7 @@ export const calendarData: {
               "Momona Yamagami, Sasa Junuzovic, Mar Gonzalez-Franco, Eyal Ofek, Edward Cutrell, John R. Porter, Andrew D. Wilson, Martez E. Mott",
             title:
               "Two-In-One: A Design Space for Mapping Unimanual Input into Bimanual Interactions in VR for Users with Limited Movement",
-            publicationText: "TACCESS 2022",
+            publicationText: "TACCESS. 2022",
             link: "https://canvas.uw.edu/files/129729434/",
           },
         ],
@@ -723,14 +723,14 @@ export const calendarData: {
               "Adam Fourney, Gagan Bansal, Hussein Mozannar, Cheng Tan, Eduardo Salinas, Erkang (Eric) Zhu, Friederike Niedtner, Grace Proebsting, Griffin Bassman, Jack Gerrits, Jacob Alber, Peter Chang, Ricky Loynd, Robert West, Victor Dibia, Ahmed Awadallah, Ece Kamar, Rafah Hosn, Saleema Amershi",
             title:
               "Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks",
-            publicationText: "arXiv 2024",
+            publicationText: "arXiv. 2024",
             link: "https://canvas.uw.edu/files/129687809/",
           },
           {
             authorText:
               "Gagan Bansal, Jennifer Wortman Vaughan, Saleema Amershi, Eric Horvitz, Adam Fourney, Hussein Mozannar, Victor Dibia, Daniel S. Weld",
             title: "Challenges in Human-Agent Communication",
-            publicationText: "arXiv 2024",
+            publicationText: "arXiv. 2024",
             link: "https://canvas.uw.edu/files/129687671/",
           },
         ],
