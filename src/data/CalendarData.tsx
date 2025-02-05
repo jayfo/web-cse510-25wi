@@ -740,10 +740,36 @@ export const calendarData: {
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
       title: "Research Topic: Mental Health and Wellness",
-      tbd: true,
       guest: {
         name: "Mary Czerwinski",
         link: "https://www.microsoft.com/en-us/research/people/marycz/",
+      },
+      readingsStandard: {
+        framing: {
+          authorText: "Petr Slovak, Sean A. Munson",
+          title:
+            "HCI Contributions in Mental Health: A Modular Framework to Guide Psychosocial Intervention Design",
+          publicationText: "CHI 2024",
+          link: "https://canvas.uw.edu/files/130268073/",
+        },
+        instances: [
+          {
+            authorText:
+              "Jessica Schroeder, Chelsey Wilkes, Kael Rowan, Arturo Toledo, Ann Paradiso, Mary Czerwinski, Gloria Mark, Marsha M. Linehan",
+            title:
+              "PocketSkills: A Conversational Mobile Web App to Support Dialectical Behavioral Therapy",
+            publicationText: "CHI 2018",
+            link: "https://canvas.uw.edu/files/130268124/",
+          },
+          {
+            authorText:
+              "Esther Howe, Jina Suh, Mehrab Bin Morshed, Daniel McDuff, Kael Rowan, Javier Hernandez, Marah Ihab Abdin, Gonzalo Ramos, Tracy Tran, Mary Czerwinski",
+            title:
+              "Design of Digital Workplace Stress-Reduction Intervention Systems: Effects of Intervention Type and Timing",
+            publicationText: "CHI 2022",
+            link: "https://canvas.uw.edu/files/130268146/",
+          },
+        ],
       },
     },
     // Week 10
@@ -751,8 +777,32 @@ export const calendarData: {
       date: verifyCalendarDate("2025-03-11", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "Research Topic: TBD",
-      tbd: true,
+      title: "Research Topic: Interface Toolkits",
+      readingsStandard: {
+        framing: {
+          authorText: "Brad Myers, Scott E. Hudson, Randy Pausch",
+          title: "Past, Present, and Future of User Interface Software Tools",
+          publicationText: "TOCHI 2000",
+          link: "https://canvas.uw.edu/files/130268362/",
+        },
+        instances: [
+          {
+            authorText:
+              "Junhan Kong, Mingyuan Zhong, James Fogarty, Jacob O. Wobbrock",
+            title:
+              "The Ability-Based Design Mobile Toolkit (ABD-MT): Developer Support for Runtime Interface Adaptation Based on Users' Abilities",
+            publicationText: "MobileHCI 2024",
+            link: "https://canvas.uw.edu/files/130268429/",
+          },
+          {
+            authorText:
+              "Josh Pollock, Catherine Mei, Grace Huang, Elliot Evans, Daniel Jackson, Arvind Satyanarayan",
+            title: "Bluefish: Composing Diagrams with Declarative Relations",
+            publicationText: "UIST 2024",
+            link: "https://canvas.uw.edu/files/130268397/",
+          },
+        ],
+      },
     },
     {
       date: verifyCalendarDate("2025-03-13", "Thu"),
