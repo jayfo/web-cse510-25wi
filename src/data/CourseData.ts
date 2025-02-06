@@ -103,6 +103,22 @@ export const courseData = {
     link: "https://faculty.washington.edu/wobbrock/pubs/Wobbrock-2015.pdf",
   },
 
+  // Readings on contribution
+  readingContributionWobbrockKientz: {
+    authorText: "Jacob O. Wobbrock, Julie A. Kientz",
+    title: "Research Contributions in Human-Computer Interaction",
+    publicationText: "Interactions. 2016",
+    link: "https://canvas.uw.edu/files/128522132/",
+  },
+
+  readingContributionFogarty: {
+    authorText: "James Fogarty",
+    title: "Code and Contribution in Interactive Systems Research",
+    publicationText:
+      "CHI 2017 Workshop on #HCI.Tools: Strategies and Best Practices for Designing, Evaluating, and Sharing Technical HCI Toolkits",
+    link: "https://canvas.uw.edu/files/128522176/",
+  },
+
   // Readings on methods
   readingMethodsWaysOfKnowing: {
     authorText: "Judith S. Olson, Wendy A. Kellogg",
