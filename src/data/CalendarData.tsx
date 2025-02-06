@@ -662,7 +662,6 @@ export const calendarData: {
     {
       date: verifyCalendarDate("2025-02-20", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      tbd: true,
       type: "lecture",
       title:
         "Research Topic: Information and Communication Technologies and Development",
@@ -670,34 +669,32 @@ export const calendarData: {
         name: "Kurtis Heimerl",
         link: "https://kurti.sh/",
       },
-      //   readingsStandard: {
-      //     framing: {
-      //       authorText:
-      //         "Lilly Irani, Janet Vertesi, Paul Dourish, Kavita Philip, Rebecca E. Grinter",
-      //       title: "Postcolonial Computing: A Lens on Design and Development",
-      //       publicationText: "CHI 2010",
-      //       link: "https://canvas.uw.edu/files/109846175/",
-      //     },
-      //     instances: [
-      //       {
-      //         authorText:
-      //           "Eric Brewer, Michael Demmer, Melissa Ho, R. J. Honicky, Joyojeet Pal, Madelaine Plauche, Sonesh Surana",
-      //         title:
-      //           "The Challenges of Technology Research for Developing Regions",
-      //         publicationText: "IEEE Pervasive Computing, 2006",
-      //         link: "https://canvas.uw.edu/files/109846171/",
-      //       },
-      //       {
-      //         authorText:
-      //           "Matthew William Johnson, Esther Han Beol Jang, Frankie O'Rourke, Rachel Ye, Kurtis Heimerl",
-      //         title:
-      //           "Network Capacity as Common Pool Resource: Community-Based Congestion Management in a Community Network",
-      //         publicationText: "CSCW 2021",
-      //         link: "https://canvas.uw.edu/files/109846179/",
-      //       },
-      //     ],
-      //   },
-      // },
+      readingsStandard: {
+        framing: {
+          authorText:
+            "Lilly Irani, Janet Vertesi, Paul Dourish, Kavita Philip, Rebecca E. Grinter",
+          title: "Postcolonial Computing: A Lens on Design and Development",
+          publicationText: "CHI 2010",
+          link: "https://canvas.uw.edu/files/130302270/",
+        },
+        instances: [
+          {
+            authorText:
+              "Eric Brewer, Michael Demmer, Melissa Ho, R. J. Honicky, Joyojeet Pal, Madelaine Plauche, Sonesh Surana",
+            title:
+              "The Challenges of Technology Research for Developing Regions",
+            publicationText: "IEEE Pervasive Computing. 2006",
+            link: "https://canvas.uw.edu/files/130302268/",
+          },
+          {
+            authorText: "Dhruv Agarwal, Mor Naaman, Aditya Vashistha",
+            title:
+              "AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances",
+            publicationText: "CHI 2025",
+            link: "https://canvas.uw.edu/files/130302426/",
+          },
+        ],
+      },
     },
     // Week 8
     {
