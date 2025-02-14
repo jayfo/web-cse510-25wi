@@ -805,7 +805,7 @@ export const calendarData: {
       date: verifyCalendarDate("2025-03-13", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "Research Topic: Sustained HCI Research In the Wild",
+      title: "Research Topic: Sustained HCI Research in the Wild",
       guests: [
         {
           name: "Richard Li",
