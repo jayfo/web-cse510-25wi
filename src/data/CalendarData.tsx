@@ -805,8 +805,44 @@ export const calendarData: {
       date: verifyCalendarDate("2025-03-13", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       type: "lecture",
-      title: "Research Topic: TBD",
-      tbd: true,
+      title: "Research Topic: Sustained HCI Research In the Wild",
+      guests: [
+        {
+          name: "Richard Li",
+          link: "https://lichard49.github.io/",
+        },
+        {
+          name: "Esther Jang",
+          link: "https://estherjang.com/",
+        },
+      ],
+      readingsStandard: {
+        framing: {
+          authorText: "Philip Guo",
+          title:
+            "Ten Million Users and Ten Years Later: Python Tutor’s Design Guidelines for Building Scalable and Sustainable Research Software in Academia",
+          publicationText: "UIST 2021",
+          link: "https://canvas.uw.edu/files/130724905/",
+        },
+        instances: [
+          {
+            authorText:
+              "Richard Li, Philip Vutien, Sabrina Omer, Michael Yacoub, George Ioannou, Ravi Karkar, Sean A. Munson, James Fogarty",
+            title:
+              "Deploying and Examining Beacon for At-Home Patient Self-Monitoring with Critical Flicker Frequency",
+            publicationText: "To Appear, CHI 2025",
+            //link: "https://canvas.uw.edu/files/130268429/",
+          },
+          {
+            authorText:
+              "Esther Han Beol Jang, Nussara Tieanklin, Kurtis Heimerl",
+            title:
+              '"Seattle Community Network": Building Power through Communities of Practice',
+            publicationText: "To Appear, CSCW 2025",
+            //link: "https://canvas.uw.edu/files/130268397/",
+          },
+        ],
+      },
     },
     // Project Meetings, Week 6 and Week 9
     {
