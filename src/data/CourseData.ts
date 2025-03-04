@@ -92,7 +92,7 @@ export const courseData = {
   },
 
   linkProjectFinalReportCHIFormat: {
-    href: "https://chi2024.acm.org/submission-guides/chi-publication-formats/",
+    href: "https://chi2025.acm.org/chi-publication-formats/",
   },
 
   // Reading on paper writing
