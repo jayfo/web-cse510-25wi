@@ -690,7 +690,7 @@ export const calendarData: {
             authorText: "Dhruv Agarwal, Mor Naaman, Aditya Vashistha",
             title:
               "AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances",
-            publicationText: "CHI 2025",
+            publicationText: "To Appear, CHI 2025",
             link: "https://canvas.uw.edu/files/130302426/",
           },
         ],
@@ -831,15 +831,13 @@ export const calendarData: {
             title:
               "Deploying and Examining Beacon for At-Home Patient Self-Monitoring with Critical Flicker Frequency",
             publicationText: "To Appear, CHI 2025",
-            //link: "https://canvas.uw.edu/files/130268429/",
+            link: "https://canvas.uw.edu/files/131458051/",
           },
           {
-            authorText:
-              "Esther Han Beol Jang, Nussara Tieanklin, Kurtis Heimerl",
-            title:
-              '"Seattle Community Network": Building Power through Communities of Practice',
-            publicationText: "To Appear, CSCW 2025",
-            //link: "https://canvas.uw.edu/files/130268397/",
+            authorText: "Esther Han Beol Jang et al",
+            title: "Title Anonymized",
+            publicationText: "In Preparation",
+            link: "https://canvas.uw.edu/files/131458047/",
           },
         ],
       },
