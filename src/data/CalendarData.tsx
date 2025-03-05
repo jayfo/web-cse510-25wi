@@ -690,7 +690,7 @@ export const calendarData: {
             authorText: "Dhruv Agarwal, Mor Naaman, Aditya Vashistha",
             title:
               "AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances",
-            publicationText: "CHI 2025",
+            publicationText: "To Appear, CHI 2025",
             link: "https://canvas.uw.edu/files/130302426/",
           },
         ],
